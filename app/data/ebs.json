@@ -1,0 +1,11 @@
+{
+  "data": [{
+    "hero image":"ebs",
+    "header": "AIB - Takeover",
+    "description": "When we were reviewing client's provided assets, the challenge was clear; How to intuitively offer the user a premium full-screen experience with the brand without compromising publisher's content and pushing the article below the viewable fold. We wanted to stay clear of traditional overlays, intrusive blocks that are overlayed on top of the crucial publisher's material. Our solution was to focus on the unique reveal animation that helps users understand emotional connection between the content and the website. We have created a visually astounding flip effect of the whole page that reveals client's large scale advertisement.",
+    "date": "2017",
+    "client": "Independent IE",
+    "demo": "/ie-ebs-wallpaper.html",
+    "tags":"Homepage, Takeover, Video"
+  }]
+}
