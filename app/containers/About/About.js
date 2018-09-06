@@ -1,48 +1,35 @@
 import React, { Component } from 'react';
-import { PropTypes } from 'prop-types';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import * as copyActions from 'redux/modules/copy';
-import * as scrollActions from 'redux/modules/scroll';
 import Helmet from 'react-helmet';
+import { PropTypes } from 'prop-types';
 import { Divider, SectionItem } from 'components';
+import './About.scss';
 
-// eslint-disable-next-line import/extensions, import/no-extraneous-dependencies
-@connect(
-  state => ({ localeCopy: state.copy.localeCopy }),
-  dispatch => bindActionCreators({ ...scrollActions, ...copyActions }, dispatch)
-)
+const settings = {
+  "smallHeader": "Quartile",
+  "header": "About Us",
+  "description": "We are advocates of simplicity and transparency. With over ten years experience in the advertising business, it is safe to say that we gained excellent exposure and grasp in all industry-leading solutions. We place the highest emphasis on immersive experience design, where we collaborate with our clients to deliver comprehensive solutions that meet their even most demanding business goals. Our agency originated in the very heart of London's silicon roundabout, where most of our tech talent was acquired. Get in touch with us, see how our award-winning service differs from others.",
+  "buttonText": "Contact US",
+  "link": "",
+  "sectionClass": "about",
+  "videoLink": ""
+}
+
 export default class About extends Component {
-  static propTypes = {
-    loadCopy: PropTypes.func.isRequired,
-    localeCopy: PropTypes.oneOfType([
-      PropTypes.object, // eslint-disable-line react/forbid-prop-types
-      PropTypes.array // eslint-disable-line react/forbid-prop-types
-    ]),
-    updateMaxPages: PropTypes.func.isRequired
-  }
-  componentDidMount() {
-    this.props.loadCopy('about');
-    this.props.updateMaxPages(1);
-  }
-
-  defaultCopy = () => (
-    'We are advocates of simplicity and transparency. It is safe to say that we gained excellent exposure and grasp in all industry-leading RichMedia and advertising solutions.'
-  )
-
   render() {
-    // eslint-disable-next-line global-require
-    const styles = require('./About.scss');
-
-    const aboutCopy = this.props.localeCopy.data;
-    if (!aboutCopy) {
-      return (<p>{this.defaultCopy()}</p>);
-    }
-
+    // console.log(this.settings());
+    console.log('>> HERE ::: ');
+    console.log({...settings});
     return (
-      <div className={styles.about}>
-        <Helmet title="About" />
-        <SectionItem inView key={0} offset={0} order={0} {...aboutCopy[0]} link="about" />
+      <div className={'about'}>
+        <Helmet>
+        <title>About Us</title>
+          <meta
+            name="description"
+            content="Feature page of React.js Boilerplate application"
+          />
+        </Helmet>
+        <p>{settings.description}</p>
+        <SectionItem inView key={0} offset={0} order={0} {...settings} link="about" />
         <Divider colour="white" />
       </div>
     );

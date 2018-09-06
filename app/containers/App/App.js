@@ -16,16 +16,20 @@ import HomePage from 'containers/HomePage/Loadable';
 // import Footer from 'components/Footer';
 import {
   About,
+  ArrowNav,
   Contact,
   Careers,
   FrequentlyAsked,
   Front,
   Legal,
+  NavBar,
   NotFound,
   ProjectDetails,
   Work,
   Services,
 } from 'containers'; // eslint-disable-line import/extensions
+
+import { FooterBar } from 'components';
 
 import './style.scss';
 
@@ -38,6 +42,7 @@ const App = () => (
       <meta name="description" content="A React.js Boilerplate application" />
     </Helmet>
     {/* <Header /> */}
+    <NavBar />
     <Switch>
       <Route exact path="/" component={HomePage} />
       { /* Routes */ }
@@ -52,7 +57,8 @@ const App = () => (
       { /* Catch all route */ }
       <Route path="*" component={NotFound} status={404} />
     </Switch>
-    {/* <Footer /> */}
+    {/* <ArrowNav /> */}
+    <FooterBar />
   </div>
 );
 
