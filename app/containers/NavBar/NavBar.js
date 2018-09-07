@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import React, { Component } from 'react';
-import { IndexLink, Link, browserHistory } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './NavBar.scss';
 
 export default class NavBar extends Component {
@@ -9,37 +9,9 @@ export default class NavBar extends Component {
     this.state = { navbar: 'sticky', location: '' };
   }
 
-  componentDidMount() {
-    window.addEventListener('scroll', (e) => { this.mScrollHandler(e); });
-    browserHistory.listen((e) => {
-      if (e.pathname !== this.state.location) {
-        this.showLoader();
-        this.setState({ location: e.pathname });
-      }
-    });
-    this.showLoader();
-    this.saveLocation();
-  }
-
   componentWillUnmount() {
     window.removeEventListener('scroll', (e) => { this.mScrollHandler(e); });
     this.state = {};
-  }
-
-  saveLocation() {
-    if (this.state.location === '') {
-      this.setState({ location: browserHistory.getCurrentLocation().pathname });
-    }
-  }
-
-  showLoader = () => {
-    if (document) {
-      const navLoader = document.getElementById('navLoader');
-      navLoader.style.visibility = 'visible';
-      setTimeout(() => {
-        navLoader.style.visibility = 'hidden';
-      }, 3200);
-    }
   }
 
   scrollPageHandler = () => {
@@ -102,6 +74,7 @@ export default class NavBar extends Component {
         mobileNavType = 'openNav';
       }
     }
+
     const navConfig = [
       {
         to: '/about', name: 'About Us', className: '', onClick: this.navClickHandler
@@ -116,47 +89,42 @@ export default class NavBar extends Component {
         to: '/contact', name: 'Contact', className: 'contactUsButton', onClick: this.navClickHandler
       }
     ];
-    const navButtons = [];
 
+    const navButtons = [];
     for (let i = 0; i < navConfig.length; i++) {
-      if (this.state.location === navConfig[i].to) {
-        navButtons.push(
-          <li key={'navBtn' + i}><Link className={'activeNavButton' + ' ' + navConfig[i].className} to={navConfig[i].to} onClick={navConfig[i].onClick}>{navConfig[i].name}</Link></li>
-        );
-      } else {
-        navButtons.push(
-          <li key={'navBtn' + i}><Link className={navConfig[i].className} to={navConfig[i].to} onClick={navConfig[i].onClick}>{navConfig[i].name}</Link></li>
-        );
-      }
+      navButtons.push(
+        <li key={'navBtn' + i}>
+          <NavLink activeClassName="activeNavButton" className={navConfig[i].className} to={navConfig[i].to} onClick={navConfig[i].onClick}>{navConfig[i].name}</NavLink>
+        </li>
+      );
     }
 
     const logo = [];
     try {
       if (window.location.host !== 'localhost:3000') {
         logo.push(
-          <IndexLink key="0" to="/" activeStyle={{ color: '#33e0ff' }}>
+          <NavLink key="0" to="/" activeStyle={{ color: '#33e0ff' }}>
             <div className={'brandClick'} />
             <div className={'brand' + ' ' + brandType}>
               <div dangerouslySetInnerHTML={this.retrieveIframeElement()} />
             </div>
-          </IndexLink>
+          </NavLink>
         );
       } else {
         logo.push(
-          <IndexLink key="0" to="/" activeStyle={{ color: '#33e0ff' }}>
+          <NavLink key="0" to="/" activeStyle={{ color: '#33e0ff' }}>
             <div className={'brandClick'} />
-          </IndexLink>
+          </NavLink>
         );
       }
     } catch (e) {
       logo.push(
-        <IndexLink key="0" to="/" activeStyle={{ color: '#33e0ff' }}>
+        <NavLink key="0" to="/" activeStyle={{ color: '#33e0ff' }}>
           <div className={'brandClick'} />
-        </IndexLink>
+        </NavLink>
       );
     }
 
-    /* eslint-disable */
     return (
       <header className={'mainHeader' + ' ' + navType + ' ' + mobileNavType }>
         <div className={'row'}>
@@ -179,6 +147,5 @@ export default class NavBar extends Component {
         </div>
       </header>
     );
-    /* eslint-enable */
   }
 }

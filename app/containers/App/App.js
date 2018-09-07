@@ -8,7 +8,7 @@
 
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { Switch, IndexRoute, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 
 import HomePage from 'containers/HomePage/Loadable';
 // import NotFoundPage from 'containers/NotFoundPage/Loadable';
