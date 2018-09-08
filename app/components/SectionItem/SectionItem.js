@@ -46,7 +46,7 @@ export default class SectionItem extends Component {
 
     let outOrInView = 'outView';
     let infoOutOrInView = 'infoOutView';
-    let inset = 'inset';
+    let inset = ' inset';
     if ((this.props.order % 2) === 0) {
       inset = '';
     }
@@ -78,7 +78,7 @@ export default class SectionItem extends Component {
     const text = this.props.description;
     // <SectionVideo key={this.props.key} inView={this.props.inView} videoLink={this.props.videoLink} />
     return (
-      <div id={selectedClass} className={'section' + ' ' + inset + ' ' + backgroundClass}>
+      <div id={selectedClass} className={'section' + '' + inset + ' ' + backgroundClass}>
         <div className={'info'}>
           <div className={selectedImageClass + ' ' + 'imageBg'}></div>
           {contactSection &&

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
-import { PropTypes } from 'prop-types';
 import { Divider, SectionItem } from 'components';
 import './About.scss';
 
@@ -16,9 +15,6 @@ const settings = {
 
 export default class About extends Component {
   render() {
-    // console.log(this.settings());
-    console.log('>> HERE ::: ');
-    console.log({...settings});
     return (
       <div className={'about'}>
         <Helmet>
@@ -28,7 +24,6 @@ export default class About extends Component {
             content="Feature page of React.js Boilerplate application"
           />
         </Helmet>
-        <p>{settings.description}</p>
         <SectionItem inView key={0} offset={0} order={0} {...settings} link="about" />
         <Divider colour="white" />
       </div>
