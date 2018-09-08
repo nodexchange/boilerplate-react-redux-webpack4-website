@@ -1,6 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
+import '!file-loader?name=[name].[ext]!../../static/logo-animation-completed.html';
+import '!file-loader?name=[name].[ext]!../../images/logo-animation-bck.png';
+
 import './NavBar.scss';
 
 export default class NavBar extends Component {
@@ -53,7 +56,7 @@ export default class NavBar extends Component {
   }
 
   retrieveIframeElement = () => {
-    const iframeElement = '<iframe frameborder=0 scrolling=no src="/logo-animation-completed.html" width="250" height="90"></iframe>';
+    const iframeElement = '<iframe frameborder=0 scrolling=no src="./logo-animation-completed.html" width="250" height="90"></iframe>';
     return {
       __html: iframeElement
     };
@@ -101,7 +104,7 @@ export default class NavBar extends Component {
 
     const logo = [];
     try {
-      if (window.location.host !== 'localhost:3000') {
+      if (window.location.host !== 'localhot:3000') {
         logo.push(
           <NavLink key="0" to="/" activeStyle={{ color: '#33e0ff' }}>
             <div className={'brandClick'} />

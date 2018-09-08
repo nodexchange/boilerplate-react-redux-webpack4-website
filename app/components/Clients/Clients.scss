@@ -1,11 +1,10 @@
-.section {
+.section-clients {
   height: 56%;
   min-height: 250px;
   background-size: cover !important;
   overflow: hidden;
   position: relative;
   background-color: #2989d8;
-  padding-top: 5vh;
   .info {
     font-family: 'Didact Gothic', sans-serif;
     text-align: center;
@@ -35,17 +34,19 @@
 }
 
 @media only screen and (max-width: 700px) {
-  .info {
-    font-size: 15px !important;
-  }
-  .clients {
-    width: 100% !important;
-    grid-template-columns: 25vw 25vw 25vw !important;
-    grid-gap: 4vw !important;
-  }
-  .client {
-    img {
-      max-width: 30vw !important;
+  .section-clients {
+    .info {
+      font-size: 15px !important;
+    }
+    .clients {
+      width: 100% !important;
+      grid-template-columns: 25vw 25vw 25vw !important;
+      grid-gap: 4vw !important;
+    }
+    .client {
+      img {
+        max-width: 30vw !important;
+      }
     }
   }
 }

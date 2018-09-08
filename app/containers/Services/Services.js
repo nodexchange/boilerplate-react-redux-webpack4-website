@@ -1,69 +1,45 @@
 import React, { Component } from 'react';
-import { PropTypes } from 'prop-types';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import * as copyActions from 'redux/modules/copy';
-import * as scrollActions from 'redux/modules/scroll';
 import Helmet from 'react-helmet';
 import { Divider } from 'components';
+import './Services.scss';
 
-// eslint-disable-next-line import/extensions, import/no-extraneous-dependencies
-@connect(
-  state => ({ localeCopy: state.copy.localeCopy }),
-  dispatch => bindActionCreators({ ...scrollActions, ...copyActions }, dispatch)
-)
+const settings = [{
+  "service1": "Creative Production, From simple IAB certified Ad banners to bespoke builds and homepage takeovers, our team's expertise can facilitate delivery on any creative ad campaign. Google Web Designer, Celtra, DoubleClick Studio, ONE Creative or Hype, we can help with all.",
+  "service2": "Ad Support, We are happy to assist with adverts conversions, bug fixing, reporting adjustments or any other technical ad query.",
+  "service3": "Design, Our award-winning team will be happy to assist with any creative tasks, from mock-ups to visual design.",
+  "service4": "Training, This service is design to assist our clients with the planning of dedicated training and workshops. We would be happy upskill your team on technical ad build, industry jargon or unique solutions such as DCO or Audience Targeting.",
+  "service5": "Holistic Ad Serving, Our most straight forward way of showing you the excellence of our service. We would be happy to design your ad to the provided specs, build and traffic it. We will be sharing regular updates and reports with you throughout the campaign lifecycle.",
+  "service6": "Consultancy, We can advise on deadlines, feasibility or unique solutions. Let's us be part of your conversations & brainstorming sessions. Our technical expertise is yours to leverage."
+}];
+
 export default class Services extends Component {
-  static propTypes = {
-    loadCopy: PropTypes.func.isRequired,
-    localeCopy: PropTypes.oneOfType([
-      PropTypes.object, // eslint-disable-line react/forbid-prop-types
-      PropTypes.array // eslint-disable-line react/forbid-prop-types
-    ]),
-    updateMaxPages: PropTypes.func.isRequired
-  }
-  componentDidMount() {
-    this.props.loadCopy('services');
-    this.props.updateMaxPages(1);
-  }
-
-  defaultCopy = () => (
-    'We are advocates of simplicity and transparency. It is safe to say that we gained excellent exposure and grasp in all industry-leading RichMedia and advertising solutions.'
-  )
-
-
   render() {
-    // eslint-disable-next-line global-require
-    const styles = require('./Services.scss');
-
-    const servicesCopy = this.props.localeCopy.data;
-    if (!servicesCopy) {
-      return (<p>{this.defaultCopy()}</p>);
-    }
+    const servicesCopy = settings;
 
     return (
-      <div className={styles.services}>
+      <div className={'services'}>
         <Helmet title="Services" />
-        <div className={styles.section}>
-          <div className={styles.phone} />
-          <div className={styles.logo} />
-          <div className={styles.logoShadow} />
-          <div className={styles.stars}>
-            <div className={styles.numbers}>
-              <div className={styles.number1 + ' ' + styles.numberEl}>{servicesCopy[0].service1}</div>
-              <div className={styles.number2 + ' ' + styles.numberEl}>{servicesCopy[0].service2}</div>
-              <div className={styles.number3 + ' ' + styles.numberEl}>{servicesCopy[0].service3}</div>
-              <div className={styles.number4 + ' ' + styles.numberEl}>{servicesCopy[0].service4}</div>
-              <div className={styles.number5 + ' ' + styles.numberEl}>{servicesCopy[0].service5}</div>
-              <div className={styles.number6 + ' ' + styles.numberEl}>{servicesCopy[0].service6}</div>
+        <div className={'section'}>
+          <div className={'phone'} />
+          <div className={'logo'} />
+          <div className={'logoShadow'} />
+          <div className={'stars'}>
+            <div className={'numbers'}>
+              <div className={'number1' + ' ' + 'numberEl'}>{servicesCopy[0].service1}</div>
+              <div className={'number2' + ' ' + 'numberEl'}>{servicesCopy[0].service2}</div>
+              <div className={'number3' + ' ' + 'numberEl'}>{servicesCopy[0].service3}</div>
+              <div className={'number4' + ' ' + 'numberEl'}>{servicesCopy[0].service4}</div>
+              <div className={'number5' + ' ' + 'numberEl'}>{servicesCopy[0].service5}</div>
+              <div className={'number6' + ' ' + 'numberEl'}>{servicesCopy[0].service6}</div>
             </div>
           </div>
-          <div className={styles.mobileServices}>
-            <div className={styles.number1 + ' ' + styles.numberEl}>{servicesCopy[0].service1}</div>
-            <div className={styles.number2 + ' ' + styles.numberEl}>{servicesCopy[0].service2}</div>
-            <div className={styles.number3 + ' ' + styles.numberEl}>{servicesCopy[0].service3}</div>
-            <div className={styles.number4 + ' ' + styles.numberEl}>{servicesCopy[0].service4}</div>
-            <div className={styles.number5 + ' ' + styles.numberEl}>{servicesCopy[0].service5}</div>
-            <div className={styles.number6 + ' ' + styles.numberEl}>{servicesCopy[0].service6}</div>
+          <div className={'mobileServices'}>
+            <div className={'number1' + ' ' + 'numberEl'}>{servicesCopy[0].service1}</div>
+            <div className={'number2' + ' ' + 'numberEl'}>{servicesCopy[0].service2}</div>
+            <div className={'number3' + ' ' + 'numberEl'}>{servicesCopy[0].service3}</div>
+            <div className={'number4' + ' ' + 'numberEl'}>{servicesCopy[0].service4}</div>
+            <div className={'number5' + ' ' + 'numberEl'}>{servicesCopy[0].service5}</div>
+            <div className={'number6' + ' ' + 'numberEl'}>{servicesCopy[0].service6}</div>
           </div>
         </div>
         <Divider colour="" />

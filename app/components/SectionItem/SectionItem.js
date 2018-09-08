@@ -78,7 +78,7 @@ export default class SectionItem extends Component {
     const text = this.props.description;
     // <SectionVideo key={this.props.key} inView={this.props.inView} videoLink={this.props.videoLink} />
     return (
-      <div id={selectedClass} className={'section' + '' + inset + ' ' + backgroundClass}>
+      <div id={selectedClass} className={'section-item' + '' + inset + ' ' + backgroundClass}>
         <div className={'info'}>
           <div className={selectedImageClass + ' ' + 'imageBg'}></div>
           {contactSection &&

@@ -2,15 +2,15 @@ import React, { Component } from 'react';
 import { PropTypes } from 'prop-types';
 
 /* eslint-disable import/no-webpack-loader-syntax */
-import '!file-loader?name=[name].[ext]!../../static/clients/renault.png';
-import '!file-loader?name=[name].[ext]!../../static/clients/ford.png';
-import '!file-loader?name=[name].[ext]!../../static/clients/audi.png';
-import '!file-loader?name=[name].[ext]!../../static/clients/toyota.png';
-import '!file-loader?name=[name].[ext]!../../static/clients/you.png';
-import '!file-loader?name=[name].[ext]!../../static/clients/gsk.png';
-import '!file-loader?name=[name].[ext]!../../static/clients/hme.png';
-import '!file-loader?name=[name].[ext]!../../static/clients/dnno.png';
-import '!file-loader?name=[name].[ext]!../../static/clients/inm.png';
+import '!file-loader?name=[name].[ext]!../../images/clients/renault.png';
+import '!file-loader?name=[name].[ext]!../../images/clients/ford.png';
+import '!file-loader?name=[name].[ext]!../../images/clients/audi.png';
+import '!file-loader?name=[name].[ext]!../../images/clients/toyota.png';
+import '!file-loader?name=[name].[ext]!../../images/clients/you.png';
+import '!file-loader?name=[name].[ext]!../../images/clients/gsk.png';
+import '!file-loader?name=[name].[ext]!../../images/clients/hme.png';
+import '!file-loader?name=[name].[ext]!../../images/clients/dnno.png';
+import '!file-loader?name=[name].[ext]!../../images/clients/inm.png';
 /* eslint-enable import/no-webpack-loader-syntax */
 import './Clients.scss';
 
@@ -21,7 +21,7 @@ export default class Clients extends Component { // eslint-disable-line react/pr
 
   render() {
     return (
-      <div className={'section'}>
+      <div className={'section-clients'}>
         <div className={'info'}>
           Brands and clients that <b>entrust</b> our solutions and empathy&#8482; algorithm
         </div>

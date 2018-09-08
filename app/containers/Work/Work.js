@@ -1,66 +1,89 @@
 import React, { Component } from 'react';
-import { PropTypes } from 'prop-types';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import * as copyActions from 'redux/modules/copy';
-import * as scrollActions from 'redux/modules/scroll';
 import Helmet from 'react-helmet';
 import { Divider, GridCard, Hero } from 'components';
+import './Work.scss';
 
-// eslint-disable-next-line import/extensions, import/no-extraneous-dependencies
-@connect(
-  state => ({ localeCopy: state.copy.localeCopy }),
-  dispatch => bindActionCreators({ ...scrollActions, ...copyActions }, dispatch)
-)
+const settings = {
+  "data": [{
+      "header": "Ford F-150 360°",
+      "description": "360° In-Car Experience ",
+      "imageClass": "ford",
+      "link": "work/ford"
+    },{
+      "header": "Brazil Tourism",
+      "description": "Virtual 360° Video Tour",
+      "imageClass": "brazil",
+      "link": "work/brazil"
+    },{
+      "header": "Renault Takeover",
+      "description": "Renault cross-screen video takeover",
+      "imageClass": "renault",
+      "link": "work/renault"
+    }, {
+      "header": "AIB - Brand Takeover",
+      "description": "Unique interactive Homepage wallpaper takeover.",
+      "imageClass": "aib",
+      "link": "work/aib"
+    }, {
+      "header": "Toyota",
+      "description": "Vibrant 360° banner to support Toyota Yaris re-launch.",
+      "imageClass": "toyota",
+      "link": "work/toyota"
+    }, {
+      "header": "Audi",
+      "description": "Pure Imagination - Responsive Header",
+      "imageClass": "audi",
+      "link": "work/audi"
+    }, {
+      "header": "EBS - Interactive Wallpaper",
+      "description": "Premium Video takeover from a static wallpaper.",
+      "imageClass": "ebs",
+      "link": "work/ebs"
+    }, {
+      "header": "Marvel - VR Virtual Reality takeover",
+      "description": "Bleeding-edge mobile experience.",
+      "imageClass": "marvel",
+      "link": "work/marvel"
+    }
+  ],
+  "quotes": [{
+    "text": "Empathy is about standing in someone else's shoes, feeling with his or her heart, seeing with his or her eyes. Not only is empathy hard to outsource and automate, but it makes the world a better place.",
+    "author": "Daniel H. Pink"
+  }, {
+    "text": "When people talk, listen completely. Most people never listen.",
+    "author": "Ernest Hemingway"
+  }, {
+    "text": "Sometimes all a person wants is an empathetic ear; all he or she needs is to talk it out. Just offering a listening ear and an understanding heart for his or her suffering can be a big comfort.",
+    "author": "Roy T. Bennett"
+  }, {
+    "text": "I believe empathy is the most essential quality of civilization.",
+    "author": "Roger Ebert"
+  }]
+}
 
 export default class Work extends Component {
-  static propTypes = {
-    loadCopy: PropTypes.func.isRequired,
-    localeCopy: PropTypes.oneOfType([
-      PropTypes.object, // eslint-disable-line react/forbid-prop-types
-      PropTypes.array // eslint-disable-line react/forbid-prop-types
-    ]),
-    updateMaxPages: PropTypes.func.isRequired
-  }
-  constructor(props) {
-    super(props);
-    this.localeCopy = this.props.localeCopy || 'pending';
-  }
-  componentDidMount() {
-    this.props.loadCopy('work');
-    this.props.updateMaxPages(1);
-  }
   selectRandomQuote() {
-    const quotes = this.props.localeCopy.quotes;
+    const quotes = settings.quotes;
     return quotes[Math.floor(Math.random() * quotes.length)];
   }
 
   render() {
-    const styles = require('./Work.scss');
-
-    // hero as a todo item.
-    const projectsGridCopy = this.props.localeCopy.data;
     const cards = [];
-    if (!projectsGridCopy || !this.props.localeCopy.quotes) {
-      return (<p>Loading...</p>);
-    }
+    const projectsGridCopy = settings.data;
     for (let i = 0; i < projectsGridCopy.length; i++) {
       cards.push(<GridCard key={i} order={i} {...projectsGridCopy[i]} />);
     }
     const quote = this.selectRandomQuote();
     // {cards}
     return (
-      <div className={styles.projects}>
+      <div className={'projects'}>
         <Helmet title="Our Work" />
         <Hero smallHeader={'"' + quote.text + '"'} smallText={quote.author} background="narrow" />
-        <div className={styles.section}>
-          <ul className={styles.grid + ' ' + styles.cards}>
+        <div className={'section'}>
+          <ul className={'grid' + ' ' + 'cards'}>
             {cards}
           </ul>
         </div>
-        <Divider colour="" />
-        <Divider colour="" />
-        <Divider colour="" />
         <Divider colour="" />
       </div>
     );
