@@ -19,7 +19,7 @@ export default class GridCard extends Component {
     return (
       <li className={'gridItem' + ' ' + 'grid' + this.props.order}>
         <Link to={'/' + this.props.link}>
-          <div className={'gridBackground' + ' ' + 'this.props.imageClass'} />
+          <div className={'gridBackground' + ' ' + this.props.imageClass} />
           <div className={'gridTitle'}>
             <h2>{this.props.header}</h2>
             <p>

@@ -3,7 +3,6 @@
   background-size: cover !important;
   overflow: hidden;
   position: relative;
-  background-color: #2989d8;
   .infoOutView {
     -webkit-transform: translate3d(0,-100px,0);
     transform: translate3d(0,-100px,0);
@@ -121,16 +120,17 @@
       display: block;
     }
   }
-  /* Projects section */
-  .narrow {
-    height: 49%;
-    .info {
-      margin-top: 34px;
-      max-width: 60%;
-      width: 60%;
-      .projectInfo {
-        display: none;
-      }
+}
+/* Projects section */
+.narrow {
+  height: 70%;
+  padding-bottom: 5%;
+  .info {
+    margin-top: 34px;
+    max-width: 60%;
+    width: 60%;
+    .projectInfo {
+      display: none !important;
     }
   }
 

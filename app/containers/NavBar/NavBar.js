@@ -12,6 +12,10 @@ export default class NavBar extends Component {
     this.state = { navbar: 'sticky', location: '' };
   }
 
+  componentDidMount() {
+    window.addEventListener('scroll', (e) => { this.mScrollHandler(e); });
+  }
+
   componentWillUnmount() {
     window.removeEventListener('scroll', (e) => { this.mScrollHandler(e); });
     this.state = {};

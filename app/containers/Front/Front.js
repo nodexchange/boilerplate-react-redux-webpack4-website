@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
 import { Clients, Divider, SectionItem } from 'components';
+import throttle from '../../helpers/Throttle';
 import './Front.scss';
 
 const settings = [{
@@ -63,7 +64,7 @@ const settings = [{
 export default class Front extends Component {
   constructor(props) {
     super(props);
-    // this.currentPanel = this.props.offsetRatio || 0;
+    this.currentPanel = this.props.offsetRatio || 0;
     // this.localeCopy = this.props.localeCopy || 'pending';
   }
 
@@ -72,8 +73,6 @@ export default class Front extends Component {
     // window.addEventListener('scroll', throttle(this.props.mainWindowScrollAction, 100));
     // this.props.mainWindowScrollAction();
     // this.props.mainImageResizeAction();
-    // this.props.updateMaxPages(6);
-    // this.props.loadCopy('front');
   }
 
   componentWillReceiveProps(nextProps) {
