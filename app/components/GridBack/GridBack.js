@@ -1,7 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import React, { Component } from 'react';
 import { PropTypes } from 'prop-types';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
+import './GridBack.scss';
 
 // eslint-disable-next-line react/prefer-stateless-function
 export default class GridBack extends Component {
@@ -10,11 +11,10 @@ export default class GridBack extends Component {
   };
   render() {
     // eslint-disable-next-line global-require
-    const styles = require('./GridBack.scss');
 
     return (
       <Link to={'/' + this.props.link}>
-        <div className={styles.gridBack}>{}</div>
+        <div className={'gridBack'}>{}</div>
       </Link>
     );
   }
