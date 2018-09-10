@@ -11,7 +11,7 @@ const settings = [{
   "description": "We are data obsessed, London based innovators, day dreamers, creative ad specialists, always striving to push the boundaries of our emotional & bleeding edge digital executions to the next level.",
   "buttonText": "Learn More",
   "link": "/about",
-  "backgroundClass":"blue",
+  "backgroundClass":"section-text-left",
   "sectionClass": "one",
   "videoLink": "/top.mp4"
 }, {
@@ -20,7 +20,7 @@ const settings = [{
   "description": "Ads are dead! That's why we produce eye-catching personalised experiences. Our focus is to engage new audiences through the user-centric, data-first approach and adapt it real-time through various input points. By applying our asset level targeting and dynamic creative optimisation based on our proprietary machine learning algorithm, we produce ads that deliver premium performance.",
   "buttonText": "Get in touch",
   "link": "/contact",
-  "backgroundClass":"orange",
+  "backgroundClass":"section-text-right",
   "sectionClass": "two",
   "videoLink": ""
 }, {
@@ -29,7 +29,7 @@ const settings = [{
   "description": "Innovation is in our DNA. Our personalised 360° Cross-screen video player's intelligence adjusts the content in the real-time, exposing the audience to the most interactive areas. Our VR experiences can seamlessly deliver immersive ground-breaking visuals that no other static media can offer.",
   "buttonText": "Our Work",
   "link": "/work",
-  "backgroundClass":"blue",
+  "backgroundClass":"section-text-left",
   "sectionClass": "three",
   "videoLink": ""
 }, {
@@ -38,7 +38,7 @@ const settings = [{
   "description": "Across the web, mobile, in-app or video inventory, our talented team can assist with creation of any standard IAB executions, reusable ad templates, as well as full scale, responsive, true cross-screen ads and homepage takeovers. Our native solutions are often embedded contextually and dynamically enhanced to reflect the hosting page.",
   "buttonText": "Get in touch",
   "link": "/contact",
-  "backgroundClass":"orange",
+  "backgroundClass":"section-text-right",
   "sectionClass": "four",
   "videoLink": ""
 }, {
@@ -47,7 +47,7 @@ const settings = [{
   "description": "Our services are not designed to lock-in our customers. Our product and optimisation processes are ad server agnostic and can run across various cross-environment inventory simultaneously. Our true cross-screen personalised solutions. available in Celtra, DoubleClick Studio and ONE Creative, accelerate conversions and drive higher campaign performance.",
   "buttonText": "Learn More",
   "link": "/about",
-  "backgroundClass":"blue",
+  "backgroundClass":"section-text-left",
   "sectionClass": "five",
   "videoLink": ""
 }, {
@@ -56,7 +56,7 @@ const settings = [{
   "description": "We love to brainstorm ideas, and we do believe that the inspiration can come from anywhere. Inspire us to innovate, challenge us, tell us what you think; we are always happy to learn new things.",
   "buttonText": "Get in touch",
   "link": "/contact",
-  "backgroundClass":"orange",
+  "backgroundClass":"section-text-right",
   "sectionClass": "six",
   "videoLink": ""
 }]
@@ -107,8 +107,6 @@ export default class Front extends Component {
           <Helmet title="Home" />
           {rows}
           <Clients />
-          <Divider colour="blue" />
-          <Divider colour="blue" />
         </div>
       </section>
     );

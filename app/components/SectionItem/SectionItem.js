@@ -50,13 +50,10 @@ export default class SectionItem extends Component {
     if ((this.props.order % 2) === 0) {
       inset = '';
     }
-    if (this.props.inView) {
+    // if (this.props.inView) {
       outOrInView = 'inView';
       infoOutOrInView = 'infoInView';
-    }
-    if (this.props.inView) {
-      outOrInView = 'inView';
-    }
+    // }
     let linkNode = (
       <Link to={this.props.link} className={'btn' + ' ' + outOrInView}>{this.props.buttonText}</Link>
     );
