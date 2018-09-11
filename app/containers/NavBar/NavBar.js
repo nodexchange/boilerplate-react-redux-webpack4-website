@@ -108,7 +108,7 @@ export default class NavBar extends Component {
 
     const logo = [];
     try {
-      if (window.location.host !== 'localhot:3000') {
+      if (window.location.host !== 'localhost:3000') {
         logo.push(
           <NavLink key="0" to="/" activeStyle={{ color: '#33e0ff' }}>
             <div className={'brandClick'} />
