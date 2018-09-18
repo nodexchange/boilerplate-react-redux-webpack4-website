@@ -1,0 +1,168 @@
+#Wercker
+✔ Wercker deploy (404 on docker error) @done (2017-10-14 20:14:09)
+☐ Wercker Docker build to work better.
+☐ Wercker tests
+
+# pERFORM GROUP?
+
+CERTIFICATION HTTPS EXPIRES:
+
+    2018-05-17
+
+    https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-16-04
+    sudo certbot renew --dry-run
+
+    You should test your configuration at:
+        https://www.ssllabs.com/ssltest/analyze.html?d=quartile.io
+
+☐ https://helixsleep.com/ “Our site colors change every few hours. That’s because they’re a reflection of the circadian rhythm, the light based biological phenomenon that governs how, and when, we sleep.”
+☐ https://iabuk.net/blog/the-iab-uk-gold-standard-where-we-are-and-where-we-re-going
+☐ unique buisness cards?
+
+Empathy algorithm:
+Adjust contrast every few hours (to match circadian rhythm).
+image selection (energetic vs calm (morning / evening)).
+commute content vs wifi content.
+messenging vs quick shout out.
+Be helpful
+  (location based weather forcast in the advert) on signifact changes display a reminder / alert.
+  geofencing
+  sequeneced messengng
+  on second impression - understand if the same location (stuck at the office / bored?)
+  GDPR friendly (data stored and analysed on the user's computer)
+  scroll speed - reader vs browser
+  can we determin an age based on scroll speed?
+  device position / angle (text size?)
+
+https://veritystudios.com/work
+_______
+Gallery fixes (our work) verticises and filters
+____
+Services improvements
+
+(like clients grid)
+
+____
+get intouch - basic info (SAY HELLO
+
+Based in the heart of London. Drop by and say hello or give us a call.
+REQUEST A QUOTE
+
+Have an urgent project and need a quote? Send us a few details and we'll respond within 2 hours.
+SEND US A BRIEF
+
+We regularly help clients win bookings, by providing creative ideas and mockups.
+_______
+
+=== our purpose ===
+
+About
+Our purpose
+
+Deviceful’s primary aim is to support brands, agencies and media owners engineer creative suitable for cross-device programmatic deployment. By partnering with the leading Dynamic Creative Optimisation (DCO) providers, it is our mission to produce creative capable of harnessing the rich data available through real-time and impression level buying. With a growing team of London based HTML5 creative strategists, Deviceful is at the fore-front of helping marketers bring their digital campaigns to life.
+
+Going native: – With huge advances in audience targeting, brands are now able to have one-to-one dialogue with their audience across multiple devices. Unfortunately, many marketers are still deploying creative assets designed for one-to-many communications. As more campaigns go native, the need for customisable creative will  become even more relevant and this is a service area we are already investing in for our clients.
+
+===
+Digital creative production studio based in London, specialising in Rich Media advertising, Dynamic Campaign production and consulting.
+===
+
+http://sodaspeaks.com/members/
+
+2.2.0
+✔ HTTPS?
+✔ Add ford.
+✔ CLIENT BADGES?
+✔ certification divider section.
+✔ projects - animated gif or media gallery slide show for project details.
+ ✔ trusted by section / divider .
+ ✔ canvas text backup
+ ✔ canvas animation for services
+ ✔ SVG(snap.js) quartile icon to love symbol <3 (maybe adobe animate cc animation svg animations).
+ ✔ get in touch emphisesed.
+ ✔ services section.
+
+
+ 2.1.1
+ ✔ fix test pages (FHM priority 1)
+ ✔ arrownav to hide when section is loaded directly.
+
+2.1.0
+ ✔ signature fix. ~update (files in the folder, awaits deploy and html update)
+ ✔ nav logo animation - better tween. @done (December 10th 2017, 9:07)
+ ✔ meta for page and images - make it look sexy for outlook and facebook share. @done (December 2nd 2017, 17:43)
+ ✔ softer divider. @done (November 27th 2017, 5:49)
+ ✔ softer blue divider. @done (November 27th 2017, 19:20)
+ ✔ projects section tiles animtion on load.
+ ✔ shadow under heart / contact us. @done (November 28th 2017, 7:06)
+ ✔ Navigation issue (stick) @done (November 26th 2017, 23:25)
+ ✔ Navigation cool text decoration @done (November 26th 2017, 23:25)
+ ✔ improve 404. @done (November 27th 2017, 0:13)
+ ✔ reproduce quartile logo as SVG (footer). @done (November 27th 2017, 5:32)
+ ✔ make it look hot on iphone. @done (December 1st 2017, 8:26)
+
+2.0
+✔ redux data for front.
+✔ redux data for about.
+✔ redux data for contact.
+✔ fix page numbers on smaller height.
+✔ last section (footer / social media channels) (home page) https://www.dogstudio.co/ @done (2017-10-14 02:07:32)
+✔ divider section to update the math for subsections. @done (2017-10-14 19:37:47)
+✔ pagenumber issue. @done (2017-10-15 00:02:36)
+✔ project links effects on buttons http://www.kikk.be/2016/en/program/workshops/machine-learning-for-artists.
+✔ project lists https://www.dogstudio.co/projects/
+✔ media queries for mobile portrait. @done (2017-10-14 14:32:40)
+✔ title change for sections. @done (2017-10-15 00:02:40)
+✔ media queries for landscape heights. @done (2017-10-14 00:18:59)
+✔ loader. @done (November 3rd 2017, 21:11)
+✔ firefox sections calc. @done (2017-10-14 19:37:44)
+✔ social links on footer. @done (2017-10-14 04:43:42)
+✔ create ONE Creative icon. @done (2017-10-14 04:43:45)
+✔ footer media queries. @done (2017-10-14 14:32:16)
+✔ analytics. @done (2017-10-14 10:29:58)
+
+
+1.0
+#HOME
+✔ White sections (home page) @done (2017-10-13 22:20:50)
+✔ 100% timelapse video (home page) @done (2017-10-13 22:20:51)
+
+#CONTACT PAGE
+☐ video or token (home page)
+
+#ABOUT
+✔ about page. @done (2017-10-13 22:20:57)
+
+#PRODUCTS
+☐ Case study
+☐ products page.
+
+#OTHER
+✔ Twitter Account @done (2017-10-13 22:20:43)
+✔ LinkedIn account @done (2017-10-13 22:20:44)
+
+## RELEASED
+1.0
+✔ mobile navigation. @done (21/08/2017, 10:00:35)
+✔ arrow page menu (used with scrolling). @done (21/08/2017, 10:00:42)
+✔ contact page. @done (21/08/2017, 10:00:48)
+✔ footer bar. @done (21/08/2017, 10:00:50)
+
+====
+TODO HINTS:
+    New Task:
+        ☐ Press Cmd+Enter (Ctrl+Enter on Windows and Linux) to add a new task
+        ☐ You can also use the Command pallette to create a new task by typing To Do:New Task
+        ☐ If you are on a new line, it will create a new task on the current line
+        ☐ If you are on a line with some text pressing new task shortcut will convert it to a task
+        ☐ New tasks are nested as much as the previous task
+    More Actions:
+        ✔ Complete a task by pressing Alt+d @done
+        ☐ Re-open a completed task by pressing Alt+d
+        ✘ Cancel a task by pressing Alt+c @cancelled
+        ☐ Complete a cancelled task by pressing Alt+d
+        ☐ You can also use the Command pallette to complete or cancel a task by typing To Do:Complete Task or To Do:Cancel Task
+    Tagging:
+        ☐ You can add tags using @ sign, like this @tag
+        ☐ You can use following pre-existing tags to mark tasks @critical @high @low @today
+        ☐ Auto intellisense is provided to help you in finding tags

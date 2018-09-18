@@ -4,6 +4,13 @@ import { Divider } from 'components';
 import './Services.scss';
 
 const settings = [{
+  "service1": {
+    "title":"Pitch Support",
+    "description":"Pitch Support, RFI / RFP."
+  },
+  "service2": {
+    "Pitch Support, RFI / RFP.",
+  }
   "service1": "Creative Production, From simple IAB certified Ad banners to bespoke builds and homepage takeovers, our team's expertise can facilitate delivery on any creative ad campaign. Google Web Designer, Celtra, DoubleClick Studio, ONE Creative or Hype, we can help with all.",
   "service2": "Ad Support, We are happy to assist with adverts conversions, bug fixing, reporting adjustments or any other technical ad query.",
   "service3": "Design, Our award-winning team will be happy to assist with any creative tasks, from mock-ups to visual design.",
@@ -23,17 +30,7 @@ export default class Services extends Component {
           <div className={'phone'} />
           <div className={'logo'} />
           <div className={'logoShadow'} />
-          <div className={'stars'}>
-            <div className={'numbers'}>
-              <div className={'number1' + ' ' + 'numberEl'}>{servicesCopy[0].service1}</div>
-              <div className={'number2' + ' ' + 'numberEl'}>{servicesCopy[0].service2}</div>
-              <div className={'number3' + ' ' + 'numberEl'}>{servicesCopy[0].service3}</div>
-              <div className={'number4' + ' ' + 'numberEl'}>{servicesCopy[0].service4}</div>
-              <div className={'number5' + ' ' + 'numberEl'}>{servicesCopy[0].service5}</div>
-              <div className={'number6' + ' ' + 'numberEl'}>{servicesCopy[0].service6}</div>
-            </div>
-          </div>
-          <div className={'mobileServices'}>
+          <div className={'numbers'}>
             <div className={'number1' + ' ' + 'numberEl'}>{servicesCopy[0].service1}</div>
             <div className={'number2' + ' ' + 'numberEl'}>{servicesCopy[0].service2}</div>
             <div className={'number3' + ' ' + 'numberEl'}>{servicesCopy[0].service3}</div>

@@ -68,7 +68,6 @@ export default class NavBar extends Component {
 
   render() {
     // eslint-disable-next-line global-require
-
     let navType = 'sticky';
     let mobileNavType = 'close-nav';
     let brandType = 'brandNormal';
@@ -105,10 +104,9 @@ export default class NavBar extends Component {
         </li>
       );
     }
-
     const logo = [];
     try {
-      if (window.location.host !== 'localhot:3000') {
+      if (window.location.host !== 'localhost:3000') {
         logo.push(
           <NavLink key="0" to="/" activeStyle={{ color: '#33e0ff' }}>
             <div className={'brandClick'} />

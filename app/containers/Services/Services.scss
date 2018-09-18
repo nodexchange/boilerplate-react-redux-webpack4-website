@@ -1,10 +1,5 @@
 .services {
   height: 105%;
-  background: #e2764c; /* Old browsers */
-  background: -moz-linear-gradient(top, #e06919 0%, #e2764c 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #e06919 0%,#e2764c 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #e06919 0%,#e2764c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e06919', endColorstr='#e2764c',GradientType=0 ); /* IE6-9 */
   .section {
     height: 100%;
     margin: 0 auto;
@@ -28,55 +23,6 @@
           overflow: hidden;
           animation: fadein 2s;
         }
-        .number1 {
-          top: 0px;
-          left: 0px;
-          width: 408px;
-          height: 358px;
-          background: url(/services1.png) center center no-repeat scroll;
-        }
-        .number2 {
-          top: 0px;
-          left: 0px;
-          width: 408px;
-          height: 361px;
-          background: url(/services2.png) center center no-repeat scroll;
-        }
-        .number3 {
-          top: 0px;
-          left: 0px;
-          width: 408px;
-          height: 322px;
-          background: url(/services3.png) center center no-repeat scroll;
-        }
-        .number4 {
-          top: 0px;
-          left: 0px;
-          width: 408px;
-          height: 409px;
-          background: url(/services4.png) center center no-repeat scroll;
-        }
-        .number5 {
-          top: 0px;
-          left: 0px;
-          width: 408px;
-          height: 453px;
-          background: url(/services5.png) center center no-repeat scroll;
-        }
-        .number6 {
-          top: 0px;
-          left: 0px;
-          width: 408px;
-          height: 400px;
-          background: url(/services6.png) center center no-repeat scroll;
-        }
-    }
-    .stars {
-      position: absolute;
-      width:  100%;
-      height:  100%;
-      background: url(./stars.png) center center no-repeat scroll;
-      background-size: cover;
     }
     .phone {
       position: absolute;
@@ -116,73 +62,6 @@
       animation: revealShadow 2s;
       animation-delay: 1.5s;
       animation-fill-mode: forwards;
-    }
-    .numbers {
-      position: relative;
-      height:  100%;
-      width: 50%;
-      margin: 0 auto;
-      .numberEl {
-        position: absolute;
-        top: 0;
-        left: 0;
-        text-indent: 100%;
-        white-space: nowrap;
-        overflow: hidden;
-        animation: fadein 2s;
-        animation-fill-mode: forwards;
-        opacity: 0;
-      }
-      .number1 {
-        top: 40px;
-        left: -206px;
-        width: 244px;
-        height: 428px;
-        background: url(./number1.png) center center no-repeat scroll;
-        animation-delay: 1s;
-      }
-      .number2 {
-        top: 374px;
-        left: -215px;
-        width: 358px;
-        height: 480px;
-        background: url(./number2.png) center center no-repeat scroll;
-        animation-delay: 1.5s;
-      }
-      .number3 {
-        top: 402px;
-        left: 27px;
-        width: 200px;
-        height: 388px;
-        background: url(./number3.png) center center no-repeat scroll;
-        animation-delay: 2s;
-
-      }
-      .number4 {
-        top: 377px;
-        left: 203px;
-        width: 221px;
-        height: 512px;
-        background: url(./number4.png) center center no-repeat scroll;
-        animation-delay: 2.5s;
-      }
-      .number5 {
-        top: 397px;
-        left: 339px;
-        width: 383px;
-        height: 477px;
-        background: url(./number5.png) center center no-repeat scroll;
-        animation-delay: 3s;
-      
-      }
-      .number6 {
-        top: 57px;
-        left: 441px;
-        width: 262px;
-        height: 413px;
-        background: url(./number6.png) center center no-repeat scroll;
-        animation-delay: 3.5s;
-      }
     }
   }
 }

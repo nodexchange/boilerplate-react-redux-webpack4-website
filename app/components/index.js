@@ -7,6 +7,7 @@
 
 export Arrow from './Arrow/Arrow';
 export BackgroundRow from './BackgroundRow/BackgroundRow';
+export BackgroundSky from './BackgroundSky/BackgroundSky';
 export CanvasBall from './CanvasBall/CanvasBall';
 export Canvas from './Canvas/Canvas';
 export Clients from './Clients/Clients';
@@ -18,6 +19,7 @@ export ServiceCard from './ServiceCard/ServiceCard';
 export Hero from './Hero/Hero';
 export MiniInfoBar from './MiniInfoBar/MiniInfoBar';
 export ProductItem from './ProductItem/ProductItem';
+export ScrollToTopOnMount from './ScrollToTopOnMount/ScrollToTopOnMount';
 export SectionItem from './SectionItem/SectionItem';
 export SectionText from './SectionText/SectionText';
 export SectionVideo from './SectionVideo/SectionVideo';

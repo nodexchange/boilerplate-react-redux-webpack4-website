@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import { PropTypes } from 'prop-types';
 import './FooterBar.scss';
 
@@ -26,10 +27,10 @@ export default class FooterBar extends Component { // eslint-disable-line react/
         </section>
         <section className={'center' + ' ' + 'b'}>
           <h4>Assistance</h4>
-          <a href="/contact">Contact</a><br />
-          <a href="/faq">FAQs</a>
-          <a href="/careers">Careers</a>
-          <a href="/legal">Legal Notices</a><br/>
+          <Link to="/contact">Contact</Link><br />
+          <Link to="/faq">FAQs</Link>
+          <Link to="/careers">Careers</Link>
+          <Link to="/legal">Legal Notices</Link><br/>
         </section>
         <section className={'social'}>
           <h4>Follow</h4>
