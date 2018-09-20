@@ -103,7 +103,7 @@ export default class NavBar extends Component {
         brandType = styles.brandScrolled;
       }
       if (this.state.mobileNav === 'open-nav') {
-        mobileNavType = styles.openNav;
+        mobileNavType = 'open-nav';
       }
     }
     const navConfig = [

@@ -25,7 +25,7 @@ export default class ProjectDetails extends Component {
     return (
       <div className={'projectDetails'}>
         {/* <Helmet title={this.props.params.projectName + " | Detail"} /> */}
-        <Helmet title={'aib | Details'} />
+        <Helmet title={localeCopy.client + ' | Details'} />
         <Hero
           smallHeader={localeCopy.header}
           background={localeCopy['hero image']}

@@ -1,7 +1,7 @@
 .mainHeader {
   position: fixed;
   top: 0px;
-  max-height: 70px;
+  height: 100%;
   z-index: 100;
   width: 100%;
   padding-top: 7px;
@@ -103,11 +103,10 @@
     top: 1px;
   }
 
-.openNav {
-  max-height: 400px !important;
+.open-nav {
   background-color: rgba(0, 0, 0, 0.6) !important;
 }
-.openNav .mobileToggle {
+.open-nav .mobileToggle {
   transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
 }
@@ -118,6 +117,9 @@
   top: 0px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.0);
   background-color: rgba(0, 0, 0, 0);
+}
+.close-nav {
+  height: 50px;
 }
 .scroll {
   background-color: rgba(0, 0, 0, 0.2);
@@ -267,9 +269,8 @@ nav ul a {
 
 .row {
   width: 100%;
-  max-width: 940px;
   margin: 0 auto;
-  position: relative;
+  position: absolute;
   padding: 0 2%;
 }
 
