@@ -1,3 +1,5 @@
+import ThreeJsTest from './ThreeJsTest/ThreeJsTest';
+
 /**
  *  Point of contact for component modules
  *
@@ -23,4 +25,5 @@ export ScrollToTopOnMount from './ScrollToTopOnMount/ScrollToTopOnMount';
 export SectionItem from './SectionItem/SectionItem';
 export SectionText from './SectionText/SectionText';
 export SectionVideo from './SectionVideo/SectionVideo';
+export ThreeJsTest from './ThreeJsTest/ThreeJsTest';
 export VideoPlayer from './Video/VideoPlayer';
