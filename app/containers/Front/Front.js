@@ -1,12 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import Helmet from 'react-helmet';
+import PropTypes from 'prop-types';
 import { BackgroundSky, Clients, SectionItem } from 'components';
 import throttle from '../../helpers/Throttle';
 import './Front.scss';
 import data from './front-data.json';
 
-export default class Front extends Component {
+export default class Front extends PureComponent {
   constructor(props) {
     super(props);
     this.currentPanel = this.props.offsetRatio || 0;
@@ -56,4 +57,11 @@ export default class Front extends Component {
       </section>
     );
   }
+}
+
+Front.propTypes = {
+  mainWindowScrollAction: PropTypes.func.isRequired,
+  mainImageResizeAction: PropTypes.func.isRequired,
+  updateMaxPages: PropTypes.func.isRequired,
+  offsetRatio: PropTypes.number,
 }
