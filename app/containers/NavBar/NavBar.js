@@ -148,7 +148,7 @@ export default class NavBar extends Component {
               {navButtons}
             </ul>
           </nav>
-          <div id="navLoader" className={'loader'} />
+          {/* <div id="navLoader" className={'loader'} /> */}
         </div>
       </header>
     );
