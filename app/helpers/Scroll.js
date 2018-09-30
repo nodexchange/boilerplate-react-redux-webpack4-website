@@ -11,17 +11,9 @@ export default class Scroll {
     if (scrollBarPosition === 0) {
       scrollBarPosition = 1;
     }
-    let dividerScrollCorrection = 0.99;
-    if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1){
-      // Do Firefox-related activities
-      dividerScrollCorrection = 0.97;
-    }
-    if (window.innerHeight < 700) {
-      dividerScrollCorrection = 0.82;
-    }
     // divider included 0.8
-    const ratioValue = Math.round(((scrollBarPosition * dividerScrollCorrection) / clientH) * 100) / 100;
-    return ratioValue; 
+    const ratioValue = Math.round((scrollBarPosition / clientH) * 100) / 100;
+    return ratioValue;
   }
   static scrollToSection(requestedSection, direction) {
     const clientH = window.innerHeight;
@@ -32,7 +24,7 @@ export default class Scroll {
       requestedSection -= 1;
       if (requestedSection === -1) {
         return;
-      } 
+      }
     }
     let requestedY = clientH * requestedSection;
     this.scrollToY(requestedY);

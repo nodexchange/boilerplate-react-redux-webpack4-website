@@ -16,17 +16,17 @@ export default class Front extends PureComponent {
 
   componentDidMount() {
     // window.addEventListener('resize', throttle(this.props.mainImageResizeAction, 100));
-    // window.addEventListener('scroll', throttle(this.props.mainWindowScrollAction, 100));
-    // this.props.mainWindowScrollAction();
+    window.addEventListener('scroll', throttle(this.props.mainWindowScrollAction, 100));
+    this.props.mainWindowScrollAction();
     // this.props.mainImageResizeAction();
   }
 
   componentWillReceiveProps(nextProps) {
-    // const panelValue = Math.round(nextProps.offsetRatio) + 0.2;
-    // const panelValue = Math.round(nextProps.offsetRatio) + 0.2;
-    // if (panelValue !== this.currentPanel) {
-    //   this.currentPanel = Math.round(nextProps.offsetRatio);
-    // }
+    // console.log('PROPS HERE ' + nextProps);
+    const panelValue = Math.round(nextProps.offsetRatio) + 0.2;
+    if (panelValue !== this.currentPanel) {
+      this.currentPanel = Math.round(nextProps.offsetRatio);
+    }
   }
 
   componentWillUnmount() {
@@ -39,14 +39,15 @@ export default class Front extends PureComponent {
     for (let i = 0; i < frontPanelsCopy.length; i++) {
       if (this.currentPanel === i) {
         rows.push(
-          <SectionItem inView key={i} order={i} {...frontPanelsCopy[i]} offset={0} />
+          <SectionItem inView key={i} order={i} {...frontPanelsCopy[i]} offset={this.props.offsetRatio} />
         );
       } else {
         rows.push(
-          <SectionItem inView={false} key={i} order={i} {...frontPanelsCopy[i]} offset={0} />
+          <SectionItem inView={false} key={i} order={i} {...frontPanelsCopy[i]} offset={this.props.offsetRatio} />
         );
       }
     }
+    // console.log(this.props);
     return (
       <section className="content">
         <div className={'front'}>
@@ -61,7 +62,7 @@ export default class Front extends PureComponent {
 
 Front.propTypes = {
   mainWindowScrollAction: PropTypes.func.isRequired,
-  mainImageResizeAction: PropTypes.func.isRequired,
+  mainImageResizeAction: PropTypes.func,
   updateMaxPages: PropTypes.func.isRequired,
   offsetRatio: PropTypes.number,
 }

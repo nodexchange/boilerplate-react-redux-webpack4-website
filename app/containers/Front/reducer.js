@@ -21,13 +21,6 @@ const initialState = fromJS({
 });
 
 function frontReducer(state = initialState, action) {
-  // switch (action.type) {
-  //   case CHANGE_USERNAME:
-  //     // Delete prefixed '@' from the github username
-  //     return state.set('username', action.name.replace(/@/gi, ''));
-  //   default:
-  //     return state;
-  // }
   switch (action.type) {
     // eslint-disable-next-line no-case-declarations
     case SCROLL:
