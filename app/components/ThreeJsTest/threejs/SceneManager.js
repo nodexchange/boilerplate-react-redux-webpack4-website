@@ -3,20 +3,16 @@ import SceneSubject from './SceneSubject';
 import GeneralLights from './GeneralLights';
 
 export default canvas => {
-
     const clock = new THREE.Clock();
     const origin = new THREE.Vector3(0,0,0);
-
     const screenDimensions = {
         width: canvas.width,
         height: canvas.height
     }
-
     const mousePosition = {
         x: 0,
         y: 0
     }
-
     const scene = buildScene();
     const renderer = buildRender(screenDimensions);
     const camera = buildCamera(screenDimensions);
