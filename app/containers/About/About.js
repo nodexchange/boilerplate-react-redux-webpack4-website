@@ -1,31 +1,72 @@
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
-import { Divider, SectionItem } from 'components';
+import { SectionItem } from 'components';
+import throttle from '../../helpers/Throttle';
+import data from './about-data.json';
 import './About.scss';
 
-const settings = {
-  "smallHeader": "Quartile",
-  "header": "About Us",
-  "description": "We are advocates of simplicity and transparency. With over ten years experience in the advertising business, it is safe to say that we gained excellent exposure and grasp in all industry-leading solutions. We place the highest emphasis on immersive experience design, where we collaborate with our clients to deliver comprehensive solutions that meet their even most demanding business goals. Our agency originated in the very heart of London's silicon roundabout, where most of our tech talent was acquired. Get in touch with us, see how our award-winning service differs from others.",
-  "buttonText": "Contact US",
-  "link": "",
-  "sectionClass": "about",
-  "videoLink": ""
-}
-
 export default class About extends Component {
+  componentDidMount() {
+    console.log('[about debug] HERE! ');
+    // https://www.clicktorelease.com/blog/how-to-make-clouds-with-css-3d/
+    /*
+      Defining our variables
+      world and viewport are DOM elements,
+      worldXAngle and worldYAngle are floats that hold the world rotations,
+      d is an int that defines the distance of the world from the camera
+    */
+    this.world = document.getElementById('world');
+    this.viewport = document.getElementById('viewport');
+    this.worldXAngle = 0;
+    this.worldYAngle = 0;
+    this.d = 0;
+    this.mouseActive = true;
+
+    window.addEventListener('mousemove', throttle(this.mouseHandler, 10));
+    window.addEventListener('mouseout', (e) => this.mouseLeaveHandler(e));
+    window.addEventListener('mouseover', (e) => this.mouseOverHandler(e));
+  }
+  componentWillUnmount() {
+    window.removeEventListener('mousemove', throttle(this.mouseHandler, 10));
+    window.removeEventListener('mouseout', (e) => this.mouseLeaveHandler(e));
+    window.removeEventListener('mouseover', (e) => this.mouseOverHandler(e));
+  }
+
+  mouseHandler = (e) => {
+    this.worldYAngle = -(0.5 - (e.clientX / window.innerWidth)) * 180;
+    this.worldXAngle = (0.5 - (e.clientY / window.innerHeight)) * 180;
+    this.updateView();
+  }
+  mouseOverHandler = (e) => {
+    this.mouseActive = true;
+    this.world.style.transition = 'all 0.1s';
+  }
+  mouseLeaveHandler = (e) => {
+    if (e.target.className === 'smallBox infoInView' ||
+      e.target.className === 'aboutBg imageBg' ||
+      e.target.className === 'descText' ||
+      e.target.parentNode.className === 'smallBox infoInView') {
+      return;
+    }
+    this.mouseActive = false;
+    this.world.style.transition = 'all 1s';
+    this.world.style.transform = 'translateZ(0px) rotateX(0deg) rotateY(0deg)';
+  }
+  updateView() {
+    if (!this.mouseActive) {
+      return;
+    }
+    this.world.style.transform = 'translateZ( ' + this.d + 'px ) rotateX( ' + this.worldXAngle + 'deg) rotateY( ' + this.worldYAngle + 'deg)';
+  }
+
   render() {
     return (
       <div className={'about'}>
-        <Helmet>
-        <title>About Us</title>
-          <meta
-            name="description"
-            content="Feature page of React.js Boilerplate application"
-          />
-        </Helmet>
-        <SectionItem inView key={0} offset={0} order={0} {...settings} link="about" />
-        <Divider colour="white" />
+        <Helmet title="About Us" />
+        <div id="viewport">
+          <div id="world"></div>
+        </div>
+        <SectionItem inView key={0} offset={0} order={0} {...data['About Us']} link="about" />
       </div>
     );
   }
