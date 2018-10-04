@@ -54,9 +54,19 @@ export default class SectionItem extends Component {
       outOrInView = 'inView';
       infoOutOrInView = 'infoInView';
     }
+    console.log('SECTION ::: ' + this.props.link);
+    console.log(Array.isArray(this.props.link));
     let linkNode = (
       <Link to={this.props.link} className={'btn' + ' ' + outOrInView}>{this.props.buttonText}</Link>
     );
+    if (Array.isArray(this.props.link)) {
+      linkNode = (
+        <div id="btn-list">
+          <Link to={this.props.link[0]} className={'btn' + ' ' + outOrInView}>{this.props.buttonText[0]}</Link>
+          <Link to={this.props.link[1]} className={'btn' + ' ' + outOrInView}>{this.props.buttonText[1]}</Link>
+        </div>
+      );
+    }
     let contactSection = false;
     if (this.props.link === 'contact') {
       contactSection = true;
@@ -71,8 +81,11 @@ export default class SectionItem extends Component {
     }
 
     const topValue = this.calculateTop();
-    const topStyle = { top: topValue + '%' };
     const text = this.props.description;
+    let topStyle = { top: topValue + '%' };
+    if (backgroundClass === 'section-text-center') {
+      topStyle = { top: '30%' };
+    }
     // <SectionVideo key={this.props.key} inView={this.props.inView} videoLink={this.props.videoLink} />
     return (
       <div id={selectedClass} className={'section-item' + '' + inset + ' ' + backgroundClass}>

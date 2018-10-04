@@ -4,14 +4,16 @@
   background-size: cover !important;
   overflow: hidden;
   position: relative;
-  background-color: #2989d8;
+  background-color: #ff3d59;
   .info {
     font-family: 'Didact Gothic', sans-serif;
     text-align: center;
     color: white;
     font-size: 23px;
     text-transform: uppercase;
-    text-shadow: 2px 2px #3e3a3a;
+    font-weight: bold;
+    padding-top:15px;
+    padding-bottom: 19px;
   }
   .clients {
     display: grid;

@@ -28,23 +28,29 @@
     height: 100%;
   }
   .oneBg {
+    position: fixed;
     background: url(./section-1-twitter-heart.png) center right no-repeat scroll;
   }
   .twoBg {
-    background: url(./section2-conversions-high.png) center left no-repeat scroll;
+    background: url(./test.jpg) center left no-repeat scroll;
+    filter: contrast(1.55) brightness(0.4);
   }
   .threeBg {
-    background: url(./section3-boy.png) center right no-repeat scroll;
+    background-color: #280a33;
+    // background: url(./section4.png) center left no-repeat scroll;
   }
   .fourBg {
-    background: url(./section4.png) center left no-repeat scroll;
+    background: url(./vr.jpg) center right no-repeat scroll;
+    background-size: cover;
   }
   .fiveBg {
-    background: url(./section5-system.png) center right no-repeat scroll;
+    background-color: black;
+    // background: url(./section5-system.png) center right no-repeat scroll;
   }
   .sixBg {
+    background-color: #280a33;
     margin-left: 10vw;
-    background: url(./section6-idea.png) center left no-repeat scroll;
+    // background: url(./section6-idea.png) center left no-repeat scroll;
   }
   .contactBg {
     -moz-transform: scaleX(-1);
@@ -151,13 +157,13 @@
     top: 15%;
     left: 8%;
     z-index: 2;
-    width: 506px;
+    width: 40vw;
     overflow: hidden;
     color: white;
     line-height: 1.42857;
     font-family: 'Didact Gothic', sans-serif;
     transition: all 1s ease 0s;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.6);
     -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
     -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
     box-shadow: 1px 1px 3px rgba(0,0,0,.6);
@@ -185,7 +191,7 @@
     }
     .header {
       font-size: 46px;
-      font-weight: 400;
+      font-weight: 600;
       font-style: normal;
       margin: 1px 0 0;
       text-transform: uppercase;
@@ -196,9 +202,9 @@
     }
     .line {
       display: block;
-      width: 40px;
+      width: 60px;
       height: 2px;
-      background: #fff;
+      background: #ff3d59;
       margin: 30px 0 33px 5px;
       -webkit-transition-delay: .21s;
       transition-delay: .21s;
@@ -210,41 +216,39 @@
       font-size: 20px;
       font-weight: 400;
       font-style: normal;
-      margin: 0 0 10px;
+      margin: 0 0 18px;
       -webkit-transition-delay: .31s;
       transition-delay: .31s;
     }
     .btn {
+      margin-right: 15px;
       margin-top: 15px;
       display: inline-block;
-      height: 60px;
+      height: 50px;
       padding: 0 25px;
       color: #fff;
-      line-height: 60px;
+      line-height: 50px;
       letter-spacing: 4px;
       text-transform: uppercase;
       text-decoration: none;
       font-family: Colfax,sans-serif;
       font-size: 15px;
-      font-weight: 400;
       cursor: pointer;
       text-align: center;
       background: rgba(0,0,0,0);
       border-style: solid;
       border-width: 1px;
-      border-radius: 10px 10px 10px 10px;
+      border-radius: 4px 4px 4px 4px;
       min-width: 200px;
       outline: 0;
       position: relative;
       z-index: 0;
       transition: all .3s;
-      -webkit-transition-delay: .51s;
-      transition-delay: .51s;
     }
     .btn:hover {
       color: #fff;
-      border-color: #16a7f6;
-      background-color: #16a7f6;
+      border-color: #ff3d59;
+      background-color: #ff3d59;
     }
   }
 }
@@ -257,6 +261,21 @@
   .smallBox {
     left: auto !important;
     right: 8%;
+  }
+}
+.section-text-center {
+  background: rgba(44,7,61, 0);
+  .smallBox {
+    text-align: center;
+    width: 96%;
+    height: 100%;
+    left: 2%;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    .line {
+      margin-left: 40%;
+      width: 20%;
+    }
   }
 }
 
