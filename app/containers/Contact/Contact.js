@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
-import { Divider, SectionItem, ScrollToTopOnMount } from 'components';
+import { BackgroundSky, Divider, SectionItem, ScrollToTopOnMount } from 'components';
 import './Contact.scss';
 
 const settings = {
@@ -26,9 +26,9 @@ export default class Contact extends Component {
             content="Feature page of React.js Boilerplate application"
           />
         </Helmet>
+        <BackgroundSky />
         <ScrollToTopOnMount />
         <SectionItem inView key={0} offset={0} order={0} {...settings} link="contact" />
-        <Divider colour="orange" />
       </div>
     );
   }
