@@ -31,7 +31,6 @@ export default class Front extends PureComponent {
 
   componentWillUnmount() {
     window.removeEventListener('scroll', throttle(this.props.mainWindowScrollAction, 100));
-    
     // this.props.updateMaxPages(1);
   }
 

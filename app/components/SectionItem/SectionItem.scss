@@ -29,14 +29,15 @@
   }
   .oneBg {
     position: fixed;
-    background: url(./section-1-twitter-heart.png) center right no-repeat scroll;
+    background: url(./section-1-twitter-heart.png) center right no-repeat scroll, radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 45%, rgba(0,0,0,0.45) 100%);
   }
   .twoBg {
     background: url(./picadilly.jpg) center left no-repeat scroll;
     filter: contrast(1.55) brightness(0.4);
   }
   .threeBg {
-    background-color: #280a33;
+    background: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(21,5,27,0.74) 25%, rgba(36,9,46,1) 42%, rgba(40,10,51,1) 47%);;
+    // background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 45%, rgba(0,0,0,0.45) 100%);
     // background: url(./section4.png) center left no-repeat scroll;
   }
   .fourBg {
