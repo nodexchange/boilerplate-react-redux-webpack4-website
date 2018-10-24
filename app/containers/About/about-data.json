@@ -6,6 +6,7 @@
     "buttonText": "Contact US",
     "link": "",
     "sectionClass": "about",
+    "backgroundClass":"section-text-about",
     "videoLink": ""
   }
 }

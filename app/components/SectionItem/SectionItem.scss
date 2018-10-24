@@ -32,7 +32,7 @@
     background: url(./section-1-twitter-heart.png) center right no-repeat scroll;
   }
   .twoBg {
-    background: url(./test.jpg) center left no-repeat scroll;
+    background: url(./picadilly.jpg) center left no-repeat scroll;
     filter: contrast(1.55) brightness(0.4);
   }
   .threeBg {
@@ -44,12 +44,16 @@
     background-size: cover;
   }
   .fiveBg {
-    background-color: black;
+    // background-color: black;
+    background: url(./open.jpg) center right no-repeat scroll;
+    background-size: cover;
     // background: url(./section5-system.png) center right no-repeat scroll;
   }
   .sixBg {
-    background-color: #280a33;
-    margin-left: 10vw;
+    // background-color: #280a33;
+    
+    background: url(./contact.jpg) center left no-repeat scroll;
+    background-size: cover;
     // background: url(./section6-idea.png) center left no-repeat scroll;
   }
   .contactBg {
@@ -261,6 +265,12 @@
   .smallBox {
     left: auto !important;
     right: 8%;
+  }
+}
+.section-text-about {
+  .smallBox {
+    width: 80vw;
+    background-color: rgba(0, 0, 0, 0.2);
   }
 }
 .section-text-center {

@@ -7,14 +7,6 @@ import './About.scss';
 
 export default class About extends Component {
   componentDidMount() {
-    console.log('[about debug] HERE! ');
-    // https://www.clicktorelease.com/blog/how-to-make-clouds-with-css-3d/
-    /*
-      Defining our variables
-      world and viewport are DOM elements,
-      worldXAngle and worldYAngle are floats that hold the world rotations,
-      d is an int that defines the distance of the world from the camera
-    */
     this.world = document.getElementById('world');
     this.viewport = document.getElementById('viewport');
     this.worldXAngle = 0;

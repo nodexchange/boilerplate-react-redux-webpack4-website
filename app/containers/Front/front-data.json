@@ -32,7 +32,7 @@
     "description": "Innovation is in our DNA. Our personalised 360° Cross-screen video player's intelligence adjusts the content in the real-time, exposing the audience to the most interactive areas. Our VR experiences can seamlessly deliver immersive ground-breaking visuals that no other static media can offer.",
     "buttonText": "Our Work",
     "link": "/work",
-    "backgroundClass":"section-text-left",
+    "backgroundClass":"section-text-right",
     "sectionClass": "four",
     "videoLink": ""
   }, {
@@ -50,7 +50,7 @@
     "description": "We love to brainstorm ideas, and we do believe that the inspiration can come from anywhere. Inspire us to innovate, challenge us, tell us what you think; we are always happy to learn new things.",
     "buttonText": "Get in touch",
     "link": "/contact",
-    "backgroundClass":"section-text-right",
+    "backgroundClass":"section-text-center",
     "sectionClass": "six",
     "videoLink": ""
   }]
