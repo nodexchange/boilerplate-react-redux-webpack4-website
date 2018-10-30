@@ -1,15 +1,15 @@
 {
   "Pitch Support": {
-    "header": "Pitch Support, RFI / RFP.",
-    "description": "COPY HERE tion with the Irish Independent website team, we could achieve a truly unique way of emotionally engaging their audience with the AIB brand. Our initial conversations made it clear that wallpaper formats combined with banners as static homepage takeovers, rarely produce any form of satisfying results for the advertiser. We wanted to challenge that. Make sure to visit the demo page (link above) and click on the advert to understand the Quartile approach to the traditional formats."
+    "header": "Pitch Support & assistance with RFI & RFP",
+    "description": "We would be happy to become the part of your conversation. Bring us in, let us provide you with some technical feasiblity checks, mocks, timelines, quotes and answer the most demanding questions from your clients."
   },
-  "PoC": {
-    "header": "Proof of Concept / Interactive Mocks",
-    "description": "COPY Here - Thanks to the close collaboration with the Irish Independent website team, we could achieve a truly unique way of emotionally engaging their audience with the AIB brand. Our initial conversations made it clear that wallpaper formats combined with banners as static homepage takeovers, rarely produce any form of satisfying results for the advertiser. We wanted to challenge that. Make sure to visit the demo page (link above) and click on the advert to understand the Quartile approach to the traditional formats."
+  "Interactive Mocks": {
+    "header": "Interactive Mocks",
+    "description": "A picture is worth a thousand words... what about an interactive mock, allowing your user to sample the experience prior to signing anything off? Sounds good? This service is for you, then!"
   },
   "Innovation Support": {
     "header": "Innovation Labs",
-    "description": "COPY Here - Thanks to the close collaboration with the Irish Independent website team, we could achieve a truly unique way of emotionally engaging their audience with the AIB brand. Our initial conversations made it clear that wallpaper formats combined with banners as static homepage takeovers, rarely produce any form of satisfying results for the advertiser. We wanted to challenge that. Make sure to visit the demo page (link above) and click on the advert to understand the Quartile approach to the traditional formats."
+    "description": "We are always looking for partners to test our latest products and features! If you are interested in the next big industry shake up like VR, AR, facial recognition or 5G, get in touch! Let's find out how we can help each other."
   }, 
   "Creative Production": {
     "header": "Creative Production",
@@ -27,8 +27,12 @@
     "header": "Training and Workshops",
     "description": "Training, This service is design to assist our clients with the planning of dedicated training and workshops. We would be happy upskill your team on technical ad build, industry jargon or unique solutions such as DCO or Audience Targeting."
   },
+  "Ad Service": {
+    "header": "Complete Ad Service",
+    "description": "Our most straightforward way of showing you the excellence of our service. We would be happy to design your ads to the specs, build it, traffic it and provide the post campaign analysis. Naturally, we will be sharing regular updates and reports through the campaign lifecycle."
+  },
   "Consultancy": {
     "header": "Consultancy",
-    "description": "Consultancy, We can advise on deadlines, feasibility or unique solutions. Let's us be part of your conversations & brainstorming sessions. Our technical expertise is yours to leverage."
+    "description": "Do you need our help but you would prefer for us to stay behind the scene?\nNot an issue, send us the brief or give us a call and we can assit with brainstorming and ideas generation. Most imporatantly, this service is completely free of charge! Our technical expertise is yours to leverage."
   }
 }

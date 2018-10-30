@@ -5,21 +5,28 @@ import './Services.scss';
 
 export default class Services extends Component {
   render() {
+    let services = ['Pitch Support', 'Creative Production', 'Ad Support', 'Design', 'Interactive Mocks', 'Innovation Support', 'Training and Workshops', 'Ad Service', 'Consultancy'];
+    let rows = [];;
+    for (let i = 0; i < services.length; i++) {
+      let dataPoint = data[services[i]];
+      rows.push(
+        // <SectionItem inView={false} key={i} order={i} {...frontPanelsCopy[i]} offset={this.props.offsetRatio} />
+        <div key={i} className={'service' + i + ' ' + 'serviceItem'}>
+          <div className={'serviceHeader'}>{dataPoint.header}</div>
+          <div className={'serviceDescription'}>{dataPoint.description}</div>
+        </div>
+      );
+    }
     return (
       <div className={'services'}>
         <Helmet title="Services" />
         <div className={'section'}>
-          <div className={'phone'} />
-          <div className={'logo'} />
-          <div className={'logoShadow'} />
-          <div className={'numbers'}>
-            <div className={'number1' + ' ' + 'numberEl'}>{data['Pitch Support'].description}</div>
-            <div className={'number2' + ' ' + 'numberEl'}>{data['Creative Production'].description}</div>
-            <div className={'number3' + ' ' + 'numberEl'}>{data['Ad Support'].description}</div>
-            <div className={'number4' + ' ' + 'numberEl'}>{data['Design'].description}</div>
-            <div className={'number5' + ' ' + 'numberEl'}>{data['PoC'].description}</div>
-            <div className={'number6' + ' ' + 'numberEl'}>{data['Innovation Support'].description}</div>
-            <div className={'number7' + ' ' + 'numberEl'}>{data['Training and Workshops'].description}</div>
+          <div className={'phoneContainer'}>
+            <div className={'logo'} />
+            <div className={'logoShadow'} />
+          </div>
+          <div className={'serviceItems'}>
+            {rows}
           </div>
         </div>
       </div>
