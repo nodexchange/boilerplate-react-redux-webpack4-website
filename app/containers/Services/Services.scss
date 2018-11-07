@@ -12,7 +12,72 @@
       width:  100%;
       height:  auto;
       height: auto;
-      padding-bottom: 30px;
+      padding-bottom: 20px;
+      .sprite {
+        background-image: url(./spritesheet.png);
+        background-repeat: no-repeat;
+        display: block;
+        position: absolute;
+        transform: scale(0.7);
+        margin-top:-15px;
+      }
+      
+      .sprite-icons8-design-64-_1_ {
+        width: 64px;
+        height: 64px;
+        background-position: -5px -5px;
+      }
+      
+      .sprite-icons8-innovation-64 {
+          width: 64px;
+          height: 64px;
+          background-position: -79px -5px;
+      }
+      
+      .sprite-icons8-mobile-80 {
+          width: 80px;
+          height: 80px;
+          background-position: -5px -79px;
+      }
+      
+      .sprite-icons8-touchscreen-80 {
+          width: 80px;
+          height: 80px;
+          background-position: -95px -79px;
+      }
+      
+      .sprite-icons8-training-50 {
+          width: 50px;
+          height: 50px;
+          background-position: -153px -5px;
+      }
+      
+      .sprite-icons8-video-editing-64 {
+          width: 64px;
+          height: 64px;
+          background-position: -213px -5px;
+      }
+      
+      .sprite-icons8-virtual-reality-50 {
+          width: 50px;
+          height: 50px;
+          background-position: -185px -79px;
+      }
+      
+      .sprite-icons8-web-advertising-80 {
+          width: 80px;
+          height: 80px;
+          background-position: -185px -139px;
+      }
+      
+      .sprite-icons8-wrench-80 {
+          width: 80px;
+          height: 80px;
+          background-position: -287px -5px;
+      }
+    
+    
+    
       .serviceItem {
         width: 60vw;
         margin-left: 20vw;
@@ -26,14 +91,21 @@
         -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
         -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
         box-shadow: 1px 1px 3px rgba(0,0,0,.6);
-        padding: 30px;
+        padding: 24px;
         // margin: 0px 0px 0px 30vw;
-        margin: 4vw 4vw 4vw 20vw;
+        margin: 2vw 4vw 2vw 20vw;
+        transition: all 1s;
+        opacity: 0;
+        margin-top: -50px;
         // margin-left: 30vw;
         .serviceHeader {
           font-size: 25px;
           padding-bottom: 25px;
         }
+      }
+      .serviceItemAnimation {
+        opacity: 1;
+        margin-top: 2vw;
       }
       .service1 {
         left: auto !important;

@@ -1,38 +1,47 @@
 {
   "Pitch Support": {
     "header": "Pitch Support & assistance with RFI & RFP",
-    "description": "We would be happy to become the part of your conversation. Bring us in, let us provide you with some technical feasiblity checks, mocks, timelines, quotes and answer the most demanding questions from your clients."
+    "description": "We would be happy to become the part of your conversation. Bring us in, let us provide you with some technical feasiblity checks, mocks, timelines, quotes and answer the most demanding questions from your clients.",
+    "icon": "sprite-icons8-design-64-_1_"
   },
   "Interactive Mocks": {
     "header": "Interactive Mocks",
-    "description": "A picture is worth a thousand words... what about an interactive mock, allowing your user to sample the experience prior to signing anything off? Sounds good? This service is for you, then!"
+    "description": "A picture is worth a thousand words... what about an interactive mock, allowing your user to sample the experience prior to signing anything off? Sounds good? This service is for you, then!",
+    "icon": "sprite-icons8-mobile-80"
   },
   "Innovation Support": {
     "header": "Innovation Labs",
-    "description": "We are always looking for partners to test our latest products and features! If you are interested in the next big industry shake up like VR, AR, facial recognition or 5G, get in touch! Let's find out how we can help each other."
+    "description": "We are always looking for partners to test our latest products and features! If you are interested in the next big industry shake up like VR, AR, facial recognition or 5G, get in touch! Let's find out how we can help each other.",
+    "icon": "sprite-icons8-virtual-reality-50"
   }, 
   "Creative Production": {
     "header": "Creative Production",
-    "description": "From simple IAB certified Ad banners to bespoke builds and homepage takeovers, our team's expertise can facilitate delivery on any creative ad campaign. Google Web Designer, Celtra, DoubleClick Studio, ONE Creative or Hype, we can help with all."
+    "description": "From simple IAB certified Ad banners to bespoke builds and homepage takeovers, our team's expertise can facilitate delivery on any creative ad campaign. Google Web Designer, Celtra, DoubleClick Studio, ONE Creative or Hype, we can help with all.",
+    "icon": "sprite-icons8-video-editing-64"
   }, 
   "Ad Support": {
     "header": "Ad Support",
-    "description": "We are happy to assist with adverts conversions, bug fixing, reporting adjustments or any other technical ad query."
+    "description": "We are happy to assist with adverts conversions, bug fixing, reporting adjustments or any other technical ad query.",
+    "icon": "sprite-icons8-wrench-80"
   },
   "Design": {
     "header": "Design",
-    "description": "Our award-winning team will be happy to assist with any creative tasks, from mock-ups to visual design."
+    "description": "Our award-winning team will be happy to assist with any creative tasks, from mock-ups to visual design.",
+    "icon": "sprite-icons8-web-advertising-80"
   }, 
   "Training and Workshops": {
     "header": "Training and Workshops",
-    "description": "Training, This service is design to assist our clients with the planning of dedicated training and workshops. We would be happy upskill your team on technical ad build, industry jargon or unique solutions such as DCO or Audience Targeting."
+    "description": "Training, This service is design to assist our clients with the planning of dedicated training and workshops. We would be happy upskill your team on technical ad build, industry jargon or unique solutions such as DCO or Audience Targeting.",
+    "icon": "sprite-icons8-training-50"
   },
   "Ad Service": {
     "header": "Complete Ad Service",
-    "description": "Our most straightforward way of showing you the excellence of our service. We would be happy to design your ads to the specs, build it, traffic it and provide the post campaign analysis. Naturally, we will be sharing regular updates and reports through the campaign lifecycle."
+    "description": "Our most straightforward way of showing you the excellence of our service. We would be happy to design your ads to the specs, build it, traffic it and provide the post campaign analysis. Naturally, we will be sharing regular updates and reports through the campaign lifecycle.",
+    "icon": "sprite-icons8-touchscreen-80"
   },
   "Consultancy": {
     "header": "Consultancy",
-    "description": "Do you need our help but you would prefer for us to stay behind the scene?\nNot an issue, send us the brief or give us a call and we can assit with brainstorming and ideas generation. Most imporatantly, this service is completely free of charge! Our technical expertise is yours to leverage."
+    "description": "Do you need our help but you would prefer for us to stay behind the scene?\nNot an issue, send us the brief or give us a call and we can assit with brainstorming and ideas generation. Most imporatantly, this service is completely free of charge! Our technical expertise is yours to leverage.",
+    "icon": "sprite-icons8-innovation-64"
   }
 }
