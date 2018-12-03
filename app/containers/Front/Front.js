@@ -2,7 +2,7 @@
 import React, { PureComponent } from 'react';
 import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
-import { BackgroundSky, Clients, SectionItem } from 'components';
+import { ArrowNav, BackgroundSky, Clients, SectionItem } from 'components';
 import throttle from '../../helpers/Throttle';
 import './Front.scss';
 import data from './front-data.json';
@@ -55,6 +55,7 @@ export default class Front extends PureComponent {
           <Helmet title="Home" />
           {rows}
           <Clients />
+          <ArrowNav offsetRatio={this.props.offsetRatio} />
         </div>
       </section>
     );

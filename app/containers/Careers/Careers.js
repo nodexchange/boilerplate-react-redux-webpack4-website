@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { BackgroundSky, ScrollToTopOnMount, ThreeJsTest } from 'components';
+import Helmet from 'react-helmet';
+import { ScrollToTopOnMount, SectionItem } from 'components';
+import data from './career-data.json';
 import './Career.scss';
 
 export default class NotFound extends Component {
@@ -9,14 +11,10 @@ export default class NotFound extends Component {
   }
   render() {
     return (
-      <div className={'containerCareers'}>
-        <div id={'notFoundText'}>
-          <h1>Careers</h1>
-        </div>
+      <div className={'about'}>
+        <Helmet title="Careers" />
+        <SectionItem inView key={0} offset={0} order={0} {...data['About Us']} link="about" />
         <ScrollToTopOnMount />
-        {/* <ThreeJsTest /> */}
-        <BackgroundSky />
-        <div id={'upset'}>{''}</div>
       </div>
     );
   }

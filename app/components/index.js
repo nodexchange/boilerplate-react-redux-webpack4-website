@@ -8,6 +8,7 @@ import ThreeJsTest from './ThreeJsTest/ThreeJsTest';
  */
 
 export Arrow from './Arrow/Arrow';
+export ArrowNav from './ArrowNav/ArrowNav';
 export BackgroundRow from './BackgroundRow/BackgroundRow';
 export BackgroundSky from './BackgroundSky/BackgroundSky';
 export CanvasBall from './CanvasBall/CanvasBall';

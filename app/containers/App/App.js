@@ -54,7 +54,6 @@ class App extends Component {
           { /* Catch all route */ }
           <Route path="*" component={NotFound} status={404} />
         </Switch>
-        {/* <ArrowNav /> */}
         <FooterBar />
       </div>
     );

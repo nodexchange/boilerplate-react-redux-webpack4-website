@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
-import { SectionItem } from 'components';
+import { ScrollToTopOnMount, SectionItem } from 'components';
 import throttle from '../../helpers/Throttle';
 import data from './about-data.json';
 import './About.scss';
@@ -59,6 +59,7 @@ export default class About extends Component {
           <div id="world"></div>
         </div>
         <SectionItem inView key={0} offset={0} order={0} {...data['About Us']} link="about" />
+        <ScrollToTopOnMount />
       </div>
     );
   }
