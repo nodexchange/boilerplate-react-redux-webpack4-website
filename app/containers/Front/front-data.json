@@ -2,7 +2,7 @@
   "data": [{
     "smallHeader": "Creative Ad Agency",
     "header": "Data & Empathy driven solutions",
-    "description": "We are data obsessed, London based innovators, day dreamers, creative ad specialists, always striving to push the boundaries of our emotional & immersive executions across display, webAR, VR and video.",
+    "description": "We are data obsessed, London and Buckinghamshire based innovators, day dreamers, creative ad and premium specialists, always striving to push the boundaries of our emotional & immersive executions across display, webAR, VR and video. Utilising partner's platforms such as DoubleClick, Celtra and Oath, we are able to design, build and deliver responsive cross-screen IAB compliant campaigns. Our diligently tested ad solutions work seamlessly across all enviorments, including Display, Mobile (web and in-app MRAID), Native and Video (web + VPAID).",
     "buttonText": ["See our work", "Get quote"],
     "link": ["/work","/contact"],
     "backgroundClass":"section-text-left",

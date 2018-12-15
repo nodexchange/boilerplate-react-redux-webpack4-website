@@ -54,8 +54,6 @@ export default class SectionItem extends Component {
       outOrInView = 'inView';
       infoOutOrInView = 'infoInView';
     }
-    console.log('SECTION ::: ' + this.props.link);
-    console.log(Array.isArray(this.props.link));
     let linkNode = (
       <Link to={this.props.link} className={'btn' + ' ' + outOrInView}>{this.props.buttonText}</Link>
     );

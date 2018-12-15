@@ -21,6 +21,7 @@ import {
   Careers,
   FrequentlyAsked,
   Front,
+  Gdpr,
   Legal,
   NavBar,
   NotFound,
@@ -47,7 +48,8 @@ class App extends Component {
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/careers" component={Careers} />
           <Route exact path="/faq" component={FrequentlyAsked} />
-          <Route exact path="/legal" component={Legal} />
+          <Route exact path="/gdpr" component={Gdpr} />
+          <Route exact path="/privacy" component={Legal} />
           <Route exact path="/work" component={Work} />
           <Route path="/work/:projectName" component={ProjectDetails} />
           <Route exact path="/services" component={Services} />

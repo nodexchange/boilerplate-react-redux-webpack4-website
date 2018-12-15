@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { PropTypes } from 'prop-types';
 import Helmet from 'react-helmet';
-import { GridBack, Hero, SectionText } from 'components';
+import { GridBack, Hero, ScrollToTopOnMount, SectionText } from 'components';
 import './ProjectDetails.scss';
 import data from './projects-data.json';
 
@@ -35,6 +35,7 @@ export default class ProjectDetails extends Component {
         />
         <GridBack link="work" />
         <SectionText header={localeCopy.header} copy={localeCopy.description} tags={localeCopy.tags} />
+        <ScrollToTopOnMount />
       </div>
     );
   }

@@ -55,7 +55,7 @@ export default class Front extends PureComponent {
           <Helmet title="Home" />
           {rows}
           <Clients />
-          <ArrowNav offsetRatio={this.props.offsetRatio} />
+          <ArrowNav offsetRatio={this.props.offsetRatio} maxPages={6} />
         </div>
       </section>
     );

@@ -5,6 +5,7 @@
   display: block;
   width: 100%;
   color: white;
+  padding-bottom: 30px;
   .inner {
     width: 80%;
     margin-left: 10%;
@@ -21,7 +22,6 @@
       margin-top: 3%;
       font-family: 'Didact Gothic', sans-serif;
       font-size: 18px;
-      letter-spacing: 1.5px;
     }
     .tagsTitle {
       color: #f1c13b;
@@ -37,6 +37,35 @@
       font-family: 'Quicksand', sans-serif;
       color:rgb(255, 255, 255);
       font-weight: bold;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .sectionText {
+    .inner {
+      width: 90%;
+      margin-left: 5%;
+      .header {
+        padding-top: 1%;
+        font-weight: 200;
+        font-style: normal;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #f1c13b;
+      }
+      .main {
+        margin-top: 3%;
+        font-family: 'Didact Gothic', sans-serif;
+        font-size: 13px;
+      }
+      .tagsTitle {
+        font-size: 13px;
+      }
+      .tags {
+        font-size: 10px;
+      }
     }
   }
 }

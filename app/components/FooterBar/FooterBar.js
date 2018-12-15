@@ -30,7 +30,8 @@ export default class FooterBar extends Component { // eslint-disable-line react/
           <Link to="/contact">Contact</Link><br />
           {/* <Link to="/faq">FAQs</Link> */}
           <Link to="/careers">Careers</Link>
-          <Link to="/legal">Legal Notices</Link><br/>
+          <Link to="/privacy">Privacy Policy</Link><br/>
+          <Link to="/gdpr">GDPR Compliance</Link><br/>
         </section>
         <section className={'social'}>
           <h4>Follow</h4>

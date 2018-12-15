@@ -5,9 +5,6 @@ import './ArrowNav.scss';
 
 // eslint-disable-next-line react/prefer-stateless-function
 export default class ArrowNav extends Component {
-  static propTypes = {
-  }
-
   arrowUpHandler = () => {
     this.currentPage -= 1;
     if (this.currentPage < 1) {
@@ -33,6 +30,10 @@ export default class ArrowNav extends Component {
       this.currentPage = Math.floor(this.props.offsetRatio + 1.3);
     }
     if (this.props.maxPages === 1) {
+      return (<div className={'arrowNav'} />);
+    }
+    console.log(this.currentPage, this.props.maxPages, 'HIDEEE>>>');
+    if (this.currentPage > this.props.maxPages) {
       return (<div className={'arrowNav'} />);
     }
     return (

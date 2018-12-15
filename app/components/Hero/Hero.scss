@@ -1,8 +1,19 @@
 .hero {
   height: 70%;
+  min-height: 500px;
+  width:100%;
   background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
   overflow: hidden;
   position: relative;
+  top:0;
+  left: 0;
+  display: block;
+  -webkit-box-shadow: inset 0px 0px 47px 8px rgba(0,0,0,0.6);
+  -moz-box-shadow: inset 0px 0px 47px 8px rgba(0,0,0,0.6);
+  box-shadow: inset 0px 0px 47px 8px rgba(0,0,0,0.6);
+  
   .infoOutView {
     -webkit-transform: translate3d(0,-100px,0);
     transform: translate3d(0,-100px,0);
@@ -125,41 +136,15 @@
 .narrow {
   height: 70%;
   padding-bottom: 5%;
+  -webkit-box-shadow: inset 0px 0px 47px 8px rgba(0,0,0,0);
+  -moz-box-shadow: inset 0px 0px 47px 8px rgba(0,0,0,0);
+  box-shadow: inset 0px 0px 47px 8px rgba(0,0,0,0);
   .info {
     margin-top: 34px;
     max-width: 60%;
     width: 60%;
     .projectInfo {
       display: none !important;
-    }
-  }
-
-
-  .renault {
-    background: url('./renault.jpg');
-  }
-  .marvel {
-    background: url('./marvel.jpg');
-  }
-  .ebs {
-    background: url('./ebs.jpg');
-  }
-  .toyota {
-    background: url('./toyota.jpg');
-  }
-  .audi {
-    background: url('./audi.jpg');
-  }
-  .ford {
-    background: url('./ford.jpg');
-  }
-  .brazil {
-    background: url('./brazil.jpg');
-  }
-  .aib {
-    background: url('./aib.jpg');
-    .info {
-
     }
   }
 }
@@ -169,10 +154,39 @@
   // box-shadow: inset 0px 0px 16px 0px rgba(0,0,0,0.75);
   opacity:1;
 }
+.renault {
+  background: url('./renault.jpg');
+}
+.marvel {
+  background: url('./marvel.jpg');
+}
+.ebs {
+  background: url('./ebs.jpg');
+}
+.toyota {
+  background: url('./toyota.jpg');
+}
+.audi {
+  background: url('./audi.jpg');
+}
+.ford {
+  background: url('./ford.jpg');
+}
+.brazil {
+  background: url('./brazil.jpg');
+}
+.aib {
+  background: url('./aib.jpg');
+  .info {
 
+  }
+}
 
 
 @media only screen and (max-width: 1000px) {
+  .info {
+    max-width: 80%;
+  }
   .narrow {
     height: 49%;
     padding-right: 13px;
@@ -198,6 +212,9 @@
   }
 }
 @media only screen and (max-width: 600px) {
+  .hero {
+    min-height: 200px;
+  }
   .info {
     width: 98%;
     left: 0px;
@@ -232,6 +249,9 @@
 }
 
 @media only screen and (max-width: 400px) {
+  .hero {
+    min-height: 100px;
+  }
   .info {
     width: 98%;
     left: 0px;

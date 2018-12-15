@@ -4,6 +4,7 @@ export Careers from './Careers/Careers';
 export Contact from './Contact/Contact';
 export Front from './Front/index';
 export FrequentlyAsked from './FrequentlyAsked/FrequentlyAsked';
+export Gdpr from './Gdpr/Gdpr';
 export Legal from './Legal/Legal';
 export NavBar from './NavBar/NavBar';
 export NotFound from './NotFound/NotFound';

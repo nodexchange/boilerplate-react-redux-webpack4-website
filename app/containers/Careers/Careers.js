@@ -4,16 +4,15 @@ import { ScrollToTopOnMount, SectionItem } from 'components';
 import data from './career-data.json';
 import './Career.scss';
 
-export default class NotFound extends Component {
+export default class Careers extends Component {
   constructor(props) {
     super(props);
-    console.log('here>>>');
   }
   render() {
     return (
-      <div className={'about'}>
+      <div className={'containerCareers'}>
         <Helmet title="Careers" />
-        <SectionItem inView key={0} offset={0} order={0} {...data['About Us']} link="about" />
+        <SectionItem inView key={0} offset={0} order={0} {...data['Careeers']} link="legal" />
         <ScrollToTopOnMount />
       </div>
     );
