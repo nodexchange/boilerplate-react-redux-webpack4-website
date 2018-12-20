@@ -47,7 +47,7 @@ const history = createHistory();
 const store = configureStore(initialState, history);
 const MOUNT_NODE = document.getElementById('app');
 
-document.getElementById('static-copy').style.display = 'none';
+// document.getElementById('static-copy').style.display = 'none';
 
 const render = () => {
   ReactDOM.render(

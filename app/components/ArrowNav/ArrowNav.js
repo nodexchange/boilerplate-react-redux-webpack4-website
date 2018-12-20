@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import { PropTypes } from 'prop-types';
 import './ArrowNav.scss';
+import Scroll from './../../helpers/Scroll';
 
 // eslint-disable-next-line react/prefer-stateless-function
 export default class ArrowNav extends Component {
@@ -32,7 +33,6 @@ export default class ArrowNav extends Component {
     if (this.props.maxPages === 1) {
       return (<div className={'arrowNav'} />);
     }
-    console.log(this.currentPage, this.props.maxPages, 'HIDEEE>>>');
     if (this.currentPage > this.props.maxPages) {
       return (<div className={'arrowNav'} />);
     }
