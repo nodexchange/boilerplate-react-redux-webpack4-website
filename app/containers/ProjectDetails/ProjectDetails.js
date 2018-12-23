@@ -12,7 +12,7 @@ export default class ProjectDetails extends Component {
 
   constructor(props) {
     super(props);
-    this.section = this.props.match.params.projectName;
+    this.section = this.props.match.params.projectName; // eslint-disable-line
   }
 
   componentDidMount() {

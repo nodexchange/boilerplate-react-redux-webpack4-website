@@ -16,7 +16,6 @@ import { Switch, Route } from 'react-router-dom';
 // import Footer from 'components/Footer';
 import {
   About,
-  ArrowNav,
   Contact,
   Careers,
   FrequentlyAsked,
@@ -34,8 +33,8 @@ import { FooterBar } from 'components';
 import config from '../../config';
 import './style.scss';
 
+// eslint-disable-next-line react/prefer-stateless-function
 class App extends Component {
-
   render() {
     return (
       <div className="app">

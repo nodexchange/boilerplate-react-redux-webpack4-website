@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { PropTypes } from 'prop-types';
 
 /* eslint-disable import/no-webpack-loader-syntax */
 import '!file-loader?name=[name].[ext]!../../images/clients/renault-logo.png';
@@ -15,10 +14,6 @@ import '!file-loader?name=[name].[ext]!../../images/clients/inm-logo.png';
 import './Clients.scss';
 
 export default class Clients extends Component { // eslint-disable-line react/prefer-stateless-function
-  static propTypes = {
-    inView: PropTypes.bool,
-  };
-
   render() {
     return (
       <div className={'section-clients'}>

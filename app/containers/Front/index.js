@@ -1,9 +1,7 @@
 import { connect } from 'react-redux';
 import { compose } from 'redux';
-import { createStructuredSelector } from 'reselect';
 import injectReducer from 'utils/injectReducer';
 import reducer from './reducer';
-import { makeSelectUsername } from './selectors';
 import Front from './Front';
 
 import { mainWindowScrollAction, updateCurrentPage, updateMaxPages } from './actions';
@@ -13,13 +11,14 @@ const mapDispatchToProps = (dispatch) => ({
   updateCurrentPage: (evt) => dispatch(updateCurrentPage(evt)),
   updateMaxPages: (evt) => dispatch(updateMaxPages(evt)),
 });
-
+/* eslint-disable */
 const mapStateToProps = (state) => {
   // console.log(state.get('scroll'));
   return {
     offsetRatio: state.get('scroll').offsetRatio
   };
 };
+/* eslint-enable */
 
 const withConnect = connect(mapStateToProps, mapDispatchToProps);
 const withReducer = injectReducer({ key: 'front', reducer });

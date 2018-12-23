@@ -14,14 +14,14 @@ export default class Services extends Component {
     }, 500);
   }
   render() {
-    let services = ['Pitch Support', 'Creative Production', 'Ad Support', 'Design', 'Interactive Mocks', 'Innovation Support', 'Training and Workshops', 'Ad Service', 'Consultancy'];
-    let rows = [];;
+    const services = ['Pitch Support', 'Creative Production', 'Ad Support', 'Design', 'Interactive Mocks', 'Innovation Support', 'Training and Workshops', 'Ad Service', 'Consultancy'];
+    const rows = [];
+
     for (let i = 0; i < services.length; i++) {
-      let dataPoint = data[services[i]];
+      const dataPoint = data[services[i]];
       rows.push(
-        // <SectionItem inView={false} key={i} order={i} {...frontPanelsCopy[i]} offset={this.props.offsetRatio} />
-        <div key={i} className={'service' + i + ' ' + 'serviceItem' + ' ' + this.state.animation}>
-          <i className={'sprite' + ' ' + dataPoint.icon}></i>
+        <div key={i} className={'service' + i + ' serviceItem ' + this.state.animation}>
+          <i className={'sprite ' + dataPoint.icon}></i>
           <div className={'serviceHeader'}>{dataPoint.header}</div>
           <div className={'serviceDescription'}>{dataPoint.description}</div>
         </div>

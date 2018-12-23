@@ -5,8 +5,8 @@ import './Work.scss';
 import data from './work-data.json';
 
 export default class Work extends Component {
-  selectRandomQuote() {
-    const quotes = data.quotes;
+  selectRandomQuote = () => {
+    const { quotes } = data;
     return quotes[Math.floor(Math.random() * quotes.length)];
   }
 

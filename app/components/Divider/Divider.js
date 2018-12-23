@@ -8,7 +8,7 @@ export default class Divider extends Component { // eslint-disable-line react/pr
   };
   render() {
     return (
-      <div className={'divider' + ' ' + this.props.colour} />
+      <div className={'divider ' + this.props.colour} />
     );
   }
 }

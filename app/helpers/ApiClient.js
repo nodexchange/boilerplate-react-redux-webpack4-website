@@ -1,4 +1,5 @@
-import superagent from 'superagent';
+/* global __SERVER__ */
+import superagent from 'superagent'; // eslint-disable-line 
 import config from '../config';
 
 const methods = ['get', 'post', 'put', 'patch', 'del'];
@@ -16,7 +17,7 @@ function formatUrl(path) {
 export default class ApiClient {
   constructor(req) {
     // eslint-disable-next-line no-return-assign
-    methods.forEach(method =>
+    methods.forEach((method) =>
       this[method] = (path, { params, data } = {}) => new Promise((resolve, reject) => {
         const request = superagent[method](formatUrl(path));
 

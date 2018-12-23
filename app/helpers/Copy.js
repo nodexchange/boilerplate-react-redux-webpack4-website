@@ -42,7 +42,7 @@ export default class Copy {
       case 'brazil':
         copy = require('./../data/brazil.json').data;
         break;
-      default :
+      default:
         copy = [{ default: 'helper default' }];
     }
     return copy;

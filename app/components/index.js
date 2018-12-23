@@ -1,5 +1,3 @@
-import ThreeJsTest from './ThreeJsTest/ThreeJsTest';
-
 /**
  *  Point of contact for component modules
  *
@@ -20,11 +18,8 @@ export GridBack from './GridBack/GridBack';
 export GridCard from './GridCard/GridCard';
 export ServiceCard from './ServiceCard/ServiceCard';
 export Hero from './Hero/Hero';
-export MiniInfoBar from './MiniInfoBar/MiniInfoBar';
 export ProductItem from './ProductItem/ProductItem';
 export ScrollToTopOnMount from './ScrollToTopOnMount/ScrollToTopOnMount';
 export SectionItem from './SectionItem/SectionItem';
 export SectionText from './SectionText/SectionText';
 export SectionVideo from './SectionVideo/SectionVideo';
-export ThreeJsTest from './ThreeJsTest/ThreeJsTest';
-export VideoPlayer from './Video/VideoPlayer';

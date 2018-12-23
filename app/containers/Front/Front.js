@@ -2,7 +2,7 @@
 import React, { PureComponent } from 'react';
 import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
-import { ArrowNav, BackgroundSky, Clients, SectionItem } from 'components';
+import { ArrowNav, Clients, SectionItem } from 'components';
 import throttle from '../../helpers/Throttle';
 import './Front.scss';
 import data from './front-data.json';
@@ -67,4 +67,4 @@ Front.propTypes = {
   mainImageResizeAction: PropTypes.func,
   updateMaxPages: PropTypes.func.isRequired,
   offsetRatio: PropTypes.number,
-}
+};

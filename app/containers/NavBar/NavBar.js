@@ -1,15 +1,15 @@
 /* eslint-disable react/no-unescaped-entities */
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import '!file-loader?name=[name].[ext]!../../static/logo-animation-completed.html';
-import '!file-loader?name=[name].[ext]!../../images/logo-animation-bck.png';
+import '!file-loader?name=[name].[ext]!../../static/logo-animation-completed.html'; // eslint-disable-line
+import '!file-loader?name=[name].[ext]!../../images/logo-animation-bck.png'; // eslint-disable-line
 
 import './NavBar.scss';
 
 export default class NavBar extends Component {
   constructor(props) {
     super(props);
-    this.state = { navbar: 'sticky', location: '' };
+    this.state = { navbar: 'sticky' };
   }
 
   componentDidMount() {
@@ -18,7 +18,7 @@ export default class NavBar extends Component {
 
   componentWillUnmount() {
     window.removeEventListener('scroll', (e) => { this.mScrollHandler(e); });
-    this.state = {};
+    this.setState();
   }
 
   scrollPageHandler = () => {
@@ -33,13 +33,13 @@ export default class NavBar extends Component {
         if (this.state.navbar !== 'scroll') {
           this.setState({ navbar: 'scroll' });
         }
-        return;
+        return; // eslint-disable-line
       }
     } else {
       if (this.state.navbar !== 'sticky') {
         this.setState({ navbar: 'sticky' });
       }
-      return;
+      return; // eslint-disable-line
     }
   }
   mobileNavClickHandler = () => {
@@ -113,7 +113,7 @@ export default class NavBar extends Component {
         logo.push(
           <NavLink key="0" to="/" activeStyle={{ color: '#33e0ff' }}>
             <div className={'brandClick'} />
-            <div className={'brand' + ' ' + brandType}>
+            <div className={'brand ' + brandType}>
               <div dangerouslySetInnerHTML={this.retrieveIframeElement()} />
             </div>
           </NavLink>
@@ -134,14 +134,15 @@ export default class NavBar extends Component {
     }
 
     return (
-      <header className={'mainHeader' + ' ' + navType + ' ' + mobileNavType }>
+      <header className={'mainHeader ' + navType + ' ' + mobileNavType}>
         <div className={'row'}>
           {logo}
           <div
             role="button"
             tabIndex="0"
             className={'mobileToggle'}
-            onClick={this.mobileNavClickHandler}>
+            onClick={this.mobileNavClickHandler}
+          >
             <span>{}</span>
             <span>{}</span>
             <span>{}</span>

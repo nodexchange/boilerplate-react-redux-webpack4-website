@@ -41,7 +41,7 @@ export default class SectionItem extends Component {
     const selectedImageClass = this.props.sectionClass + 'Bg';
     let backgroundClass = '';
     if (this.props.backgroundClass) {
-      backgroundClass = this.props.backgroundClass;
+      ({ backgroundClass } = this.props);
     }
 
     let outOrInView = 'outView';
@@ -55,13 +55,13 @@ export default class SectionItem extends Component {
       infoOutOrInView = 'infoInView';
     }
     let linkNode = (
-      <Link to={this.props.link} className={'btn' + ' ' + outOrInView}>{this.props.buttonText}</Link>
+      <Link to={this.props.link} className={'btn ' + outOrInView}>{this.props.buttonText}</Link>
     );
     if (Array.isArray(this.props.link)) {
       linkNode = (
         <div id="btn-list">
-          <Link to={this.props.link[0]} className={'btn' + ' ' + outOrInView}>{this.props.buttonText[0]}</Link>
-          <Link to={this.props.link[1]} className={'btn' + ' ' + outOrInView}>{this.props.buttonText[1]}</Link>
+          <Link to={this.props.link[0]} className={'btn ' + outOrInView}>{this.props.buttonText[0]}</Link>
+          <Link to={this.props.link[1]} className={'btn ' + outOrInView}>{this.props.buttonText[1]}</Link>
         </div>
       );
     }
@@ -71,7 +71,7 @@ export default class SectionItem extends Component {
       linkNode = (
         <a
           href="mailto:hello@quartile.io?Subject=Hello%20Quartile%21"
-          className={'btn' + ' ' + outOrInView}
+          className={'btn ' + outOrInView}
         >
           {this.props.buttonText}
         </a>
@@ -86,18 +86,18 @@ export default class SectionItem extends Component {
     }
     // <SectionVideo key={this.props.key} inView={this.props.inView} videoLink={this.props.videoLink} />
     return (
-      <div id={selectedClass} className={'section-item' + '' + inset + ' ' + backgroundClass}>
+      <div id={selectedClass} className={'section-item' + inset + ' ' + backgroundClass}>
         <div className={'info'}>
-          <div className={selectedImageClass + ' ' + 'imageBg'}></div>
+          <div className={selectedImageClass + ' imageBg'}></div>
           {contactSection &&
             <div className={'contactShadow'}>{''}</div>
           }
-          <div className={'smallBox' + ' ' + infoOutOrInView} style={topStyle}>
-            <span className={'smallHeader' + ' ' + outOrInView}>{this.props.smallHeader}</span>
-            <h1 className={'header' + ' ' + outOrInView}>{this.props.header}</h1>
-            <span className={'line' + ' ' + outOrInView}>{/* eslint-disable-line no-shadow */}</span>
-            <div className={'description' + ' ' + outOrInView}>
-              {text.split('\n').map(i =>
+          <div className={'smallBox ' + infoOutOrInView} style={topStyle}>
+            <span className={'smallHeader ' + outOrInView}>{this.props.smallHeader}</span>
+            <h1 className={'header ' + outOrInView}>{this.props.header}</h1>
+            <span className={'line ' + outOrInView}>{/* eslint-disable-line no-shadow */}</span>
+            <div className={'description ' + outOrInView}>
+              {text.split('\n').map((i) =>
                 <div className={'descText'} key={i}>{i}</div>
               )}
             </div>

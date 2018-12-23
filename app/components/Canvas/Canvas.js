@@ -25,7 +25,6 @@ export default class Canvas extends Component {
   updateCanvas() {
     this.canvas.width = document.getElementsByClassName(this.styles.masthead)[0].clientWidth;
     this.canvas.height = document.getElementsByClassName(this.styles.masthead)[0].clientHeight + 400;
-    console.log('____ ' + this.canvas.height);
     this.ctx = this.canvas.getContext('2d');
     this.ctx.fillRect(0, 0, 100, 100);
     this.TAU = 2 * Math.PI;
@@ -57,6 +56,7 @@ export default class Canvas extends Component {
       const ball = this.balls[index];
       ball.draw(this.ctx, this.canvas);
       this.ctx.beginPath();
+      /* eslint-disable */
       for (let index2 = this.balls.length - 1; index2 > index; index2 += -1) {
         const ball2 = this.balls[index2];
         const dist = Math.hypot(ball.x - ball2.x, ball.y - ball2.y);
@@ -68,6 +68,7 @@ export default class Canvas extends Component {
           this.ctx.lineTo((0.5 + ball2.x) | 0, (0.5 + ball2.y) | 0);
         }
       }
+      /* eslint-enable */
       this.ctx.stroke();
     }
   }

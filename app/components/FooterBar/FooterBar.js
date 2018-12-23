@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { PropTypes } from 'prop-types';
 import './FooterBar.scss';
 
 export default class FooterBar extends Component { // eslint-disable-line react/prefer-stateless-function
-
   render() {
     // const { info, load } = this.props; // eslint-disable-line no-shadow
     // eslint-disable-next-line global-require

@@ -15,7 +15,7 @@ export default class Hero extends Component { // eslint-disable-line react/prefe
 
   render() {
     return (
-      <div className={'hero' + ' ' + this.props.background}>
+      <div className={'hero ' + this.props.background}>
         <div className={'info'}>
           <span className={'smallHeader'}>{this.props.smallHeader}</span>
           <h1 className={'header'}>{this.props.header}</h1>
@@ -27,7 +27,7 @@ export default class Hero extends Component { // eslint-disable-line react/prefe
             <span className={'smallText'}>Year: {this.props.date}</span>
             <br />
             <span className={'smallText'}>Demo link:
-            <a href={this.props.demo} target="_blank"> {this.props.demo}</a>
+              <a href={this.props.demo} target="_blank"> {this.props.demo}</a>
             </span>
           </div>
         </div>

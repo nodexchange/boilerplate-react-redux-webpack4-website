@@ -29,7 +29,7 @@ export default class About extends Component {
     this.worldXAngle = (0.5 - (e.clientY / window.innerHeight)) * 180;
     this.updateView();
   }
-  mouseOverHandler = (e) => {
+  mouseOverHandler = () => {
     this.mouseActive = true;
     this.world.style.transition = 'all 0.1s';
   }

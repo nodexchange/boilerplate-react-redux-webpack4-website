@@ -17,9 +17,9 @@ export default class GridCard extends Component {
     // eslint-disable-next-line global-require
 
     return (
-      <li className={'gridItem' + ' ' + 'grid' + this.props.order}>
+      <li className={'gridItem grid' + this.props.order}>
         <Link to={'/' + this.props.link}>
-          <div className={'gridBackground' + ' ' + this.props.imageClass} />
+          <div className={'gridBackground ' + this.props.imageClass} />
           <div className={'gridTitle'}>
             <h2>{this.props.header}</h2>
             <p>
