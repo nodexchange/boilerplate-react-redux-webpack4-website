@@ -184,9 +184,6 @@
 
 
 @media only screen and (max-width: 1000px) {
-  .info {
-    max-width: 80%;
-  }
   .narrow {
     height: 49%;
     padding-right: 13px;
@@ -216,9 +213,7 @@
     min-height: 200px;
   }
   .info {
-    width: 98%;
     left: 0px;
-    margin-left: 1%;
     line-height: 1.5;
     padding: 40px;
     .smallHeader {
@@ -251,36 +246,34 @@
 @media only screen and (max-width: 400px) {
   .hero {
     min-height: 100px;
-  }
-  .info {
-    width: 98%;
-    left: 0px;
-    margin-left: 1%;
-    line-height: 1.5;
-    padding: 40px;
-    .smallHeader {
-      font-size: 14px;
-      padding-bottom: 10px;
-    }
-    .header {
-      font-size: 20px;
-    }
-
-    .description {
-      font-size: 14px;
-    }
-    .line {
-      width: 20px;
-      margin: 10px 0 13px 5px;
-    }
-  }
-  .narrow {
-    height: 49%;
-    padding-right: 13px;
     .info {
-      margin-top: 24px;
-      width: 100%;
-      max-width: 100%;
+      left: 0px;
+      line-height: 1.5;
+      padding: 40px;
+      .smallHeader {
+        font-size: 14px;
+        padding-bottom: 10px;
+      }
+      .header {
+        font-size: 20px;
+      }
+  
+      .description {
+        font-size: 14px;
+      }
+      .line {
+        width: 20px;
+        margin: 10px 0 13px 5px;
+      }
+    }
+    .narrow {
+      height: 49%;
+      padding-right: 13px;
+      .info {
+        margin-top: 24px;
+        width: 100%;
+        max-width: 100%;
+      }
     }
   }
 }

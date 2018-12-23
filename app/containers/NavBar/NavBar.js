@@ -83,6 +83,9 @@ export default class NavBar extends Component {
 
     const navConfig = [
       {
+        to: '/', name: 'Home', className: '', onClick: this.navClickHandler
+      },
+      {
         to: '/about', name: 'About Us', className: '', onClick: this.navClickHandler
       },
       {

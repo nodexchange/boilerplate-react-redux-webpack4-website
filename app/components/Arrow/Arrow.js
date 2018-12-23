@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 export default class Arrow extends Component { // eslint-disable-line react/prefer-stateless-function
-
   render() {
     const styles = require('./Arrow.scss');
     /* eslint-disable */

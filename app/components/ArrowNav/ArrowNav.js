@@ -53,4 +53,4 @@ export default class ArrowNav extends Component {
 ArrowNav.propTypes = {
   maxPages: PropTypes.number,
   offsetRatio: PropTypes.number
-}
+};

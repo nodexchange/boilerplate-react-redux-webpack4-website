@@ -22,6 +22,9 @@
     "rules": {
       "no-param-reassign": "off",
       "function-paren-newline": "off",
+      "global-require":1,
+      "no-plusplus":1,
+      "no-bitwise":1,
       "arrow-parens": [
         "error",
         "always"

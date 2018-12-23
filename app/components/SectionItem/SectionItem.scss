@@ -346,7 +346,6 @@
 
 @media only screen and (max-height: 640px) {
   .section-item {
-    height: 85vh;
     .smallBox {
       width: 90%;
       left: 5%;
@@ -376,7 +375,7 @@
 }
 
 @media only screen and (max-width: 1400px) {
-  .section-text-left .section-text-right {
+  .section-text-left,.section-text-right {
     .smallBox {
       width: 40%;
       left: 10%;
@@ -397,7 +396,7 @@
   }
 }
 @media only screen and (max-width: 1200px) {
-  .section-text-left .section-text-right {
+  .section-text-left,.section-text-right {
     .smallBox {
       width: 50%;
       left: 5%;
@@ -428,7 +427,6 @@
 
 @media only screen and (max-width: 800px) {
   .section-item {
-    height: 85vh;
     .smallBox {
       width: 90%;
       left: 5%;
@@ -459,87 +457,104 @@
 
 @media only screen and (max-width: 600px) {
   .section-item {
-    height: 85vh;
-  .smallBox {
-    width: 98%;
-    left: 0px;
-    margin-left: 1%;
-    line-height: 1.5;
-    padding: 40px;
-    .smallHeader {
-      font-size: 18px;
-      padding-bottom: 10px;
-    }
-    .header {
-      font-size: 24px;
-    }
-    .description {
-      font-size: 18px;
-    }
-    .line {
-      width: 30px;
-      margin: 20px 0 23px 5px;
+    .smallBox {
+      width: 100%;
+      left: 0px;
+      line-height: 1.5;
+      margin-left: 5px;
+      .smallHeader {
+        font-size: 18px;
+        padding-bottom: 10px;
+      }
+      .header {
+        font-size: 24px;
+      }
+      .description {
+        font-size: 18px;
+      }
+      .line {
+        width: 30px;
+        margin: 20px 0 23px 5px;
+      }
     }
   }
-}
+  .section-text-right {
+    .info {
+      .smallBox {
+        margin-left: 20px;
+        right: -4px;
+      }
+    }
+  }
 
 }
 
 @media only screen and (max-width: 400px) {
   .section-item {
-    height: 85vh;
-  .contactBg{
-    margin-left: 0;
-  }
-  .smallBox {
-    width: 98%;
-    left: 0px;
-    margin-left: 1%;
-    line-height: 1.5;
-    padding: 40px;
-    right: auto !important;
-    top: 5%;
-    .smallHeader {
-      font-size: 19px;
-      padding-bottom: 10px;
+    .contactBg{
+      margin-left: 0;
     }
-    .header {
-      font-size: 23px;
-    }
+    .info {
+      padding: 0;
+      .smallBox {
+        left: -2px;
+        line-height: 1.5;
+        padding: 40px;
+        right: auto;
+        top: 5%;
+        .smallHeader {
+          font-size: 14px;
+          padding-bottom: 8px;
+        }
+        .header {
+          font-size: 17px;
+        }
 
-    .description {
-      font-size: 20px;
+        .description {
+          font-size: 14px;
+        }
+        .line {
+          width: 20px;
+          margin: 10px 0 13px 5px;
+        }
+        .btn {
+          font-size: 9px;
+          min-width: 50px;
+          height: 27px;
+          line-height: 27px;
+        }
+      }
     }
-    .line {
-      width: 20px;
-      margin: 10px 0 13px 5px;
+    .contactShadow {
+      display: none;
     }
   }
   #about {
     .smallBox {
-      padding: 18px;
+      padding: 10px;
       .smallHeader {
-        font-size: 18px;
+        font-size: 12px;
         padding-bottom: 8px;
       }
       .header {
-        font-size: 23px;
+        font-size: 13px;
       }
       .description {
-        font-size: 18px;
+        font-size: 12px;
       }
       .line {
 
       }
     }
   }
-  .sixBg {
-    margin-left: 4vw;
+  .section-text-right {
+    .info {
+      .smallBox {
+        margin-left: 20px;
+        right: -4px;
+      }
+    }
   }
-  .contactShadow {
-    display: none;
-  }
-}
 }
 @media only screen and (max-height: 400px) {
   .contactBg{

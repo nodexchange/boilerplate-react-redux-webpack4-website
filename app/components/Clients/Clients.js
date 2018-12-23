@@ -2,15 +2,15 @@ import React, { Component } from 'react';
 import { PropTypes } from 'prop-types';
 
 /* eslint-disable import/no-webpack-loader-syntax */
-import '!file-loader?name=[name].[ext]!../../images/clients/renault.png';
-import '!file-loader?name=[name].[ext]!../../images/clients/ford.png';
-import '!file-loader?name=[name].[ext]!../../images/clients/audi.png';
-import '!file-loader?name=[name].[ext]!../../images/clients/toyota.png';
-import '!file-loader?name=[name].[ext]!../../images/clients/you.png';
-import '!file-loader?name=[name].[ext]!../../images/clients/gsk.png';
-import '!file-loader?name=[name].[ext]!../../images/clients/hme.png';
-import '!file-loader?name=[name].[ext]!../../images/clients/dnno.png';
-import '!file-loader?name=[name].[ext]!../../images/clients/inm.png';
+import '!file-loader?name=[name].[ext]!../../images/clients/renault-logo.png';
+import '!file-loader?name=[name].[ext]!../../images/clients/ford-logo.png';
+import '!file-loader?name=[name].[ext]!../../images/clients/audi-logo.png';
+import '!file-loader?name=[name].[ext]!../../images/clients/toyota-logo.png';
+import '!file-loader?name=[name].[ext]!../../images/clients/you-logo.png';
+import '!file-loader?name=[name].[ext]!../../images/clients/gsk-logo.png';
+import '!file-loader?name=[name].[ext]!../../images/clients/hme-logo.png';
+import '!file-loader?name=[name].[ext]!../../images/clients/dnno-logo.png';
+import '!file-loader?name=[name].[ext]!../../images/clients/inm-logo.png';
 /* eslint-enable import/no-webpack-loader-syntax */
 import './Clients.scss';
 
@@ -27,31 +27,31 @@ export default class Clients extends Component { // eslint-disable-line react/pr
         </div>
         <div className={'clients'}>
           <div className={'client'}>
-            <img className={'renault'} alt="renualt" src="./renault.png" />
+            <img className={'renault'} alt="renualt" src="./renault-logo.png" />
           </div>
           <div className={'client'}>
-            <img className={'ford'} alt="ford" src="./ford.png" />
+            <img className={'ford'} alt="ford" src="./ford-logo.png" />
           </div>
           <div className={'client'}>
-            <img className={'audi'} alt="audi" src="./audi.png" />
+            <img className={'audi'} alt="audi" src="./audi-logo.png" />
           </div>
           <div className={'client'}>
-            <img className={'toyota'} alt="toyota" src="./toyota.png" />
+            <img className={'toyota'} alt="toyota" src="./toyota-logo.png" />
           </div>
           <div className={'client'}>
-            <img className={'you'} alt="you" src="./you.png" />
+            <img className={'you'} alt="you" src="./you-logo.png" />
           </div>
           <div className={'client'}>
-            <img className={'gsk'} alt="gsk" src="./gsk.png" />
+            <img className={'gsk'} alt="gsk" src="./gsk-logo.png" />
           </div>
           <div className={'client'}>
-            <img className={'hme'} alt="hme" src="./hme.png" />
+            <img className={'hme'} alt="hme" src="./hme-logo.png" />
           </div>
           <div className={'client'}>
-            <img className={'dnno'} alt="dnno" src="./dnno.png" />
+            <img className={'dnno'} alt="dnno" src="./dnno-logo.png" />
           </div>
           <div className={'client'}>
-            <img className={'inm'} alt="inm" src="./inm.png" />
+            <img className={'inm'} alt="inm" src="./inm-logo.png" />
           </div>
         </div>
       </div>
