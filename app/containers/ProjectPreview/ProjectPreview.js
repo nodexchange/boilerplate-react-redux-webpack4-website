@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { PropTypes } from 'prop-types';
 import Helmet from 'react-helmet';
-import { GridBack, Hero, ScrollToTopOnMount, SectionText } from 'components';
-import './ProjectPreview.scss';
-
+import { GridBack, ScrollToTopOnMount } from 'components';
+/* eslint-disable import/no-webpack-loader-syntax */
 import '!file-loader?name=[name].[ext]!../../static/autotrader-toyota.html';
 import '!file-loader?name=[name].[ext]!../../static/brazil.html';
 import '!file-loader?name=[name].[ext]!../../static/empire-marvel.html';
@@ -11,6 +10,9 @@ import '!file-loader?name=[name].[ext]!../../static/ford.html';
 import '!file-loader?name=[name].[ext]!../../static/ie-aib-wallpaper.html';
 import '!file-loader?name=[name].[ext]!../../static/Independant-renault.html';
 import '!file-loader?name=[name].[ext]!../../static/maxim-audi.html';
+/* eslint-enable import/no-webpack-loader-syntax */
+import './ProjectPreview.scss';
+
 
 export default class ProjectPreview extends Component {
   static propTypes = {
@@ -36,6 +38,7 @@ export default class ProjectPreview extends Component {
 
   render() {
     // const localeCopy = data[this.section];
+    // eslint-disable-next-line
     const urlSrc = this.props.location.search.replace('?', '/');
     window.open(urlSrc, '_self');
     return (
