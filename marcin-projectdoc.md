@@ -26,3 +26,10 @@ npm run prod
 # new pipline
 1. git commit 
 2. git push
+
+#V3 (no docker)
+1. ssh root@104.236.36.61
+2. pm2 list
+3. pm2 stop
+4. git pull 
+5. pm2 start npm -- start

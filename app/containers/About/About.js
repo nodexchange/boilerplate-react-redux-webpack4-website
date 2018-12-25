@@ -52,13 +52,14 @@ export default class About extends Component {
   }
 
   render() {
+    console.log(data['About Us']);
     return (
       <div className={'about'}>
         <Helmet title="About Us" />
         <div id="viewport">
           <div id="world"></div>
         </div>
-        <SectionItem inView key={0} offset={0} order={0} {...data['About Us']} link="about" />
+        <SectionItem inView key={0} offset={0} order={0} {...data['About Us']} />
         <ScrollToTopOnMount />
       </div>
     );
