@@ -1,0 +1,47 @@
+.projectDetails {
+  background: #3f1e30;
+  background: -moz-linear-gradient(top, #3f1e30 0%, #280a33 50%, #3f142a 100%);
+  background: -webkit-linear-gradient(top, #3f1e30 0%,#280a33 50%,#3f142a 100%);
+  background: linear-gradient(to bottom, #3f1e30 0%,#280a33 50%,#3f142a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f1e30', endColorstr='#3f142a',GradientType=0 );
+  .hero {
+    opacity: 0;
+    animation: fade-in-right ease 1s forwards;
+    animation-delay: 0.2s;
+  }
+  .sectionText {
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: grow-left cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s forwards;
+    animation-delay: 0.4s;
+  }
+.details {
+    color: white;
+    
+  }
+  span {
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 16px !important;
+  }
+}
+@keyframes fade-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes grow-left {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { PropTypes } from 'prop-types';
+import { Link } from 'react-router-dom';
 import './Hero.scss';
 
 export default class Hero extends Component { // eslint-disable-line react/prefer-stateless-function
@@ -14,6 +15,7 @@ export default class Hero extends Component { // eslint-disable-line react/prefe
   }
 
   render() {
+    console.log(this.props.demo);
     return (
       <div className={'hero ' + this.props.background}>
         <div className={'info'}>
@@ -27,8 +29,10 @@ export default class Hero extends Component { // eslint-disable-line react/prefe
             <span className={'smallText'}>Year: {this.props.date}</span>
             <br />
             <span className={'smallText'}>Demo link:
-              <a href={this.props.demo} target="_blank"> {this.props.demo}</a>
+              {/* <a href={this.props.demo} target="_blank"> {this.props.demo}</a> */}
             </span>
+            {/* <Link to={this.props.demo}>{this.props.demo}</Link> */}
+            <Link to={'/preview?' + this.props.demo} target="_blank">{this.props.demo}</Link>
           </div>
         </div>
       </div>

@@ -25,6 +25,7 @@ import {
   NavBar,
   NotFound,
   ProjectDetails,
+  ProjectPreview,
   Work,
   Services,
 } from 'containers'; // eslint-disable-line import/extensions
@@ -48,6 +49,7 @@ class App extends Component {
           <Route exact path="/careers" component={Careers} />
           <Route exact path="/faq" component={FrequentlyAsked} />
           <Route exact path="/gdpr" component={Gdpr} />
+          <Route path="/preview" component={ProjectPreview} />
           <Route exact path="/privacy" component={Legal} />
           <Route exact path="/work" component={Work} />
           <Route path="/work/:projectName" component={ProjectDetails} />
