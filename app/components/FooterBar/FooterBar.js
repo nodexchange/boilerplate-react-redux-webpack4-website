@@ -1,3 +1,4 @@
+/* global VERSION */
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './FooterBar.scss';
@@ -9,11 +10,11 @@ export default class FooterBar extends Component { // eslint-disable-line react/
     /* eslint-disable */
     const certificateImg = require('./one.png');
     const quartileLogoImg = require('./../../components/FooterBar/logo.png');
-
+    const version = 'v' + VERSION;
     return (
       <footer>
         <div className={'brand'}></div>
-        <div className={'copyright'}>© Quartile 2019. All rights reserved.</div>
+        <div className={'copyright'}>© Quartile 2019. All rights reserved. {version}</div>
         <section className={'center' + ' ' + 'a'}>
         <h4>Get in Touch</h4>
         <p>

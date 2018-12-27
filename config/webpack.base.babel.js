@@ -11,7 +11,7 @@ module.exports = (options) => ({
   mode: options.mode,
   entry: options.entry,
   output: Object.assign({ // Compile into js/build.js
-    path: path.resolve(process.cwd(), 'build', 'static'),
+    path: path.resolve(process.cwd(), 'build'),
     publicPath: '/',
   }, options.output), // Merge with env dependent settings
   module: {
@@ -94,6 +94,9 @@ module.exports = (options) => ({
       'process.env': {
         NODE_ENV: JSON.stringify(process.env.NODE_ENV)
       },
+    }),
+    new webpack.DefinePlugin({
+      VERSION: JSON.stringify(require('../package.json').version)
     })
   ]),
   resolve: {

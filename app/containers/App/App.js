@@ -30,7 +30,7 @@ import {
   Services,
 } from 'containers'; // eslint-disable-line import/extensions
 
-import { FooterBar } from 'components';
+import { CookiePanel, FooterBar } from 'components';
 import config from '../../config';
 import './style.scss';
 
@@ -41,6 +41,7 @@ class App extends Component {
       <div className="app">
         <Helmet {...config.app.head} />
         <NavBar />
+        <CookiePanel />
         <Switch>
           <Route exact path="/" component={Front} />
           { /* Routes */ }

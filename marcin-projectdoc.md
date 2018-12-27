@@ -27,9 +27,9 @@ npm run prod
 1. git commit 
 2. git push
 
-#V3 (no docker)
+#V3 (no docker) Dec 2018
 1. ssh root@104.236.36.61
 2. pm2 list
-3. pm2 stop
-4. git pull 
-5. pm2 start npm -- start
+3. pm2 stop npm
+4. git pull  // from v3 branch
+5. pm2 start npm || pm2 start npm -- start:production

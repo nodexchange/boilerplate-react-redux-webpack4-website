@@ -18,7 +18,6 @@ export default class NavBar extends Component {
 
   componentWillUnmount() {
     window.removeEventListener('scroll', (e) => { this.mScrollHandler(e); });
-    this.setState();
   }
 
   scrollPageHandler = () => {

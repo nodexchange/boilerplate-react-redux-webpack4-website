@@ -11,6 +11,7 @@ export BackgroundRow from './BackgroundRow/BackgroundRow';
 export BackgroundSky from './BackgroundSky/BackgroundSky';
 export CanvasBall from './CanvasBall/CanvasBall';
 export Canvas from './Canvas/Canvas';
+export CookiePanel from './CookiePanel/CookiePanel';
 export Clients from './Clients/Clients';
 export Divider from './Divider/Divider';
 export FooterBar from './FooterBar/FooterBar';

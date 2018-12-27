@@ -15,7 +15,6 @@ export default class Hero extends Component { // eslint-disable-line react/prefe
   }
 
   render() {
-    console.log(this.props.demo);
     return (
       <div className={'hero ' + this.props.background}>
         <div className={'info'}>

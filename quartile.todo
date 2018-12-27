@@ -1,16 +1,30 @@
 Sales: 
   ☐ Local Buckhinghamshire publishers, waitrose newspapers, free newspapers, local ads.
 
-  Quartile:
-    ☐ cookie panel.
-    ☐ center piece  - dino sketchfab - showcase sizzle?
-    ☐ Empathy accents
-    ☐ Enhance gallery examples.
-    ☐ personality.
-    ☐ emotional design / algorithm for optimisation.
-    ☐ load animation between sections (cutout mask polygons? https://codepen.io/shshaw/pen/PPEMYX)
-    ☐ create instagram.
-    ☐ Add INSIDE section (tweets plus blogs).
+Quartile:
+  ✔ Fix production and missing index.html. @done (12/27/2018, 2:13:13 PM)
+  cookie panel:
+    ✔ Cookies text and panel info. @done (12/27/2018, 2:13:15 PM)
+    ✔ Read the cookie state and show or disable the panel. @done (12/27/2018, 2:13:16 PM)
+    ✔ Close button. @done (12/27/2018, 2:13:17 PM)ß
+  Enhance gallery examples + filters:
+    ☐ Add more examples
+    ☐ Create filter categories
+    ☐ Connect redux (just for fun)
+    ☐ Check and uncheck state for Filters
+    ☐ Grid to reflect selections
+    ☐ Drop down section ad format (Wallpaper, Billboard, Mobile, etc.)
+  Main Website:
+    ☐ release version number and packages.json number.
+    ☐ Education solutions maybe / section?(AR VR multiplayer experiences React VR should work here).
+    
+  ☐ Add INSIDE section (tweets plus blogs).
+  ☐ personality.
+  ☐ emotional design / algorithm for optimisation.
+  ☐ Empathy accents
+  ✘ load animation between sections (cutout mask polygons? https://codepen.io/shshaw/pen/PPEMYX) @cancelled (12/27/2018, 1:00:46 PM)
+  ☐ create instagram.
+  ☐ center piece  - dino sketchfab - showcase sizzle?
 
 Projects:
   ☐ Anything with colon at the end of the line is a project title

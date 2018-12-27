@@ -1,6 +1,6 @@
 {
-  "name": "react-redux-boilerplate",
-  "version": "1.0.0",
+  "name": "quartile-official-website",
+  "version": "3.0.1",
   "description": "A minimal react-redux boilerplate with all the best practices",
   "repository": {
     "type": "git",
@@ -10,7 +10,7 @@
     "npm": ">=3",
     "node": ">=5"
   },
-  "author": "Dinesh Pandiyan",
+  "author": "Nilesh",
   "license": "MIT",
   "scripts": {
     "prebuild": "npm run build:clean",
