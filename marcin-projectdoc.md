@@ -30,6 +30,7 @@ npm run prod
 #V3 (no docker) Dec 2018
 1. ssh root@104.236.36.61
 2. pm2 list
-3. pm2 stop npm
+3. pm2 stop quartile
 4. git pull  // from v3 branch
-5. pm2 start npm || pm2 start npm -- start:production
+<!-- 5. pm2 start npm || pm2 start npm -- start:production -->
+pm2 start pm2-starter.json
