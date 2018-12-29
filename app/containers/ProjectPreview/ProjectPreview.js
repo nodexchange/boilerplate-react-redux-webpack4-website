@@ -10,6 +10,8 @@ import '!file-loader?name=[name].[ext]!../../static/ford.html';
 import '!file-loader?name=[name].[ext]!../../static/ie-aib-wallpaper.html';
 import '!file-loader?name=[name].[ext]!../../static/Independant-renault.html';
 import '!file-loader?name=[name].[ext]!../../static/maxim-audi.html';
+import '!file-loader?name=[name].[ext]!../../static/google56e1490867514ec2.html';
+import '!file-loader?name=[name].[ext]!../../static/sitemap.txt';
 /* eslint-enable import/no-webpack-loader-syntax */
 import './ProjectPreview.scss';
 
