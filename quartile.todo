@@ -9,11 +9,11 @@ Quartile:
     ✔ Close button. @done (12/27/2018, 2:13:17 PM)ß
   Enhance gallery examples + filters:
     ☐ Add more examples
-    ☐ Create filter categories
-    ☐ Connect redux (just for fun)
-    ☐ Check and uncheck state for Filters
-    ☐ Grid to reflect selections
-    ☐ Drop down section ad format (Wallpaper, Billboard, Mobile, etc.)
+    ✘ Connect redux (just for fun) @cancelled (12/30/2018, 6:22:35 PM)ß
+    ✔ Create filter categories @done (12/30/2018, 6:22:18 PM)
+    ✔ Check and uncheck state for Filters @done (12/30/2018, 6:22:21 PM)
+    ✔ Grid to reflect selections @done (12/30/2018, 6:22:26 PM)
+    ✔ Drop down section ad format (Wallpaper, Billboard, Mobile, etc.) @done (12/30/2018, 6:22:28 PM)ß
   Main Website:
     ✔ release version number and packages.json number. @done (12/29/2018, 3:44:45 PM)å
     ✔ sitemap. @done (12/29/2018, 3:44:45 PM)å

@@ -1,7 +1,6 @@
 
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { PropTypes } from 'prop-types';
 import './CookiePanel.scss';
 
 // eslint-disable-next-line react/prefer-stateless-function
@@ -56,7 +55,3 @@ export default class CookiePanel extends Component {
     );
   }
 }
-
-CookiePanel.propTypes = {
-  maxPages: PropTypes.number
-};

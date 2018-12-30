@@ -5,6 +5,16 @@
     width: 100%;
     padding-left: 8%;
     padding-right: 8%;
+    .workFilter {
+      z-index: 10;
+      position: relative;
+      top:-205px;
+      left: 0;
+      label {
+        color: #ffffff;
+        font-family: 'Travels', sans-serif;
+      }
+    }
 
     .cards {
       list-style: none;
@@ -17,7 +27,7 @@
       grid-gap: 0px;
     }
     ul {
-      transform: translateY(-4rem);
+      transform: translateY(-12rem);
     }
     li {
       opacity: 0;
@@ -75,7 +85,30 @@
   .projects {
     .section {
       .grid {
+        grid-template-columns: repeat(3,1fr);
+      }
+      .workFilter {
+        top:-230px;
+        left: 5px;
+      }
+      ul {
+        transform: translateY(-16rem);
+      }
+    }
+  }
+}
+@media only screen and (max-width: 900px) {
+  .projects {
+    .section {
+      .grid {
         grid-template-columns: repeat(2,1fr);
+      }
+      .workFilter {
+        top:-200px;
+        left: 5px;
+      }
+      ul {
+        transform: translateY(-14rem);
       }
     }
   }
@@ -86,8 +119,15 @@
       padding-left: 2%;
       padding-right: 2%;
       height: 70%;
+      .workFilter {
+        top:5px;
+        left: 5px;
+        label {
+          font-size: 12px;
+        }
+      }
       ul {
-        transform: translateY(-6rem);
+        transform: translateY(-2rem);
       }
       .grid {
         grid-template-columns: repeat(2,1fr);

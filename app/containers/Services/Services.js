@@ -8,11 +8,13 @@ export default class Services extends Component {
     super(props);
     this.state = {};
   }
+
   componentDidMount() {
     setTimeout(() => {
       this.setState({ animation: 'serviceItemAnimation' });
     }, 500);
   }
+
   render() {
     const services = ['Pitch Support', 'Creative Production', 'Ad Support', 'Design', 'Interactive Mocks', 'Innovation Support', 'Training and Workshops', 'Ad Service', 'Consultancy'];
     const rows = [];

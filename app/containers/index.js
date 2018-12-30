@@ -10,5 +10,5 @@ export NavBar from './NavBar/NavBar';
 export NotFound from './NotFound/NotFound';
 export ProjectDetails from './ProjectDetails/ProjectDetails';
 export ProjectPreview from './ProjectPreview/ProjectPreview';
-export Work from './Work/Work';
+export Work from './Work/index';
 export Services from './Services/Services';

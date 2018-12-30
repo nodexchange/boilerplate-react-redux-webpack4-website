@@ -4,7 +4,6 @@ import { PropTypes } from 'prop-types';
 
 export default class SectionVideo extends Component { // eslint-disable-line react/prefer-stateless-function
   static propTypes = {
-    inView: PropTypes.bool,
     videoLink: PropTypes.string
   };
 

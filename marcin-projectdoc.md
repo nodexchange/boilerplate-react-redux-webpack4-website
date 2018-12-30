@@ -34,3 +34,4 @@ npm run prod
 4. git pull  // from v3 branch
 <!-- 5. pm2 start npm || pm2 start npm -- start:production -->
 pm2 start pm2-starter.json
+pm2 restart quartile 
