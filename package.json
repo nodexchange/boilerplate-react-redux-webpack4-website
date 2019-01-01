@@ -1,6 +1,6 @@
 {
   "name": "quartile-official-website",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "description": "A minimal react-redux boilerplate with all the best practices",
   "repository": {
     "type": "git",

@@ -2,6 +2,12 @@ Sales:
   ☐ Local Buckhinghamshire publishers, waitrose newspapers, free newspapers, local ads.
 
 Quartile:
+  ☐ update hmrc
+  ☐ update gov
+  ☐ royce royce examples
+  ☐ GSk examples
+  ☐ check nilesh examples for more
+  ☐ 
   ✔ Fix production and missing index.html. @done (12/27/2018, 2:13:13 PM)
   cookie panel:
     ✔ Cookies text and panel info. @done (12/27/2018, 2:13:15 PM)
@@ -15,10 +21,11 @@ Quartile:
     ✔ Grid to reflect selections @done (12/30/2018, 6:22:26 PM)
     ✔ Drop down section ad format (Wallpaper, Billboard, Mobile, etc.) @done (12/30/2018, 6:22:28 PM)ß
   Main Website:
+    ✔ update footer address! @done (1/1/2019, 11:34:47 AM)æ
     ✔ release version number and packages.json number. @done (12/29/2018, 3:44:45 PM)å
     ✔ sitemap. @done (12/29/2018, 3:44:45 PM)å
     ✔ google sitemap verification. @done (12/29/2018, 3:44:45 PM)å
-    ☐ Education solutions maybe / section?(AR VR multiplayer experiences React VR should work here).
+    ✔ Education solutions maybe / section?(AR VR multiplayer experiences React VR should work here). @done (1/1/2019, 11:51:02 AM)ß
     
   ☐ Add INSIDE section (tweets plus blogs).
   ☐ personality.

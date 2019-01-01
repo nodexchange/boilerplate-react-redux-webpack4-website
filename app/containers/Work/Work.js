@@ -30,45 +30,67 @@ export default class Work extends PureComponent {
   filterData = () => {
     let filterData = data.data;
     if (this.state.environment !== 'all') {
+      console.log('----- PHASE 1, ' + this.state.environment);
       filterData = filterData.filter((ad) => {
-        const envs = ad.environment.split(',');
-        for (let i = 0; i < envs.length; i++) {
-          if (envs[i] === this.state.environment) {
-            return ad;
+        if (ad.environment.split(',').length > 1) {
+          const envs = ad.environment.split(',');
+          for (let i = 0; i < envs.length; i++) {
+            if (envs[i] === this.state.environment) {
+              return ad;
+            }
           }
+        } else {
+          /* eslint-disable */
+          if (ad.environment === this.state.environment) {
+            return true;
+          }
+           /* eslint-enable */
         }
-        if (ad.environment === this.state.environment) {
-          return ad;
-        }
-        return envs;
+        return false;
       });
     }
+
     if (this.state.format !== 'all') {
+      console.log('----- PHASE 2, ' + this.state.format);
       filterData = filterData.filter((ad) => {
-        const formats = ad.format.split(',');
-        for (let i = 0; i < formats.length; i++) {
-          if (formats[i] === this.state.format) {
-            return ad;
+        if (ad.feature.split(',').length > 1) {
+          const formats = ad.format.split(',');
+          for (let i = 0; i < formats.length; i++) {
+            if (formats[i] === this.state.format) {
+              return ad;
+            }
           }
+        } else {
+          /* eslint-disable */
+          if (ad.format === this.state.format) {
+            return true;
+          }
+          /* eslint-enable */
         }
-        if (ad.format === this.state.format) {
-          return ad;
-        }
-        return formats;
+        return false;
       });
     }
     if (this.state.feature !== 'all') {
+      console.log('----- PHASE 3, ' + this.state.feature, 'length :: ' + filterData.length);
       filterData = filterData.filter((ad) => {
-        const features = ad.feature.split(',');
-        for (let i = 0; i < features.length; i++) {
-          if (features[i] === this.state.feature) {
-            return ad;
+        if (ad.feature.split(',').length > 1) {
+          const features = ad.feature.split(',');
+          for (let i = 0; i < features.length; i++) {
+            if (features[i] === this.state.feature) {
+              return true;
+            }
           }
+        } else {
+          /* eslint-disable */
+          if (ad.feature === this.state.feature) {
+            return true;
+          }
+          /* eslint-enable */
         }
         if (ad.feature === this.state.feature) {
-          return ad;
+          return true;
         }
-        return features;
+        return false;
       });
     }
     return filterData;
@@ -100,6 +122,7 @@ export default class Work extends PureComponent {
                 </select>
                 <select value={this.state.format} onChange={this.handleFormatChange}>
                   <option value="all">All Formats</option>
+                  <option value="IAB-Standard">IAB Standard</option>
                   <option value="wallpaper">Wallpaper</option>
                   <option value="banner">Banner</option>
                   <option value="custom">Custom Size</option>
@@ -108,6 +131,7 @@ export default class Work extends PureComponent {
                 <select value={this.state.feature} onChange={this.handleFeatureChange}>
                   <option value="all">All Features</option>
                   <option value="360">360°</option>
+                  <option value="animation">Animation</option>
                   <option value="responsive">Responsive</option>
                   <option value="vr">VR/AR</option>
                   <option value="video">Video</option>

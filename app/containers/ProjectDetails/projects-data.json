@@ -52,7 +52,61 @@
     "client": "Netflix",
     "demo": "empire-marvel.html",
     "tags":"Immersive, Virtual Reality, Day Dream, Emotions"
-  }, 
+  },
+  "adidas-3d": {
+    "hero image":"adidas-3d",
+    "header": "Unieque 3D Adidas Product - MPU banner.",
+    "description": "We are always excited to explore different ways to push boundaries of new media which can be experienced in both two dimensions and virtual reality. By blending cutting-edge 3D space with a unique virtual immersive experience, we delivered a product that raised the bar for all 2017 digital creative ads.",
+    "date": "2017",
+    "client": "Netflix",
+    "demo": "empire-marvel.html",
+    "tags":"Immersive, Virtual Reality, Day Dream, Emotions"
+  },
+  "gsk-article": {
+    "hero image":"gsk-article",
+    "header": "GSK Large Animated banner",
+    "description": "We are always excited to explore different ways to push boundaries of new media which can be experienced in both two dimensions and virtual reality. By blending cutting-edge 3D space with a unique virtual immersive experience, we delivered a product that raised the bar for all 2017 digital creative ads.",
+    "date": "2017",
+    "client": "Netflix",
+    "demo": "empire-marvel.html",
+    "tags":"Immersive, Virtual Reality, Day Dream, Emotions"
+  },
+  "lg-g7": {
+    "hero image":"lg-g7",
+    "header": "LG  - 3D Virtual Reality Experience",
+    "description": "We are always excited to explore different ways to push boundaries of new media which can be experienced in both two dimensions and virtual reality. By blending cutting-edge 3D space with a unique virtual immersive experience, we delivered a product that raised the bar for all 2017 digital creative ads.",
+    "date": "2017",
+    "client": "Netflix",
+    "demo": "empire-marvel.html",
+    "tags":"Immersive, Virtual Reality, Day Dream, Emotions"
+  },
+  "gsk-banner": {
+    "hero image":"gsk-banner",
+    "header": "GSK Banner",
+    "description": "We are always excited to explore different ways to push boundaries of new media which can be experienced in both two dimensions and virtual reality. By blending cutting-edge 3D space with a unique virtual immersive experience, we delivered a product that raised the bar for all 2017 digital creative ads.",
+    "date": "2017",
+    "client": "Netflix",
+    "demo": "empire-marvel.html",
+    "tags":"Immersive, Virtual Reality, Day Dream, Emotions"
+  },
+  "audi-filmstrip": {
+    "hero image":"audi-filmstrip",
+    "header": "Audi - Dynamic Scroll Filmstrip",
+    "description": "We are always excited to explore different ways to push boundaries of new media which can be experienced in both two dimensions and virtual reality. By blending cutting-edge 3D space with a unique virtual immersive experience, we delivered a product that raised the bar for all 2017 digital creative ads.",
+    "date": "2018",
+    "client": "Audi",
+    "demo": "",
+    "tags":"Immersive, Virtual Reality, Day Dream, Emotions"
+  },
+  "rolls-royce": {
+    "hero image":"rolls-royce",
+    "header": "Rolls Royce",
+    "description": "We are always excited to explore different ways to push boundaries of new media which can be experienced in both two dimensions and virtual reality. By blending cutting-edge 3D space with a unique virtual immersive experience, we delivered a product that raised the bar for all 2017 digital creative ads.",
+    "date": "2017",
+    "client": "Royce Royce",
+    "demo": "empire-marvel.html",
+    "tags":"Immersive, Virtual Reality, Day Dream, Emotions"
+  },
   "renault": {
     "hero image":"renault",
     "header": "Renault - Responsive Takeover",

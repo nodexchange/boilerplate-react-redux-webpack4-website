@@ -20,7 +20,7 @@ export default class FooterBar extends Component { // eslint-disable-line react/
         <p>
         <a href="mailto:hello@quartile.io">hello@quartile.io</a><br/><br/>
         <a href="tel:+44-7500905701">+44 7500905701</a><br/><br/>
-        Quartile Studios<br/>Unit 3, The Island<br/>Church Path, <br/>W4 5BL<br/><br/>
+        Quartile Studios<br/>1 Lydalls<br/>Radnage Common Rd<br/>HP14 4DH<br/><br/>
         <br/>
         </p>
         </section>

@@ -1,90 +1,160 @@
 {
-  "data": [{
+  "data": [
+    {
+      "header": "Audi - Filmstrip",
+      "description": "Page embedded - scroll",
+      "imageClass": "audi-filmstrip",
+      "link": "work/audi-filmstrip",
+      "environment": "display",
+      "format": "IAB-Standard",
+      "feature": "video,animation"
+    },
+    {
+      "header": "Adidas",
+      "description": "Unique 3D Product preview unit.",
+      "imageClass": "adidas-3d",
+      "link": "work/adidas-3d",
+      "environment": "mobile,cross-screen,display",
+      "format": "IAB-Standard",
+      "feature": "360,vr"
+    },
+    {
+      "header": "LG G7",
+      "description": "3D Phone experience",
+      "imageClass": "lg-g7",
+      "link": "work/lg-g7",
+      "environment": "mobile,cross-screen,display",
+      "format": "IAB-Standard",
+      "feature": "360,vr"
+    },
+    {
+      "header": "Rolls Royce",
+      "description": "Premium animated ad",
+      "imageClass": "rolls-royce",
+      "link": "work/rolls-royce",
+      "environment": "mobile,cross-screen,display",
+      "format": "IAB-Standard",
+      "feature": "animation"
+    },
+    {
+      "header": "GSK Article",
+      "description": "360° In-Car Experience ",
+      "imageClass": "gsk-article",
+      "link": "work/gsk-article",
+      "environment": "display",
+      "format": "custom",
+      "feature": "animation,video"
+    },
+    {
+      "header": "GSK Banner",
+      "description": "Premium Animated Banner",
+      "imageClass": "gsk-banner",
+      "link": "work/gsk-banner",
+      "environment": "display",
+      "format": "IAB-Standard",
+      "feature": "responsive,360,vr"
+    },
+    {
       "header": "Ford F-150 360°",
       "description": "360° In-Car Experience ",
       "imageClass": "ford",
       "link": "work/ford",
-      "environment":"mobile,cross-screen,display",
-      "format":"full-screen",
-      "feature":"responsive,360,vr"
-    },{
+      "environment": "mobile,cross-screen,display",
+      "format": "full-screen",
+      "feature": "responsive,360,vr"
+    },
+    {
       "header": "Brazil Tourism",
       "description": "Virtual 360° Video Tour",
       "imageClass": "brazil",
       "link": "work/brazil",
-      "environment":"mobile,cross-screen,display",
-      "format":"full-screen",
-      "feature":"responsive,360,vr"
-    },{
+      "environment": "mobile,cross-screen,display",
+      "format": "full-screen",
+      "feature": "responsive,360,vr"
+    },
+    {
       "header": "Renault Takeover",
       "description": "Renault cross-screen video takeover",
       "imageClass": "renault",
       "link": "work/renault",
-      "environment":"display,video,cross-screen",
-      "format":"custom",
-      "feature":"video,responsive"
-    },{
+      "environment": "display,video,cross-screen",
+      "format": "custom",
+      "feature": "video,responsive"
+    },
+    {
       "header": "AIB - Brand Takeover",
       "description": "Unique interactive Homepage wallpaper takeover.",
       "imageClass": "aib",
       "link": "work/aib",
-      "environment":"display",
-      "format":"wallpaper",
-      "feature":"responsive,video"
-    },{
+      "environment": "display",
+      "format": "wallpaper",
+      "feature": "responsive,video"
+    },
+    {
       "header": "Toyota",
       "description": "Vibrant 360° banner to support Toyota Yaris re-launch.",
       "imageClass": "toyota",
       "link": "work/toyota",
-      "environment":"display",
-      "format":"banner,custom",
-      "feature":"360,video"
-    },{
+      "environment": "display",
+      "format": "banner,custom",
+      "feature": "360,video"
+    },
+    {
       "header": "Audi",
       "description": "Pure Imagination - Responsive Header",
       "imageClass": "audi",
       "link": "work/audi",
-      "environment":"display",
-      "format":"banner",
-      "feature":"responsive,video"
-    },{
+      "environment": "display",
+      "format": "banner",
+      "feature": "responsive,video"
+    },
+    {
       "header": "EBS - Interactive Wallpaper",
       "description": "Premium Video takeover from a static wallpaper.",
       "imageClass": "ebs",
       "link": "work/ebs",
-      "environment":"display",
-      "format":"wallpaper",
-      "feature":"responsive,video"
-    },{
+      "environment": "display",
+      "format": "wallpaper",
+      "feature": "responsive,video"
+    },
+    {
       "header": "Marvel - VR Virtual Reality takeover",
       "description": "Bleeding-edge mobile experience.",
       "imageClass": "marvel",
       "link": "work/marvel",
-      "environment":"display",
-      "format":"full-screen",
-      "feature":"responsive,vr,video"
+      "environment": "display",
+      "format": "full-screen",
+      "feature": "responsive,vr,video"
     }
   ],
-  "quotes": [{
-    "text": "Empathy is about standing in someone else's shoes, feeling with his or her heart, seeing with his or her eyes. Not only is empathy hard to outsource and automate, but it makes the world a better place.",
-    "author": "Daniel H. Pink"
-  },{
-    "text": "When people talk, listen completely. Most people never listen.",
-    "author": "Ernest Hemingway"
-  },{
-    "text": "Sometimes all a person wants is an empathetic ear; all he or she needs is to talk it out. Just offering a listening ear and an understanding heart for his or her suffering can be a big comfort.",
-    "author": "Roy T. Bennett"
-  },{
-    "text": "I believe empathy is the most essential quality of civilization.",
-    "author": "Roger Ebert"
-  },{
-    "text": "If you want to create messages that resonate with your audience, you need to know what they care about.",
-    "author": "Nate Elliott"
-  },{
-    "text": "When you align your message with what people are already passionate about, you are able to make an emotional connection.",
-    "author": "Tim Burke"
-  },{
-    "text": "It’s not business to consumer, it’s not business to business, it’s people to people.",
-    "author": "Brian Solis"
-  }]
+  "quotes": [
+    {
+      "text": "Empathy is about standing in someone else's shoes, feeling with his or her heart, seeing with his or her eyes. Not only is empathy hard to outsource and automate, but it makes the world a better place.",
+      "author": "Daniel H. Pink"
+    },
+    {
+      "text": "When people talk, listen completely. Most people never listen.",
+      "author": "Ernest Hemingway"
+    },
+    {
+      "text": "Sometimes all a person wants is an empathetic ear; all he or she needs is to talk it out. Just offering a listening ear and an understanding heart for his or her suffering can be a big comfort.",
+      "author": "Roy T. Bennett"
+    },
+    {
+      "text": "I believe empathy is the most essential quality of civilization.",
+      "author": "Roger Ebert"
+    },
+    {
+      "text": "If you want to create messages that resonate with your audience, you need to know what they care about.",
+      "author": "Nate Elliott"
+    },
+    {
+      "text": "When you align your message with what people are already passionate about, you are able to make an emotional connection.",
+      "author": "Tim Burke"
+    },
+    {
+      "text": "It’s not business to consumer, it’s not business to business, it’s people to people.",
+      "author": "Brian Solis"
+    }
+  ]
 }

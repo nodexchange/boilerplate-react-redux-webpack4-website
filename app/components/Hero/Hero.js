@@ -15,6 +15,20 @@ export default class Hero extends Component { // eslint-disable-line react/prefe
   }
 
   render() {
+    const demoLink = [];
+    if (this.props.demo) {
+      demoLink.push(
+        <span>
+          <span className={'smallText'}>
+            Demo link: {' '}
+          </span>
+          <Link to={'/preview?' + this.props.demo} target="_blank">{this.props.demo}</Link>
+        </span>
+      );
+    } else {
+      demoLink.push(<span></span>);
+    }
+
     return (
       <div className={'hero ' + this.props.background}>
         <div className={'info'}>
@@ -27,11 +41,7 @@ export default class Hero extends Component { // eslint-disable-line react/prefe
             <br />
             <span className={'smallText'}>Year: {this.props.date}</span>
             <br />
-            <span className={'smallText'}>Demo link:
-              {/* <a href={this.props.demo} target="_blank"> {this.props.demo}</a> */}
-            </span>
-            {/* <Link to={this.props.demo}>{this.props.demo}</Link> */}
-            <Link to={'/preview?' + this.props.demo} target="_blank">{this.props.demo}</Link>
+            {demoLink}
           </div>
         </div>
       </div>
