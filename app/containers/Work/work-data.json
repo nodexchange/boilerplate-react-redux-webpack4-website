@@ -20,7 +20,7 @@
     },
     {
       "header": "LG G7",
-      "description": "3D Phone experience",
+      "description": "In Ad 3D Phone experience",
       "imageClass": "lg-g7",
       "link": "work/lg-g7",
       "environment": "mobile,cross-screen,display",
@@ -38,7 +38,7 @@
     },
     {
       "header": "GSK Article",
-      "description": "360° In-Car Experience ",
+      "description": "Eye-catching large custom unit",
       "imageClass": "gsk-article",
       "link": "work/gsk-article",
       "environment": "display",
@@ -52,7 +52,7 @@
       "link": "work/gsk-banner",
       "environment": "display",
       "format": "IAB-Standard",
-      "feature": "responsive,360,vr"
+      "feature": "responsive"
     },
     {
       "header": "Ford F-150 360°",

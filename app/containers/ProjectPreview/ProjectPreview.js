@@ -10,6 +10,19 @@ import '!file-loader?name=[name].[ext]!../../static/ford.html';
 import '!file-loader?name=[name].[ext]!../../static/ie-aib-wallpaper.html';
 import '!file-loader?name=[name].[ext]!../../static/Independant-renault.html';
 import '!file-loader?name=[name].[ext]!../../static/maxim-audi.html';
+import '!file-loader?name=[name].[ext]!../../static/adidas-3d.html';
+import '!file-loader?name=[name].[ext]!../../static/adidas.mp4';
+import '!file-loader?name=[name].[ext]!../../static/audi-filmstrip.html';
+import '!file-loader?name=[name].[ext]!../../static/audi-filmstrip.mp4';
+import '!file-loader?name=[name].[ext]!../../static/gsk-banner.html';
+import '!file-loader?name=[name].[ext]!../../static/gsk-banner.mp4';
+import '!file-loader?name=[name].[ext]!../../static/gsk-article.html';
+import '!file-loader?name=[name].[ext]!../../static/gsk-article.mp4';
+import '!file-loader?name=[name].[ext]!../../static/lg-g7.html';
+import '!file-loader?name=[name].[ext]!../../static/lg-g7.mp4';
+import '!file-loader?name=[name].[ext]!../../static/rolls-royce.html';
+import '!file-loader?name=[name].[ext]!../../static/rolls-royce.mp4';
+
 import '!file-loader?name=[name].[ext]!../../static/google56e1490867514ec2.html';
 import '!file-loader?name=[name].[ext]!../../static/sitemap.txt';
 /* eslint-enable import/no-webpack-loader-syntax */
