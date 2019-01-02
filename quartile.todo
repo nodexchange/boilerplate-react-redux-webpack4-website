@@ -4,8 +4,8 @@ Sales:
 Quartile:
   ☐ update hmrc
   ☐ update gov
-  ☐ royce royce examples
-  ☐ GSk examples
+  ✔ royce royce examples @done (1/2/2019, 10:50:45 AM)
+  ✔ GSk examples @done (1/2/2019, 10:50:46 AM)
   ☐ check nilesh examples for more
   ☐ 
   ✔ Fix production and missing index.html. @done (12/27/2018, 2:13:13 PM)
@@ -14,7 +14,7 @@ Quartile:
     ✔ Read the cookie state and show or disable the panel. @done (12/27/2018, 2:13:16 PM)
     ✔ Close button. @done (12/27/2018, 2:13:17 PM)ß
   Enhance gallery examples + filters:
-    ☐ Add more examples
+    ✔ Add more examples @done (1/2/2019, 10:50:49 AM)
     ✘ Connect redux (just for fun) @cancelled (12/30/2018, 6:22:35 PM)ß
     ✔ Create filter categories @done (12/30/2018, 6:22:18 PM)
     ✔ Check and uncheck state for Filters @done (12/30/2018, 6:22:21 PM)
