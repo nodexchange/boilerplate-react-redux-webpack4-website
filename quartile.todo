@@ -3,11 +3,10 @@ Sales:
 
 Quartile:
   ☐ update hmrc
-  ☐ update gov
+  ✔ update gov @done (1/3/2019, 10:05:28 AM)
   ✔ royce royce examples @done (1/2/2019, 10:50:45 AM)
   ✔ GSk examples @done (1/2/2019, 10:50:46 AM)
-  ☐ check nilesh examples for more
-  ☐ 
+  ✔ check nilesh examples for more @done (1/2/2019, 10:51:11 AM)
   ✔ Fix production and missing index.html. @done (12/27/2018, 2:13:13 PM)
   cookie panel:
     ✔ Cookies text and panel info. @done (12/27/2018, 2:13:15 PM)
