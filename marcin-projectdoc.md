@@ -1,8 +1,11 @@
 # start dev 
-npm run dev
+npm start
 
 # start prod
-npm run prod
+check packages.json
+
+# if you see sass errors, please ensure to reinstall node-sass
+npm install node-sass
 
 # release (docker operations within the docker terminal pls)
 
