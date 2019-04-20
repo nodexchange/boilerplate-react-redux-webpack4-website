@@ -8,6 +8,15 @@
     "demo": "ie-aib-wallpaper.html",
     "tags":"Homepage, Wallpaper, Unique"
   },
+  "audi-motion": {
+    "hero image":"audi-motion",
+    "header": "Audi - R8 Video takeover",
+    "description": "To balance powerful Audi's visual experience with an eye-catching execution, our team built this unique video responsive wallpaper product, called Video Motion. It responds to user input, but at the same time, it remains non-obstructive / non-intrusive. With some intelligent features such as default collapse to a responsive wrap around header (250px height) and video timeout, the unit respects the page content above all and protects the publisher's brand from being overpowered by the Video Motion experience.",
+    "date": "2019",
+    "client": "Verizon Media",
+    "demo": "Independant-audi.html",
+    "tags":"Responsive, Video, Cross-screen"
+  },
   "audi": {
     "hero image":"audi",
     "header": "Audi - Pure Imagination",

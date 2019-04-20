@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import { PropTypes } from 'prop-types';
 import { Link } from 'react-router-dom';
 import './Hero.scss';
 
-export default class Hero extends Component { // eslint-disable-line react/prefer-stateless-function
+export default class Hero extends PureComponent { // eslint-disable-line react/prefer-stateless-function
   static propTypes = {
     smallHeader: PropTypes.string,
     header: PropTypes.string,

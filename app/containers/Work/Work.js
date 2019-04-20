@@ -7,11 +7,17 @@ import data from './work-data.json';
 export default class Work extends PureComponent {
   constructor(props) {
     super(props);
-    this.state = { environment: 'all', format: 'all', feature: 'all' };
+    this.quote = { author: '', text: '' };
+    this.state = { environment: 'all', format: 'all', feature: 'all', quote: this.quote };
   }
   selectRandomQuote = () => {
     const { quotes } = data;
     return quotes[Math.floor(Math.random() * quotes.length)];
+  }
+
+  componentDidMount() {
+    this.quote = this.selectRandomQuote();
+    this.setState({ quote: this.quote });
   }
 
   handleEnvChange = (event) => {
@@ -30,7 +36,6 @@ export default class Work extends PureComponent {
   filterData = () => {
     let filterData = data.data;
     if (this.state.environment !== 'all') {
-      console.log('----- PHASE 1, ' + this.state.environment);
       filterData = filterData.filter((ad) => {
         if (ad.environment.split(',').length > 1) {
           const envs = ad.environment.split(',');
@@ -102,12 +107,12 @@ export default class Work extends PureComponent {
     for (let i = 0; i < projectsGridCopy.length; i++) {
       cards.push(<GridCard key={i} order={i} {...projectsGridCopy[i]} />);
     }
-    const quote = this.selectRandomQuote();
+   
     // {cards}
     return (
       <div className={'projects'}>
         <Helmet title="Our Work" />
-        <Hero smallHeader={'"' + quote.text + '"'} smallText={quote.author} background="narrow" />
+        <Hero smallHeader={'"' + this.quote.text + '"'} smallText={this.quote.author} background="narrow" />
         <div className={'section'}>
           <div className={'workFilter'}>
             <form onSubmit={this.handleSubmit}>
