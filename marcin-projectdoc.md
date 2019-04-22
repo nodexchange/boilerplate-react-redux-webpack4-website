@@ -37,4 +37,5 @@ npm install node-sass
 4. git pull  // from v3 branch
 <!-- 5. pm2 start npm || pm2 start npm -- start:production -->
 pm2 start pm2-starter.json
+~ OR ~
 pm2 restart quartile 
