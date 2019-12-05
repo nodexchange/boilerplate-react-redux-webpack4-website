@@ -1,0 +1,20 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "containerDefinitions": [
+    {
+      "image": "nodexchange/quartile:latest",
+      "name": "quartile",
+      "memory": 512,
+      "essential": true
+    },
+    {
+      "name": "nginx",
+      "image": "nodexchange/quartile-nginx:latest",
+      "hostname": "nginx",
+      "memory": 128,
+      "essential": true,
+      "portMappings": [{ "hostPort": 80, "containerPort": 80 }],
+      "links": ["quartile"]
+    }
+  ]
+}
