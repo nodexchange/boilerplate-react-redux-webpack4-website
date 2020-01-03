@@ -39,6 +39,7 @@
     "fontfaceobserver": "2.0.13",
     "history": "4.7.2",
     "hoist-non-react-statics": "2.5.0",
+    "imagemin-pngquant": "^5.0.1",
     "immutable": "3.8.2",
     "invariant": "2.2.4",
     "ip": "1.1.5",
