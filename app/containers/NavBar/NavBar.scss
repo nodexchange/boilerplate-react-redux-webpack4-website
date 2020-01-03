@@ -1,8 +1,8 @@
 .mainHeader {
   position: fixed;
   top: 0px;
-  max-height: 70px;
-  z-index: 4;
+  height: 100%;
+  z-index: 100;
   width: 100%;
   padding-top: 7px;
   background: none;
@@ -103,11 +103,10 @@
     top: 1px;
   }
 
-.openNav {
-  max-height: 400px !important;
+.open-nav {
   background-color: rgba(0, 0, 0, 0.6) !important;
 }
-.openNav .mobileToggle {
+.open-nav .mobileToggle {
   transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
 }
@@ -119,15 +118,18 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.0);
   background-color: rgba(0, 0, 0, 0);
 }
+.close-nav {
+  height: 60px;
+}
 .scroll {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.3);
   // border-bottom: 1px solid rgba(255, 255, 255, 0.0);
   opacity: 1;
   top: -17px;
   nav ul a {
     font-size: 15px;
     position: relative;
-    top: 1px; 
+    top: 1px;
   }
   .navBar {
     margin-top: 6px !important;
@@ -237,7 +239,7 @@ nav ul a {
   cursor: pointer;
   font-size: 20px;
   position: absolute;
-  right: 12px;
+  right: 7vw;
   top: 0;
   width: 30px;
   -webkit-transition: all 200ms ease-in;
@@ -267,16 +269,15 @@ nav ul a {
 
 .row {
   width: 100%;
-  max-width: 940px;
   margin: 0 auto;
-  position: relative;
+  position: absolute;
   padding: 0 2%;
 }
 
 .navBar {
   font-family: 'Travels', sans-serif;
   color: #ffffff;
-  margin-top: -8px;  
+  margin-top: -8px;
   font-weight: 500;
   font-size: 17px;
   -webkit-transition: margin-top 300ms ease-in;
@@ -333,40 +334,6 @@ p {
   line-height: 2;
 }
 */
-.content {
-  padding: 50px 2% 250px;
-}
-
-.hero {
-  position: relative;
-  background: url(http://www.philippefercha.com/cd/toggle-menu-bg.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  text-align: center;
-  color: #fff;
-  padding-top: 110px;
-  min-height: 500px;
-  letter-spacing: 2px;
-  font-family: "Montserrat", sans-serif;
-  h1 {
-    font-size: 50px;
-    line-height: 1.3;
-    span {
-      font-size: 25px;
-      color: #e8f380;
-      border-bottom: 2px solid #e8f380;
-      padding-bottom: 12px;
-      line-height: 3;
-    }
-  }
-
-}
-.hero h1 {
-}
-.hero h1 span {
-
-}
 
 .mouse {
   display: block;

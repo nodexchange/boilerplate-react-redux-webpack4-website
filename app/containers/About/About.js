@@ -1,49 +1,66 @@
 import React, { Component } from 'react';
-import { PropTypes } from 'prop-types';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import * as copyActions from 'redux/modules/copy';
-import * as scrollActions from 'redux/modules/scroll';
 import Helmet from 'react-helmet';
-import { Divider, SectionItem } from 'components';
+import { ScrollToTopOnMount, SectionItem } from 'components';
+import throttle from '../../helpers/Throttle';
+import data from './about-data.json';
+import './About.scss';
 
-// eslint-disable-next-line import/extensions, import/no-extraneous-dependencies
-@connect(
-  state => ({ localeCopy: state.copy.localeCopy }),
-  dispatch => bindActionCreators({ ...scrollActions, ...copyActions }, dispatch)
-)
 export default class About extends Component {
-  static propTypes = {
-    loadCopy: PropTypes.func.isRequired,
-    localeCopy: PropTypes.oneOfType([
-      PropTypes.object, // eslint-disable-line react/forbid-prop-types
-      PropTypes.array // eslint-disable-line react/forbid-prop-types
-    ]),
-    updateMaxPages: PropTypes.func.isRequired
-  }
   componentDidMount() {
-    this.props.loadCopy('about');
-    this.props.updateMaxPages(1);
+    this.world = document.getElementById('world');
+    this.viewport = document.getElementById('viewport');
+    this.worldXAngle = 0;
+    this.worldYAngle = 0;
+    this.d = 0;
+    this.mouseActive = true;
+
+    window.addEventListener('mousemove', throttle(this.mouseHandler, 10));
+    window.addEventListener('mouseout', (e) => this.mouseLeaveHandler(e));
+    window.addEventListener('mouseover', (e) => this.mouseOverHandler(e));
+  }
+  componentWillUnmount() {
+    window.removeEventListener('mousemove', throttle(this.mouseHandler, 10));
+    window.removeEventListener('mouseout', (e) => this.mouseLeaveHandler(e));
+    window.removeEventListener('mouseover', (e) => this.mouseOverHandler(e));
   }
 
-  defaultCopy = () => (
-    'We are advocates of simplicity and transparency. It is safe to say that we gained excellent exposure and grasp in all industry-leading RichMedia and advertising solutions.'
-  )
+  mouseHandler = (e) => {
+    this.worldYAngle = -(0.5 - (e.clientX / window.innerWidth)) * 180;
+    this.worldXAngle = (0.5 - (e.clientY / window.innerHeight)) * 180;
+    this.updateView();
+  }
+  mouseOverHandler = () => {
+    this.mouseActive = true;
+    this.world.style.transition = 'all 0.1s';
+  }
+  mouseLeaveHandler = (e) => {
+    if (e.target.className === 'smallBox infoInView' ||
+      e.target.className === 'aboutBg imageBg' ||
+      e.target.className === 'descText' ||
+      e.target.parentNode.className === 'smallBox infoInView') {
+      return;
+    }
+    this.mouseActive = false;
+    this.world.style.transition = 'all 1s';
+    this.world.style.transform = 'translateZ(0px) rotateX(0deg) rotateY(0deg)';
+  }
+  updateView() {
+    if (!this.mouseActive) {
+      return;
+    }
+    this.world.style.transform = 'translateZ( ' + this.d + 'px ) rotateX( ' + this.worldXAngle + 'deg) rotateY( ' + this.worldYAngle + 'deg)';
+  }
 
   render() {
-    // eslint-disable-next-line global-require
-    const styles = require('./About.scss');
-
-    const aboutCopy = this.props.localeCopy.data;
-    if (!aboutCopy) {
-      return (<p>{this.defaultCopy()}</p>);
-    }
-
+    console.log(data['About Us']);
     return (
-      <div className={styles.about}>
-        <Helmet title="About" />
-        <SectionItem inView key={0} offset={0} order={0} {...aboutCopy[0]} link="about" />
-        <Divider colour="white" />
+      <div className={'about'}>
+        <Helmet title="About Us" />
+        <div id="viewport">
+          <div id="world"></div>
+        </div>
+        <SectionItem inView key={0} offset={0} order={0} {...data['About Us']} />
+        <ScrollToTopOnMount />
       </div>
     );
   }

@@ -1,7 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import React, { Component } from 'react';
 import { PropTypes } from 'prop-types';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
+import './GridCard.scss';
 
 // eslint-disable-next-line react/prefer-stateless-function
 export default class GridCard extends Component {
@@ -14,13 +15,12 @@ export default class GridCard extends Component {
   };
   render() {
     // eslint-disable-next-line global-require
-    const styles = require('./GridCard.scss');
 
     return (
-      <li className={styles.gridItem + ' ' + styles['grid' + this.props.order]}>
+      <li className={'gridItem grid' + this.props.order}>
         <Link to={'/' + this.props.link}>
-          <div className={styles.gridBackground + ' ' + styles[this.props.imageClass]} />
-          <div className={styles.gridTitle}>
+          <div className={'gridBackground ' + this.props.imageClass} />
+          <div className={'gridTitle'}>
             <h2>{this.props.header}</h2>
             <p>
               {this.props.description}

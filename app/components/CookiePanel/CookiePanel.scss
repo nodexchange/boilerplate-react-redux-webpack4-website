@@ -1,0 +1,70 @@
+#cookieconsent {
+  transform: translateX(255px); 
+  transition: transform 0.5s ease-out;
+  position: fixed;
+  z-index: 100000;
+  bottom: 10vh;
+  right: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  width: 260px;
+  border-left: 4px solid #ff3d59;
+  background-color: #151515;
+  padding: 5px 20px 15px 25px;
+  cursor: default;
+  font-family: 'Quicksand', sans-serif;
+  h4 {
+    font-size: 15px;
+    margin-bottom: 2px;
+  }
+  p {
+    font-size: 10px;
+    line-height: 150%;
+    font-family: 'Quicksand', sans-serif;
+  }
+  a {
+    text-decoration: underline;
+    transition: opacity 0.2s ease-out;
+    color: white;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+  .closeBtn {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    transition: opacity 0.2s ease-out;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+  .line {
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #e5e6eb;
+  }
+  .line:nth-of-type(1) {
+    transform: rotate(45deg);
+    transform-origin: 50% 50%;
+    left: 12px;
+    top: 25px;
+  }
+  .line:nth-of-type(2) {
+    transform: rotate(-45deg);
+    transform-origin: 50% 50%;
+    left: 12px;
+    top: 25px;
+  }
+}
+.cookieIn {
+  transform: translateX(0px) !important; 
+}
+.cookieOut {
+  transform: translateX(260px) !important; 
+}

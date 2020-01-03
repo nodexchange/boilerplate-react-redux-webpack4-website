@@ -1,0 +1,9 @@
+{
+  "apps": [
+      {
+          "name": "quartile",
+          "script": "npm",
+          "args" : "run start:production"
+      }
+  ]
+}

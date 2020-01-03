@@ -1,0 +1,98 @@
+Sales: 
+  ☐ Local Buckhinghamshire publishers, waitrose newspapers, free newspapers, local ads.
+
+Quartile:
+  ☐ update hmrc
+  ✔ update gov @done (1/3/2019, 10:05:28 AM)
+  ✔ royce royce examples @done (1/2/2019, 10:50:45 AM)
+  ✔ GSk examples @done (1/2/2019, 10:50:46 AM)
+  ✔ check nilesh examples for more @done (1/2/2019, 10:51:11 AM)
+  ✔ Fix production and missing index.html. @done (12/27/2018, 2:13:13 PM)
+  cookie panel:
+    ✔ Cookies text and panel info. @done (12/27/2018, 2:13:15 PM)
+    ✔ Read the cookie state and show or disable the panel. @done (12/27/2018, 2:13:16 PM)
+    ✔ Close button. @done (12/27/2018, 2:13:17 PM)ß
+  Enhance gallery examples + filters:
+    ✔ Add more examples @done (1/2/2019, 10:50:49 AM)
+    ✘ Connect redux (just for fun) @cancelled (12/30/2018, 6:22:35 PM)ß
+    ✔ Create filter categories @done (12/30/2018, 6:22:18 PM)
+    ✔ Check and uncheck state for Filters @done (12/30/2018, 6:22:21 PM)
+    ✔ Grid to reflect selections @done (12/30/2018, 6:22:26 PM)
+    ✔ Drop down section ad format (Wallpaper, Billboard, Mobile, etc.) @done (12/30/2018, 6:22:28 PM)ß
+  Main Website:
+    ✔ update footer address! @done (1/1/2019, 11:34:47 AM)æ
+    ✔ release version number and packages.json number. @done (12/29/2018, 3:44:45 PM)å
+    ✔ sitemap. @done (12/29/2018, 3:44:45 PM)å
+    ✔ google sitemap verification. @done (12/29/2018, 3:44:45 PM)å
+    ✔ Education solutions maybe / section?(AR VR multiplayer experiences React VR should work here). @done (1/1/2019, 11:51:02 AM)ß
+    
+  ☐ Add INSIDE section (tweets plus blogs).
+  ☐ personality.
+  ☐ emotional design / algorithm for optimisation.
+  ☐ Empathy accents
+  ✘ load animation between sections (cutout mask polygons? https://codepen.io/shshaw/pen/PPEMYX) @cancelled (12/27/2018, 1:00:46 PM)
+  ☐ create instagram.
+  ☐ center piece  - dino sketchfab - showcase sizzle?
+
+Projects:
+  ☐ Anything with colon at the end of the line is a project title
+  ☐ You can nest projects inside each other
+  ☐ You can fold projects and sub projects
+  Folding and Indentation:
+      ☐ Demo folidng
+
+Tasks:
+  New Task:
+      ☐ Press Cmd+Enter (Ctrl+Enter on Windows and Linux) to add a new task
+      ☐ You can also use the Command pallette to create a new task by typing To Do:New Task
+      ☐ If you are on a new line, it will create a new task on the current line
+      ☐ If you are on a line with some text pressing new task shortcut will convert it to a task
+      ☐ New tasks are nested as much as the previous task
+  More Actions:
+      ✔ Complete a task by pressing Alt+d @done
+      ☐ Re-open a completed task by pressing Alt+d
+      ✘ Cancel a task by pressing Alt+c @cancelled
+      ☐ Complete a cancelled task by pressing Alt+d
+      ☐ You can also use the Command pallette to complete or cancel a task by typing To Do:Complete Task or To Do:Cancel Task
+  Tagging:
+      ☐ You can add tags using @ sign, like this @tag
+      ☐ You can use following pre-existing tags to mark tasks @critical @high @low @today
+      ☐ Auto intellisense is provided to help you in finding tags
+
+☐ More to come... Check https://github.com/sandy081/vscode-todotasks
+
+To Do Tasks Extension:
+  Project:
+    ✔ @high Show commands or actions in the command pallette @done
+    ☐ @medium Click on the pending symbol of a task to complete it
+    ☐ @medium Ability to multi select and perform actions
+    ☐ @low Separate the pending tasks from completed and cancelled tasks
+    ✘ Do auto correction when the file is refreshed @cancelled
+  Tasks:
+    ✔ @high Make tags case-insensitive @done
+    ☐ @low Due date support
+    ✔ @low Add a completion date when task is completed @done (10/3/2016, 8:26:21 AM)
+  Customizations:
+    ☐ @medium Ability to choose colors for tags
+  Content Assist:
+    ✔ Content assist for default tags @done
+    ✔ @high Trigger auto intellisense on '@' symbol @done
+    ☐ @medium Content assit or code snippets for commands or actions
+  Tests:
+    ✔ Learn how to write tests for vs code @done
+    ✔ @high Write unit tests @done
+    ☐ @medium Write scenario based tests
+  Publishing:
+    ✔ Wirte third party notices file for using open source projects @done
+    ☐ Write README.md for the extension
+    ☐ Clean up the text mate grammar file
+    ☐ Clean up the package.josn file
+    ☐ Call the extension todos
+    ☐ Get it reviewed from @Martin
+    ☐ Finally Publish !!!!
+  Defects:
+    ☐ @critical Decorations are sticking even after removed.
+    ☐ @high Ctrl + Enter is not creating a task in the next line
+    ✔ @high Having a tag at the beginning is decorating the task description as a tag @done
+    ✔ @Medium Inserting tags by editor is selecting the inserted text @done
+    ☐ @Medium Some times creating a task is adding a space before the bullet

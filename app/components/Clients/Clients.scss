@@ -1,18 +1,19 @@
-.section {
+.section-clients {
   height: 56%;
   min-height: 250px;
   background-size: cover !important;
   overflow: hidden;
   position: relative;
-  background-color: #2989d8;
-  padding-top: 5vh;
+  background-color: #b53638;
   .info {
     font-family: 'Didact Gothic', sans-serif;
     text-align: center;
     color: white;
     font-size: 23px;
     text-transform: uppercase;
-    text-shadow: 2px 2px #3e3a3a;
+    font-weight: bold;
+    padding-top:15px;
+    padding-bottom: 19px;
   }
   .clients {
     display: grid;
@@ -35,17 +36,28 @@
 }
 
 @media only screen and (max-width: 700px) {
-  .info {
-    font-size: 15px !important;
+  .section-clients {
+    .info {
+      font-size: 15px !important;
+    }
+    .clients {
+      width: 100% !important;
+      grid-template-columns: 25vw 25vw 25vw !important;
+      grid-gap: 4vw !important;
+    }
+    .client {
+      img {
+        max-width: 30vw !important;
+      }
+    }
   }
-  .clients {
-    width: 100% !important;
-    grid-template-columns: 25vw 25vw 25vw !important;
-    grid-gap: 4vw !important;
-  }
-  .client {
-    img {
-      max-width: 30vw !important;
+}
+
+@media only screen and (max-width: 400px) {
+  .section-clients {
+    .info {
+      font-size: 14px !important;
+      margin-left: 5px;
     }
   }
 }

@@ -1,6 +1,6 @@
 
 .gridItem {
-  border: 1px solid #246469;
+  border: 0px solid #246469;
   border-radius:5px;
   color: #fff;
   flex: 1 1 200px;
@@ -32,8 +32,9 @@
       p {
         margin-top: 0;
         opacity: 1;
-        color: #ec8112;
+        color: #ff3d59;
         font-weight: bold;
+        font-family: 'Didact Gothic', sans-serif;
       }
     }
 
@@ -66,6 +67,7 @@
         transition: all 0.7s;
       }
       p {
+        font-family: 'Didact Gothic', sans-serif;
         text-align: center;
         padding: 10px;
         margin-top: 60px;
@@ -104,6 +106,9 @@
   .toyota {
     background: url(./toyota.jpg) center center no-repeat scroll rgb(79, 164, 220);
   }
+  .audi-motion {
+    background: url(./audi-motion.jpg) center center no-repeat scroll rgb(79, 164, 220);
+  }
   .audi {
     background: url(./audi.jpg) center center no-repeat scroll rgb(79, 164, 220);
   }
@@ -115,6 +120,24 @@
   }
   .brazil {
     background: url(./brazil.jpg) center center no-repeat scroll rgb(79, 164, 220);
+  }
+  .adidas-3d {
+    background: url(./adidas-3d.jpg) center center no-repeat scroll rgb(79, 164, 220);
+  }
+  .gsk-article {
+    background: url(./gsk-article.jpg) center center no-repeat scroll rgb(79, 164, 220);
+  }
+  .gsk-banner {
+    background: url(./gsk-banner.jpg) center center no-repeat scroll rgb(79, 164, 220);
+  }
+  .lg-g7 {
+    background: url(./lg-g7.jpg) center center no-repeat scroll rgb(79, 164, 220);
+  }
+  .rolls-royce {
+    background: url(./rolls-royce.jpg) center center no-repeat scroll rgb(79, 164, 220);
+  }
+  .audi-filmstrip {
+    background: url(./audi-filmstrip.jpg) center center no-repeat scroll rgb(79, 164, 220);
   }
 }
 .grid0 {

@@ -1,0 +1,137 @@
+{
+  "aib": {
+    "hero image":"aib",
+    "header": "AIB - Takeover",
+    "description": "Thanks to the close collaboration with the Irish Independent website team, we could achieve a truly unique way of emotionally engaging their audience with the AIB brand. Our initial conversations made it clear that wallpaper formats combined with banners as static homepage takeovers, rarely produce any form of satisfying results for the advertiser. We wanted to challenge that. Make sure to visit the demo page (link above) and click on the advert to understand the Quartile approach to the traditional formats.",
+    "date": "2017",
+    "client": "Independent IE",
+    "demo": "ie-aib-wallpaper.html",
+    "tags":"Homepage, Wallpaper, Unique"
+  },
+  "audi-motion": {
+    "hero image":"audi-motion",
+    "header": "Audi - R8 Video takeover",
+    "description": "To balance powerful Audi's visual experience with an eye-catching execution, our team built this unique video responsive wallpaper product, called Video Motion. It responds to user input, but at the same time, it remains non-obstructive / non-intrusive. With some intelligent features such as default collapse to a responsive wrap around header (250px height) and video timeout, the unit respects the page content above all and protects the publisher's brand from being overpowered by the Video Motion experience.",
+    "date": "2019",
+    "client": "Verizon Media",
+    "demo": "Independant-audi.html",
+    "tags":"Responsive, Video, Cross-screen"
+  },
+  "audi": {
+    "hero image":"audi",
+    "header": "Audi - Pure Imagination",
+    "description": "In our eyes, the award-winning Pure Imagination video deserved more than a static banner. Our team created this auto-play, cross-screen responsive banner that acts as an embedded inline player. Rather than being intrusive, our creative product offers a subtle video preview, inviting users to further interaction. Make sure to visit the demo link and let us know your thoughts.",
+    "date": "2017",
+    "client": "Bauer Media Group",
+    "demo": "maxim-audi.html",
+    "tags":"Responsive, Video, Cross-screen"
+  },
+  "brazil": {
+    "hero image":"brazil",
+    "header": "Brazil - 360° Video Experience",
+    "description": "Through the partnership with the Brazil Tourism Board, our team had a pleasure to work on this extraordinary 360° video experience; all fully optimised to run even on a slower 3g mobile connection. The immersive experience gives the user a taste of what is like to take part in the paragliding experience above Rio De Janeiro. Hope you will like it. We would recommend viewing this experience on your mobile phone, Virtual Reality headset or to resize the width of your browser to mimic the portrait mode. Also, please be warned, this experience might not be suitable for people that are afraid of heights.",
+    "date": "2018",
+    "client": "Brazil Tourism Board",
+    "demo": "brazil.html",
+    "tags":"Interstitial, InApp, 360°, Video, Responsive, MRAID, Mobile, Tablet"
+  }, 
+  "ebs": {
+    "hero image":"ebs",
+    "header": "AIB - Takeover",
+    "description": "When we were reviewing client's provided assets, the challenge was clear; How to intuitively offer the user a premium full-screen experience with the brand without compromising publisher's content and pushing the article below the viewable fold. We wanted to stay clear of traditional overlays, intrusive blocks that are overlayed on top of the crucial publisher's material. Our solution was to focus on the unique reveal animation that helps users understand emotional connection between the content and the website. We have created a visually astounding flip effect of the whole page that reveals client's large scale advertisement.",
+    "date": "2017",
+    "client": "Independent IE",
+    "demo": "ie-ebs-wallpaper.html",
+    "tags":"Homepage, Takeover, Video"
+  }, 
+  "ford": {
+    "hero image":"ford",
+    "header": "Ford - 360° Experience",
+    "description": "For our Canadian client, our team decided to offer a unique peak through experience for the new Ford F-150. Using mobile's phone gyroscope the user can freely navigate through the car's inside and explore some of the key features. Click on the link above and tell us what you think about this experience. We would recommend viewing this experience on your mobile phone.",
+    "date": "2017",
+    "client": "Ford Canada",
+    "demo": "ford.html",
+    "tags":"Interstitial, InApp, 360°, Responsive, MRAID, Mobile, Tablet"
+  },
+  "marvel": {
+    "hero image":"marvel",
+    "header": "Marvel - 3D Virtual Reality Experience",
+    "description": "We are always excited to explore different ways to push boundaries of new media which can be experienced in both two dimensions and virtual reality. By blending cutting-edge 3D space with a unique virtual immersive experience, we delivered a product that raised the bar for all 2017 digital creative ads.",
+    "date": "2017",
+    "client": "Netflix",
+    "demo": "empire-marvel.html",
+    "tags":"Immersive, Virtual Reality, Day Dream, Emotions"
+  },
+  "adidas-3d": {
+    "hero image":"adidas-3d",
+    "header": "Adidas 3D Product Exprience - MPU banner.",
+    "description": "This project originated from our active partnership with a London agency, we pushed in-ad product experience to never before seen heights. Fully interactive and touch-gesture senstive, our one of a kind 3D product demo, offers users an intitiuve future-proof product simulation.",
+    "date": "2018",
+    "client": "Agency",
+    "demo": "adidas-3d.html",
+    "tags":"Immersive, 3D Model, Sketchfab, Unique, Product Experience"
+  },
+  "gsk-article": {
+    "hero image":"gsk-article",
+    "header": "GSK Large Animated banner",
+    "description": "When it comes to the pharma industry, it is often quite challenging to make an engaging and eye-catching execution. Our premium looking animation, unsurprisingly produced a high-perfoming article based unit. Get in touch with us to learn more.",
+    "date": "2018",
+    "client": "Agency",
+    "demo": "gsk-article.html",
+    "tags":"Premium, Pharma, Large unit, Animation"
+  },
+  "lg-g7": {
+    "hero image":"lg-g7",
+    "header": "LG  - 3D Virtual Reality Experience",
+    "description": "We are always excited to explore different ways to push boundaries of new media which can be experienced in both two dimensions and virtual reality. By blending cutting-edge 3D space with a unique virtual immersive experience, we delivered a product that raised the bar for all 2017 digital creative ads.",
+    "date": "2018",
+    "client": "Agency",
+    "demo": "lg-g7.html",
+    "tags":"Immersive, 3D Model, Product Experience, Sketchfab"
+  },
+  "gsk-banner": {
+    "hero image":"gsk-banner",
+    "header": "GSK Banner",
+    "description": "Simiplicity often is the key to performant and eye-catching execution. By leveraging our expertise, we assisted in creation of this animated banner that was mainly targetted at the internal medical networks, mainly experienced through legacly internet browsers.",
+    "date": "2018",
+    "client": "GSK",
+    "demo": "gsk-banner.html",
+    "tags":"Premium, Pharma, IAB Standard unit, Animation"
+  },
+  "audi-filmstrip": {
+    "hero image":"audi-filmstrip",
+    "header": "Audi - Dynamic Scroll Filmstrip",
+    "description": "To increase engagement, our Audi film strip advert reacts to the user's page scroll motion, auto-scrolling through the image & video gallery in line with the article read progression. Simple but effect solution that we recommend to all of our content owners.",
+    "date": "2018",
+    "client": "Audi",
+    "demo": "audi-filmstrip.html",
+    "tags":"Premium, Auto-scroll, Filmstrip, Video"
+  },
+  "rolls-royce": {
+    "hero image":"rolls-royce",
+    "header": "Rolls Royce",
+    "description": "Relatively simple but elegant animated creative that promotes Rolls Royce innovation wonder, the jet engine. Our focus here was on the experience consitency across various screen-sizes, resolutions and device types.",
+    "date": "2018",
+    "client": "Agency",
+    "demo": "rolls-royce.html",
+    "tags":"Premium"
+  },
+  "renault": {
+    "hero image":"renault",
+    "header": "Renault - Responsive Takeover",
+    "description": "By working closely with the French publisher and their significant strategic advertiser Renault, our team decided to challenge the norm of video takeovers. We aimed to deliver a sublime video takeover that blends visually impressive advertiser's content with an engaging interactive way of allocating it within their article page across Desktop, Tablet, and Mobile. Throughout the campaign, we were monitoring the performance and adjusting the immersive experience daily to ensure the execution that it had no negative impact on the end audience and instead submerged them into an aesthetically pleasing emotional & artistical product overview.",
+    "date": "2017",
+    "client": "366",
+    "demo": "Independant-renault.html",
+    "tags":"Homepage, Takeover, Responsive, Cross-screen, Cross-device"
+  },
+  "toyota": {
+    "hero image":"toyota",
+    "header": "Toyota",
+    "description": "In our humble opinion reimagined Toyota product deserved something equally creative. That is why, we shifted our focus towards the actual visual execution. As we were commissioned to deliver a 15s interstitial, we wanted to captivate the younger audience and encourage them to interact with the ad. Through the use of vibrant colours and impressive 360 car animation, we achieved nearly 45% engagement rate, making it evident that our visual approach helped Toyota to reconnect with the targetted audience.",
+    "date": "2017",
+    "client": "Bauer Media Group",
+    "demo": "autotrader-toyota.html",
+    "tags":"360, Interstitial, Car preview"
+  }
+}

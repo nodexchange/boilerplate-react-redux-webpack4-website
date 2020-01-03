@@ -22,6 +22,10 @@
     "rules": {
       "no-param-reassign": "off",
       "function-paren-newline": "off",
+      "global-require":1,
+      "no-plusplus":1,
+      "no-bitwise":1,
+      "prefer-template":1,
       "arrow-parens": [
         "error",
         "always"
@@ -53,10 +57,13 @@
       ],
       "react/jsx-filename-extension": 0,
       "react/require-default-props": 0,
+      "react/no-danger": 0,
       "react/self-closing-comp": 0,
+      "react/jsx-no-target-blank": 1,
       "redux-saga/no-yield-in-race": 2,
       "redux-saga/yield-effects": 2,
-      "jsx-a11y/anchor-is-valid": 0
+      "jsx-a11y/anchor-is-valid": 0,
+      "jsx-a11y/click-events-have-key-events": 1
     },
     "settings": {
       "import/resolver": {

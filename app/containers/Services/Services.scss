@@ -1,10 +1,5 @@
 .services {
-  height: 105%;
-  background: #e2764c; /* Old browsers */
-  background: -moz-linear-gradient(top, #e06919 0%, #e2764c 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #e06919 0%,#e2764c 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #e06919 0%,#e2764c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e06919', endColorstr='#e2764c',GradientType=0 ); /* IE6-9 */
+  background-color: #280a33;
   .section {
     height: 100%;
     margin: 0 auto;
@@ -13,87 +8,120 @@
     padding-right: 1%;
     position: relative;
     top: 2vw;
-    .mobileServices {
-      display: none;
+    .serviceItems {
       position: relative;
-        height:  100%;
-        width: 50%;
-        margin: 0 auto;
-        .numberEl {
-          position: relative;
-          top: 0;
-          left: 0;
-          text-indent: 200%;
-          white-space: nowrap;
-          overflow: hidden;
-          animation: fadein 2s;
+      width:  100%;
+      height:  auto;
+      height: auto;
+      padding-bottom: 20px;
+      .sprite {
+        background-image: url(./spritesheet.png);
+        background-repeat: no-repeat;
+        display: block;
+        position: absolute;
+        transform: scale(0.7);
+        margin-top:-15px;
+      }
+      
+      .sprite-icons8-design-64-_1_ {
+        width: 64px;
+        height: 64px;
+        background-position: -5px -5px;
+      }
+      
+      .sprite-icons8-innovation-64 {
+          width: 64px;
+          height: 64px;
+          background-position: -79px -5px;
+      }
+      
+      .sprite-icons8-mobile-80 {
+          width: 80px;
+          height: 80px;
+          background-position: -5px -79px;
+      }
+      
+      .sprite-icons8-touchscreen-80 {
+          width: 80px;
+          height: 80px;
+          background-position: -95px -79px;
+      }
+      
+      .sprite-icons8-training-50 {
+          width: 50px;
+          height: 50px;
+          background-position: -153px -5px;
+      }
+      
+      .sprite-icons8-video-editing-64 {
+          width: 64px;
+          height: 64px;
+          background-position: -213px -5px;
+      }
+      
+      .sprite-icons8-virtual-reality-50 {
+          width: 50px;
+          height: 50px;
+          background-position: -185px -79px;
+      }
+      
+      .sprite-icons8-web-advertising-80 {
+          width: 80px;
+          height: 80px;
+          background-position: -185px -139px;
+      }
+      
+      .sprite-icons8-wrench-80 {
+          width: 80px;
+          height: 80px;
+          background-position: -287px -5px;
+      }
+    
+    
+    
+      .serviceItem {
+        width: 80vw;
+        overflow: hidden;
+        color: white;
+        text-align: center;
+        line-height: 1.42857;
+        font-family: 'Didact Gothic', sans-serif;
+        transition: all 1s ease 0s;
+        background-color: rgba(0,0,0,0.6);
+        -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+        -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+        box-shadow: 1px 1px 3px rgba(0,0,0,.6);
+        padding: 24px;
+        // margin: 0px 0px 0px 30vw;
+        margin: 2vw 4vw 2vw 10vw;
+        transition: all 1s;
+        opacity: 0;
+        margin-top: -50px;
+        // margin-left: 30vw;
+        .serviceHeader {
+          font-size: 25px;
+          padding-bottom: 25px;
         }
-        .number1 {
-          top: 0px;
-          left: 0px;
-          width: 408px;
-          height: 358px;
-          background: url(/services1.png) center center no-repeat scroll;
-        }
-        .number2 {
-          top: 0px;
-          left: 0px;
-          width: 408px;
-          height: 361px;
-          background: url(/services2.png) center center no-repeat scroll;
-        }
-        .number3 {
-          top: 0px;
-          left: 0px;
-          width: 408px;
-          height: 322px;
-          background: url(/services3.png) center center no-repeat scroll;
-        }
-        .number4 {
-          top: 0px;
-          left: 0px;
-          width: 408px;
-          height: 409px;
-          background: url(/services4.png) center center no-repeat scroll;
-        }
-        .number5 {
-          top: 0px;
-          left: 0px;
-          width: 408px;
-          height: 453px;
-          background: url(/services5.png) center center no-repeat scroll;
-        }
-        .number6 {
-          top: 0px;
-          left: 0px;
-          width: 408px;
-          height: 400px;
-          background: url(/services6.png) center center no-repeat scroll;
-        }
+      }
+      .serviceItemAnimation {
+        opacity: 1;
+        margin-top: 2vw;
+      }
+      .service1 {
+        left: auto !important;
+        right: 8%;
+      }
     }
-    .stars {
+    .phoneContainer {
       position: absolute;
       width:  100%;
       height:  100%;
-      background: url(./stars.png) center center no-repeat scroll;
-      background-size: cover;
-    }
-    .phone {
-      position: absolute;
-      width:  100%;
-      height:  100%;
-      background: url(./phone.png) center center no-repeat scroll;
     }
     .logo {
       margin-top: -86px;
-      position: absolute;
       width:  100%;
       height:  100%;
       opacity: 0;
-      // -webkit-transition:  all 1200ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      // -moz-transition:  all 1200ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      // -o-transition:  all 1200ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      // transition:  all 1200ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
       background: url(./logo.png) center center no-repeat scroll;
       animation: revealLogo 2s;
       animation-fill-mode: forwards;
@@ -102,11 +130,6 @@
     .logoShadow {
       margin-top: 26px;
       opacity: 0;
-      // -webkit-transition:  all 1200ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      // -moz-transition:  all 1200ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      // -o-transition:  all 1200ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      // transition:  all 1200ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      position: absolute;
       width:  100%;
       height:  100%;
       -webkit-filter: contrast(0);
@@ -116,73 +139,6 @@
       animation: revealShadow 2s;
       animation-delay: 1.5s;
       animation-fill-mode: forwards;
-    }
-    .numbers {
-      position: relative;
-      height:  100%;
-      width: 50%;
-      margin: 0 auto;
-      .numberEl {
-        position: absolute;
-        top: 0;
-        left: 0;
-        text-indent: 100%;
-        white-space: nowrap;
-        overflow: hidden;
-        animation: fadein 2s;
-        animation-fill-mode: forwards;
-        opacity: 0;
-      }
-      .number1 {
-        top: 40px;
-        left: -206px;
-        width: 244px;
-        height: 428px;
-        background: url(./number1.png) center center no-repeat scroll;
-        animation-delay: 1s;
-      }
-      .number2 {
-        top: 374px;
-        left: -215px;
-        width: 358px;
-        height: 480px;
-        background: url(./number2.png) center center no-repeat scroll;
-        animation-delay: 1.5s;
-      }
-      .number3 {
-        top: 402px;
-        left: 27px;
-        width: 200px;
-        height: 388px;
-        background: url(./number3.png) center center no-repeat scroll;
-        animation-delay: 2s;
-
-      }
-      .number4 {
-        top: 377px;
-        left: 203px;
-        width: 221px;
-        height: 512px;
-        background: url(./number4.png) center center no-repeat scroll;
-        animation-delay: 2.5s;
-      }
-      .number5 {
-        top: 397px;
-        left: 339px;
-        width: 383px;
-        height: 477px;
-        background: url(./number5.png) center center no-repeat scroll;
-        animation-delay: 3s;
-      
-      }
-      .number6 {
-        top: 57px;
-        left: 441px;
-        width: 262px;
-        height: 413px;
-        background: url(./number6.png) center center no-repeat scroll;
-        animation-delay: 3.5s;
-      }
     }
   }
 }
@@ -205,108 +161,45 @@
   100%   { margin-top: -7px; opacity:0.4}
 }
 
-@media only screen and (min-width: 1610px) {
-  .numbers {
-    left: 11vw;
-  }
-}
-@media only screen and (max-width: 1600px) {
-  .numbers {
-    left: 9vw;
-  }
-}
 
-@media only screen and (max-width: 1400px) {
-  .numbers {
-    left: 5vw;
-  }
-}
-@media only screen and (max-width: 1375px) {
-  .numbers {
-    left: 7vw;
-  }
-}
-
-@media only screen and (max-width: 1200px) {
-  .numbers {
-    left: 3vw;
-  }
-}
-
-@media only screen and (max-width: 1100px) {
-  .section {
-    transform: scale(0.8);
-  }
-  .numbers {
-    left: 0vw;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .section {
-    transform: scale(0.7);
-  }
-  .numbers {
-    left: -2vw;
-  }
-}
-
-
-@media only screen and (max-width: 766px) {
+@media only screen and (max-width: 800px) {
   .services {
-    height: 2100px !important;
-  }
-  .section {
-    transform: scale(1);
-    padding-left: 0% !important;
-    padding-right: 0% !important;
-    top: -240px !important;
-  }
-
-  .numbers {
-    display: none;
-  }
-  .stars {
-    display: none;
-  }
-  .mobileServices {
-    display: block !important;
-    left: -10vw;
-    top: 400px;
-    height: 800px;
-  }
-}
-
-
-@media only screen and (max-width: 556px) {
-  .services {
-    height: 2220px !important;
     .section {
-      .phone {
-        display: none;
-      }
-      .logo {
-        transform: scale(0.6);
-        height: 200px;
-        position: relative;
-        top: 349px;
-        width: 120%;
-        left: -41px;
-      }
-      .logoShadow {
-        transform: scale(0.6);
-        height: 200px;
-        position: relative;
-        top: 190px;
-        width: 120%;
-        left: -41px;
+      .serviceItems {
+        background-color: #280a33;
+        .sprite {
+          transform: scale(0.5);
+        }
+        .serviceHeader {
+          font-size: 14px !important;
+          padding-bottom: 20px;
+        }
+        .serviceDescription {
+          font-size: 12px !important;
+        }
       }
     }
   }
-  .mobileServices {
-    display: block !important;
-    transform: scale(0.8);
-    left: -20vw;
-    top: -50px;
+}
+
+@media only screen and (max-width: 500px) {
+  .services {
+    .section {
+      .serviceItems {
+        background-color: #280a33;
+        .sprite {
+          transform: scale(0.4);
+          margin-top:-25px;
+          margin-left:-25px;
+        }
+        .serviceHeader {
+          font-size: 14px !important;
+          padding-bottom: 20px;
+        }
+        .serviceDescription {
+          font-size: 12px !important;
+        }
+      }
+    }
   }
 }

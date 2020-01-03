@@ -1,48 +1,23 @@
 /* eslint-disable react/no-unescaped-entities */
 import React, { Component } from 'react';
-import { IndexLink, Link, browserHistory } from 'react-router';
+import { NavLink } from 'react-router-dom';
+import '!file-loader?name=[name].[ext]!../../static/logo-animation-completed.html'; // eslint-disable-line
+import '!file-loader?name=[name].[ext]!../../images/logo-animation-bck.png'; // eslint-disable-line
 
-// eslint-disable-next-line import/extensions, import/no-extraneous-dependencies
-// import config from '../../config';
+import './NavBar.scss';
 
-// eslint-disable-next-line react/prefer-stateless-function
 export default class NavBar extends Component {
   constructor(props) {
     super(props);
-    this.state = { navbar: 'sticky', location: '' };
+    this.state = { navbar: 'sticky' };
   }
 
   componentDidMount() {
     window.addEventListener('scroll', (e) => { this.mScrollHandler(e); });
-    browserHistory.listen((e) => {
-      if (e.pathname !== this.state.location) {
-        this.showLoader();
-        this.setState({ location: e.pathname });
-      }
-    });
-    this.showLoader();
-    this.saveLocation();
   }
 
   componentWillUnmount() {
     window.removeEventListener('scroll', (e) => { this.mScrollHandler(e); });
-    this.state = {};
-  }
-
-  saveLocation() {
-    if (this.state.location === '') {
-      this.setState({ location: browserHistory.getCurrentLocation().pathname });
-    }
-  }
-
-  showLoader = () => {
-    if (document) {
-      const navLoader = document.getElementById('navLoader');
-      navLoader.style.visibility = 'visible';
-      setTimeout(() => {
-        navLoader.style.visibility = 'hidden';
-      }, 3200);
-    }
   }
 
   scrollPageHandler = () => {
@@ -57,13 +32,13 @@ export default class NavBar extends Component {
         if (this.state.navbar !== 'scroll') {
           this.setState({ navbar: 'scroll' });
         }
-        return;
+        return; // eslint-disable-line
       }
     } else {
       if (this.state.navbar !== 'sticky') {
         this.setState({ navbar: 'sticky' });
       }
-      return;
+      return; // eslint-disable-line
     }
   }
   mobileNavClickHandler = () => {
@@ -84,7 +59,7 @@ export default class NavBar extends Component {
   }
 
   retrieveIframeElement = () => {
-    const iframeElement = '<iframe frameborder=0 scrolling=no src="/logo-animation-completed.html" width="250" height="90"></iframe>';
+    const iframeElement = '<iframe frameborder=0 scrolling=no src="./logo-animation-completed.html" width="250" height="90"></iframe>';
     return {
       __html: iframeElement
     };
@@ -92,21 +67,23 @@ export default class NavBar extends Component {
 
   render() {
     // eslint-disable-next-line global-require
-    const styles = require('./NavBar.scss');
-
-    let navType = styles.sticky;
+    let navType = 'sticky';
     let mobileNavType = 'close-nav';
-    let brandType = styles.brandNormal;
+    let brandType = 'brandNormal';
     if (this.state) {
       if (this.state.navbar === 'scroll') {
-        navType = styles.scroll;
-        brandType = styles.brandScrolled;
+        navType = 'scroll';
+        brandType = 'brandScrolled';
       }
       if (this.state.mobileNav === 'open-nav') {
-        mobileNavType = styles.openNav;
+        mobileNavType = 'open-nav';
       }
     }
+
     const navConfig = [
+      {
+        to: '/', name: 'Home', className: '', onClick: this.navClickHandler
+      },
       {
         to: '/about', name: 'About Us', className: '', onClick: this.navClickHandler
       },
@@ -120,69 +97,63 @@ export default class NavBar extends Component {
         to: '/contact', name: 'Contact', className: 'contactUsButton', onClick: this.navClickHandler
       }
     ];
+
     const navButtons = [];
-
     for (let i = 0; i < navConfig.length; i++) {
-      if (this.state.location === navConfig[i].to) {
-        navButtons.push(
-          <li key={'navBtn' + i}><Link className={styles.activeNavButton + ' ' + styles[navConfig[i].className]} to={navConfig[i].to} onClick={navConfig[i].onClick}>{navConfig[i].name}</Link></li>
-        );
-      } else {
-        navButtons.push(
-          <li key={'navBtn' + i}><Link className={styles[navConfig[i].className]} to={navConfig[i].to} onClick={navConfig[i].onClick}>{navConfig[i].name}</Link></li>
-        );
-      }
+      navButtons.push(
+        <li key={'navBtn' + i}>
+          <NavLink activeClassName="activeNavButton" className={navConfig[i].className} to={navConfig[i].to} onClick={navConfig[i].onClick}>{navConfig[i].name}</NavLink>
+        </li>
+      );
     }
-
     const logo = [];
     try {
       if (window.location.host !== 'localhost:3000') {
         logo.push(
-          <IndexLink key="0" to="/" activeStyle={{ color: '#33e0ff' }}>
-            <div className={styles.brandClick} />
-            <div className={styles.brand + ' ' + brandType}>
+          <NavLink key="0" to="/" activeStyle={{ color: '#33e0ff' }}>
+            <div className={'brandClick'} />
+            <div className={'brand ' + brandType}>
               <div dangerouslySetInnerHTML={this.retrieveIframeElement()} />
             </div>
-          </IndexLink>
+          </NavLink>
         );
       } else {
         logo.push(
-          <IndexLink key="0" to="/" activeStyle={{ color: '#33e0ff' }}>
-            <div className={styles.brandClick} />
-          </IndexLink>
+          <NavLink key="0" to="/" activeStyle={{ color: '#33e0ff' }}>
+            <div className={'brandClick'} />
+          </NavLink>
         );
       }
     } catch (e) {
       logo.push(
-        <IndexLink key="0" to="/" activeStyle={{ color: '#33e0ff' }}>
-          <div className={styles.brandClick} />
-        </IndexLink>
+        <NavLink key="0" to="/" activeStyle={{ color: '#33e0ff' }}>
+          <div className={'brandClick'} />
+        </NavLink>
       );
     }
 
-    /* eslint-disable */
     return (
-      <header className={styles.mainHeader + ' ' + navType + ' ' + mobileNavType }>
-        <div className={styles.row}>
+      <header className={'mainHeader ' + navType + ' ' + mobileNavType}>
+        <div className={'row'}>
           {logo}
           <div
             role="button"
             tabIndex="0"
-            className={styles.mobileToggle}
-            onClick={this.mobileNavClickHandler}>
+            className={'mobileToggle'}
+            onClick={this.mobileNavClickHandler}
+          >
             <span>{}</span>
             <span>{}</span>
             <span>{}</span>
           </div>
-          <nav className={styles.navBar}>
+          <nav className={'navBar'}>
             <ul>
               {navButtons}
             </ul>
           </nav>
-          <div id="navLoader" className={styles.loader} />
+          {/* <div id="navLoader" className={'loader'} /> */}
         </div>
       </header>
     );
-    /* eslint-enable */
   }
 }

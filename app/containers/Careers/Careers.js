@@ -1,20 +1,16 @@
 import React, { Component } from 'react';
+import Helmet from 'react-helmet';
+import { ScrollToTopOnMount, SectionItem } from 'components';
+import data from './career-data.json';
+import './Career.scss';
 
-// eslint-disable-next-line react/prefer-stateless-function
-export default class NotFound extends Component {
-
+export default class Careers extends Component { // eslint-disable-line react/prefer-stateless-function
   render() {
-    const styles = require('./Career.scss');
-
     return (
-      <div className={styles.containerNotFound}>
-        <div id={styles.notFoundText}>
-          <h1>Careers</h1>
-          <p>The infamous error 404, these sadly happen!</p>
-          <p>If the page has been moved or you found a deadlink...</p>
-          <span>Please let us know, our front-end team might cry a little, but ultimately they will appreciate the info!</span>
-        </div>
-        <div id={styles.upset}>{''}</div>
+      <div className={'containerCareers'}>
+        <Helmet title="Careers" />
+        <SectionItem inView key={0} offset={0} order={0} {...data.Careeers} link="legal" />
+        <ScrollToTopOnMount />
       </div>
     );
   }

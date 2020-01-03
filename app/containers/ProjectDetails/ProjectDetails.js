@@ -1,47 +1,31 @@
 import React, { Component } from 'react';
 import { PropTypes } from 'prop-types';
-import { connect } from 'react-redux';
-import * as copyActions from 'redux/modules/copy';
 import Helmet from 'react-helmet';
-import { Divider, GridBack, Hero, SectionText } from 'components';
-
-// eslint-disable-next-line import/extensions, import/no-extraneous-dependencies
-@connect(
-  state => ({ localeCopy: state.copy.localeCopy }),
-  copyActions
-)
+import { GridBack, Hero, ScrollToTopOnMount, SectionText } from 'components';
+import './ProjectDetails.scss';
+import data from './projects-data.json';
 
 export default class ProjectDetails extends Component {
   static propTypes = {
-    loadCopy: PropTypes.func.isRequired, // redux-actions
-    params: PropTypes.object, // eslint-disable-line react/forbid-prop-types
-    localeCopy: PropTypes.oneOfType([
-      PropTypes.object, // eslint-disable-line react/forbid-prop-types
-      PropTypes.array // eslint-disable-line react/forbid-prop-types
-    ])
+    params: PropTypes.object
   }
 
   constructor(props) {
     super(props);
-    this.localeCopy = this.props.localeCopy || 'loading...';
+    this.section = this.props.match.params.projectName; // eslint-disable-line
   }
 
   componentDidMount() {
-    const section = this.props.params.projectName;
-    this.props.loadCopy(section);
+    // const section = this.props.params.projectName;
+    this.section = this.props.match.params.projectName;
   }
 
   render() {
-    const styles = require('./ProjectDetails.scss');
-
-    if (this.localeCopy === 'loading...' || this.props.localeCopy.default ||
-        typeof this.props.localeCopy[0] === 'undefined') {
-      return (<p>Loading...</p>);
-    }
-    const localeCopy = this.props.localeCopy[0];
+    const localeCopy = data[this.section];
     return (
-      <div className={styles.projectDetails}>
-        <Helmet title="Project Detail" />
+      <div className={'projectDetails'}>
+        {/* <Helmet title={this.props.params.projectName + " | Detail"} /> */}
+        <Helmet title={localeCopy.client + ' | Details'} />
         <Hero
           smallHeader={localeCopy.header}
           background={localeCopy['hero image']}
@@ -51,8 +35,7 @@ export default class ProjectDetails extends Component {
         />
         <GridBack link="work" />
         <SectionText header={localeCopy.header} copy={localeCopy.description} tags={localeCopy.tags} />
-        <Divider />
-        <Divider />
+        <ScrollToTopOnMount />
       </div>
     );
   }

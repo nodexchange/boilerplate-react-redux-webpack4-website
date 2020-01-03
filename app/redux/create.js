@@ -1,3 +1,4 @@
+/* global __DEVELOPMENT__ __CLIENT__ __DEVTOOLS__ */
 import { createStore as _createStore, applyMiddleware, compose } from 'redux';
 import { routerMiddleware } from 'react-router-redux';
 
@@ -12,9 +13,9 @@ export default function createStore(history, client, data) {
 
   let finalCreateStore;
   if (__DEVELOPMENT__ && __CLIENT__ && __DEVTOOLS__) {
-    // eslint-disable-next-line global-require, import/no-extraneous-dependencies
+    // eslint-disable-next-line global-require, import/no-extraneous-dependencies, import/no-unresolved
     const { persistState } = require('redux-devtools');
-    // eslint-disable-next-line global-require
+    // eslint-disable-next-line global-require, import/no-unresolved
     const DevTools = require('../containers/DevTools/DevTools');
 
     finalCreateStore = compose(
@@ -25,14 +26,14 @@ export default function createStore(history, client, data) {
   } else {
     finalCreateStore = applyMiddleware(...middleware)(_createStore);
   }
-  // eslint-disable-next-line global-require
+  // eslint-disable-next-line global-require, import/no-unresolved
   const reducer = require('./modules/reducer');
 
   const store = finalCreateStore(reducer, data);
 
   if (__DEVELOPMENT__ && module.hot) {
     module.hot.accept('./modules/reducer', () => {
-      // eslint-disable-next-line global-require
+      // eslint-disable-next-line global-require, import/no-unresolved
       store.replaceReducer(require('./modules/reducer'));
     });
   }
